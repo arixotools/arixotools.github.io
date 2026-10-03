@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator - ARIXO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <a href="../../../../index.html" class="back-btn">
+            ← Back to ARIXO
+        </a>
+
+        <section class="calculator-card">
+
+            <div class="icon">🧾</div>
+
+            <h1>GST Calculator</h1>
+
+            <p class="subtitle">
+                Calculate GST, CGST, SGST and final amount easily.
+            </p>
+
+            <div class="input-group">
+                <label for="amount">Amount (₹)</label>
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Enter amount"
+                    min="0"
+                    step="0.01"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="gstRate">GST Rate</label>
+
+                <select id="gstRate">
+                    <option value="5">5%</option>
+                    <option value="12">12%</option>
+                    <option value="18" selected>18%</option>
+                    <option value="28">28%</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="gstType">GST Type</label>
+
+                <select id="gstType">
+                    <option value="exclusive">
+                        GST Exclusive
+                    </option>
+
+                    <option value="inclusive">
+                        GST Inclusive
+                    </option>
+                </select>
+            </div>
+
+            <button
+                type="button"
+                id="calculateBtn"
+                class="calculate-btn"
+            >
+                Calculate GST
+            </button>
+
+            <button
+                type="button"
+                id="clearBtn"
+                class="clear-btn"
+            >
+                Clear
+            </button>
+
+            <p id="error" class="error"></p>
+
+            <div class="result-box">
+
+                <div class="main-result">
+
+                    <span>Final Amount</span>
+
+                    <strong id="finalAmount">
+                        ₹0.00
+                    </strong>
+
+                </div>
+
+                <div class="result-row">
+
+                    <span>Base Amount</span>
+
+                    <strong id="baseAmount">
+                        ₹0.00
+                    </strong>
+
+                </div>
+
+                <div class="result-row">
+
+                    <span>GST Amount</span>
+
+                    <strong id="gstAmount">
+                        ₹0.00
+                    </strong>
+
+                </div>
+
+                <div class="result-row">
+
+                    <span>CGST</span>
+
+                    <strong id="cgst">
+                        ₹0.00
+                    </strong>
+
+                </div>
+
+                <div class="result-row">
+
+                    <span>SGST</span>
+
+                    <strong id="sgst">
+                        ₹0.00
+                    </strong>
+
+                </div>
+
+                <div class="result-row">
+
+                    <span>GST Rate</span>
+
+                    <strong id="rateResult">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="formula-box">
+
+                <strong>Formula</strong>
+
+                <span id="formula">
+                    GST = Amount × GST Rate ÷ 100
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

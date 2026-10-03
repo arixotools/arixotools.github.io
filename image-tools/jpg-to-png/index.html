@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JPG to PNG — ARIXO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../../../index.html">
+        ← Back to ARIXO
+    </a>
+
+    <div class="card">
+
+      <div class="logo">ARIXO</div>
+
+      <h1>JPG to PNG</h1>
+
+      <p class="subtitle">
+        Convert JPG and JPEG images to PNG format instantly.
+      </p>
+
+      <div class="upload-box">
+
+        <input
+          type="file"
+          id="imageInput"
+          accept="image/jpeg,.jpg,.jpeg"
+          onchange="loadImage(event)"
+        >
+
+        <label for="imageInput">
+          📷 Choose JPG Image
+        </label>
+
+        <p id="fileName">
+          No image selected
+        </p>
+
+      </div>
+
+      <div
+        class="preview-box"
+        id="previewBox"
+      >
+
+        <img
+          id="preview"
+          alt="Image Preview"
+        >
+
+      </div>
+
+      <button onclick="convertToPNG()">
+        Convert to PNG
+      </button>
+
+      <div id="result"></div>
+
+      <a
+        id="downloadBtn"
+        class="download-btn"
+        download="arixo-converted.png"
+      >
+        Download PNG
+      </a>
+
+      <button
+        class="clear-btn"
+        onclick="clearTool()"
+      >
+        Clear
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

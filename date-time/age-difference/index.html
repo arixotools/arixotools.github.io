@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Age Difference Calculator — ARIXO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../../../index.html">
+    ← Back to ARIXO
+</a>
+
+    <div class="card">
+
+      <div class="logo">ARIXO</div>
+
+      <h1>Age Difference</h1>
+
+      <p class="subtitle">
+        Calculate the exact age between two dates.
+      </p>
+
+      <div class="input-group">
+        <label for="dateOfBirth">First Date</label>
+        <input type="date" id="dateOfBirth">
+      </div>
+
+      <div class="input-group">
+        <label for="secondDate">Second Date</label>
+        <input type="date" id="secondDate">
+      </div>
+
+      <button onclick="calculateAgeDifference()">
+        Calculate
+      </button>
+
+      <div id="result" class="result">
+        Select two dates to calculate the difference.
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

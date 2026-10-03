@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Base64 Encoder — ARIXO</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a class="back" href="../../../index.html">
+    ← Back to ARIXO
+</a>
+
+        <div class="card">
+
+            <div class="logo">ARIXO</div>
+
+            <h1>Base64 Encoder</h1>
+
+            <p class="subtitle">
+                Convert text into Base64 format instantly.
+            </p>
+
+            <textarea
+                id="textInput"
+                placeholder="Enter your text here..."
+            ></textarea>
+
+            <div class="button-grid">
+
+                <button onclick="encodeText()">
+                    Encode
+                </button>
+
+                <button class="secondary" onclick="copyResult()">
+                    Copy
+                </button>
+
+                <button class="clear-btn" onclick="clearTool()">
+                    Clear
+                </button>
+
+            </div>
+
+            <textarea
+                id="output"
+                class="output"
+                placeholder="Encoded Base64 result will appear here..."
+                readonly
+            ></textarea>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

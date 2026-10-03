@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Image to JPG — ARIXO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../../../index.html">
+        ← Back to ARIXO
+    </a>
+
+    <div class="card">
+
+      <div class="logo">ARIXO</div>
+
+      <h1>Image to JPG</h1>
+
+      <p class="subtitle">
+        Convert your image to JPG format quickly and easily.
+      </p>
+
+      <div class="upload-box">
+
+        <input
+          type="file"
+          id="imageInput"
+          accept="image/*"
+          onchange="loadImage(event)"
+        >
+
+        <label for="imageInput">
+          📷 Choose Image
+        </label>
+
+        <p id="fileName">
+          No image selected
+        </p>
+
+      </div>
+
+      <div class="preview-box" id="previewBox">
+
+        <img
+          id="preview"
+          alt="Image Preview"
+        >
+
+      </div>
+
+      <div class="quality-box" id="qualityBox">
+
+        <label for="quality">
+          JPG Quality:
+          <strong id="qualityValue">90%</strong>
+        </label>
+
+        <input
+          type="range"
+          id="quality"
+          min="10"
+          max="100"
+          value="90"
+          oninput="updateQuality()"
+        >
+
+      </div>
+
+      <button onclick="convertToJPG()">
+        Convert to JPG
+      </button>
+
+      <div id="result"></div>
+
+      <a
+        id="downloadBtn"
+        class="download-btn"
+        download="arixo-converted.jpg"
+      >
+        Download JPG
+      </a>
+
+      <button
+        class="clear-btn"
+        onclick="clearTool()"
+      >
+        Clear
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
