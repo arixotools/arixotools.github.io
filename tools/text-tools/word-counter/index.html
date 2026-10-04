@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Word Counter — ARIXO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../../../index.html">
+    ← Back to ARIXO
+</a>
+
+    <div class="card">
+
+      <div class="logo">ARIXO</div>
+
+      <h1>Word Counter</h1>
+
+      <p class="subtitle">
+        Count words, characters and spaces instantly.
+      </p>
+
+      <textarea
+        id="textInput"
+        placeholder="Type or paste your text here..."
+        oninput="countText()"
+      ></textarea>
+
+      <div class="stats">
+
+        <div class="stat">
+          <span id="wordCount">0</span>
+          <small>Words</small>
+        </div>
+
+        <div class="stat">
+          <span id="characterCount">0</span>
+          <small>Characters</small>
+        </div>
+
+        <div class="stat">
+          <span id="characterNoSpaceCount">0</span>
+          <small>No Spaces</small>
+        </div>
+
+      </div>
+
+      <button onclick="clearText()">
+        Clear
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

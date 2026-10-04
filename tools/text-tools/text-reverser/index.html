@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Text Reverser — ARIXO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../../../index.html">
+    ← Back to ARIXO
+</a>
+
+    <div class="card">
+
+      <div class="logo">ARIXO</div>
+
+      <h1>Text Reverser</h1>
+
+      <p class="subtitle">
+        Reverse your text instantly with one click.
+      </p>
+
+      <textarea
+        id="textInput"
+        placeholder="Type or paste your text here..."
+      ></textarea>
+
+      <div class="buttons">
+
+        <button onclick="reverseText()">
+          Reverse Text
+        </button>
+
+        <button onclick="reverseWords()">
+          Reverse Words
+        </button>
+
+      </div>
+
+      <button class="clear-btn" onclick="clearText()">
+        Clear
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

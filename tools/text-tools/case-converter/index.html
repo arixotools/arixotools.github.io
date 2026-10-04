@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Case Converter — ARIXO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../../../index.html">
+    ← Back to ARIXO
+</a>
+
+    <div class="card">
+
+      <div class="logo">ARIXO</div>
+
+      <h1>Case Converter</h1>
+
+      <p class="subtitle">
+        Convert your text to different letter cases instantly.
+      </p>
+
+      <textarea
+        id="textInput"
+        placeholder="Type or paste your text here..."
+      ></textarea>
+
+      <div class="buttons">
+
+        <button onclick="toUpperCaseText()">
+          UPPERCASE
+        </button>
+
+        <button onclick="toLowerCaseText()">
+          lowercase
+        </button>
+
+        <button onclick="toTitleCase()">
+          Title Case
+        </button>
+
+        <button onclick="toSentenceCase()">
+          Sentence case
+        </button>
+
+      </div>
+
+      <button class="clear-btn" onclick="clearText()">
+        Clear
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

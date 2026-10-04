@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JSON Validator — ARIXO</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a class="back" href="../../../index.html">
+    ← Back to ARIXO
+</a>
+
+        <div class="card">
+
+            <div class="logo">ARIXO</div>
+
+            <h1>JSON Validator</h1>
+
+            <p class="subtitle">
+                Check whether your JSON is valid or contains errors.
+            </p>
+
+            <textarea
+                id="jsonInput"
+                placeholder='Paste your JSON here...
+
+Example:
+{"name":"Arikul","age":20}'
+            ></textarea>
+
+            <div class="button-grid">
+
+                <button onclick="validateJSON()">
+                    Validate JSON
+                </button>
+
+                <button class="secondary" onclick="formatJSON()">
+                    Format JSON
+                </button>
+
+                <button class="copy-btn" onclick="copyJSON()">
+                    Copy
+                </button>
+
+                <button class="clear-btn" onclick="clearTool()">
+                    Clear
+                </button>
+
+            </div>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

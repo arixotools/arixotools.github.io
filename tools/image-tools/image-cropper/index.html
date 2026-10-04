@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Image Cropper — ARIXO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../../../index.html">
+        ← Back to ARIXO
+    </a>
+
+    <div class="card">
+
+      <div class="logo">ARIXO</div>
+
+      <h1>Image Cropper</h1>
+
+      <p class="subtitle">
+        Crop your image by selecting the area you want to keep.
+      </p>
+
+      <div class="upload-box">
+
+        <input
+          type="file"
+          id="imageInput"
+          accept="image/*"
+          onchange="loadImage(event)"
+        >
+
+        <label for="imageInput">
+          📷 Choose Image
+        </label>
+
+        <p id="fileName">
+          No image selected
+        </p>
+
+      </div>
+
+      <div
+        class="crop-area"
+        id="cropArea"
+      >
+        <img
+          id="preview"
+          alt="Image Preview"
+        >
+<div
+  id="cropBox"
+  class="crop-box"
+>
+
+  <div class="grid-v1"></div>
+  <div class="grid-v2"></div>
+
+  <div class="grid-h1"></div>
+  <div class="grid-h2"></div>
+
+  <div class="handle handle-nw" data-direction="nw"></div>
+  <div class="handle handle-n" data-direction="n"></div>
+  <div class="handle handle-ne" data-direction="ne"></div>
+
+  <div class="handle handle-w" data-direction="w"></div>
+  <div class="handle handle-e" data-direction="e"></div>
+
+  <div class="handle handle-sw" data-direction="sw"></div>
+  <div class="handle handle-s" data-direction="s"></div>
+  <div class="handle handle-se" data-direction="se"></div>
+
+</div>
+      </div>
+
+      <div class="crop-info">
+
+        <span>
+          Crop:
+          <strong id="cropWidth">0</strong>
+          ×
+          <strong id="cropHeight">0</strong> px
+        </span>
+
+      </div>
+
+      <button onclick="cropImage()">
+        Crop Image
+      </button>
+
+      <div id="result"></div>
+
+      <a
+        id="downloadBtn"
+        class="download-btn"
+        download="arixo-cropped-image.jpg"
+      >
+        Download Cropped Image
+      </a>
+
+      <button
+        class="clear-btn"
+        onclick="clearTool()"
+      >
+        Clear
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

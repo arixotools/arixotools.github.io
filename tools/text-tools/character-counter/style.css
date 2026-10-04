@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(circle at 12% 18%, rgba(0, 229, 255, 0.16), transparent 32%),
+    radial-gradient(circle at 88% 82%, rgba(124, 58, 237, 0.14), transparent 34%),
+    linear-gradient(135deg, #020617, #07111f 50%, #030711);
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* =========================
+   BACK TO ARIXO
+========================= */
+
+.back {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 16px;
+  padding: 9px 15px;
+
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  border-radius: 999px;
+
+  background: rgba(0, 229, 255, 0.06);
+
+  color: #c4f9ff;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.25s ease;
+}
+
+.back:hover {
+  transform: translateY(-2px);
+
+  background: rgba(0, 229, 255, 0.12);
+
+  border-color: rgba(0, 229, 255, 0.7);
+
+  box-shadow:
+    0 0 22px rgba(0, 229, 255, 0.20);
+}
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card {
+  position: relative;
+
+  padding: 38px 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.095),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  border: 1px solid rgba(0, 229, 255, 0.16);
+
+  border-radius: 26px;
+
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 0 40px rgba(0, 229, 255, 0.06);
+
+  overflow: hidden;
+}
+
+/* Top cyan glow */
+
+.card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 230px;
+  height: 230px;
+
+  top: -140px;
+  left: -110px;
+
+  background: rgba(0, 229, 255, 0.13);
+
+  filter: blur(65px);
+
+  pointer-events: none;
+}
+
+/* Bottom violet glow */
+
+.card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  right: -120px;
+  bottom: -130px;
+
+  background: rgba(124, 58, 237, 0.12);
+
+  filter: blur(65px);
+
+  pointer-events: none;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  font-size: 27px;
+  font-weight: 800;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 21px;
+
+  color: #ffffff;
+
+  text-shadow:
+    0 0 12px rgba(0, 229, 255, 0.45),
+    0 0 30px rgba(0, 229, 255, 0.18);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  margin-bottom: 10px;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  color: #a8b8c9;
+
+  margin-bottom: 25px;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+}
+
+/* =========================
+   TEXT AREA
+========================= */
+
+textarea {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  min-height: 220px;
+
+  resize: vertical;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(0, 229, 255, 0.16);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 0, 0, 0.30),
+      rgba(255, 255, 255, 0.035)
+    );
+
+  color: #f5fcff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  outline: none;
+
+  box-shadow:
+    inset 0 0 25px rgba(0, 0, 0, 0.20);
+
+  transition: 0.25s ease;
+}
+
+textarea::placeholder {
+  color: #7f92a6;
+}
+
+textarea:focus {
+  border-color: rgba(0, 229, 255, 0.65);
+
+  box-shadow:
+    0 0 0 3px rgba(0, 229, 255, 0.07),
+    0 0 25px rgba(0, 229, 255, 0.10),
+    inset 0 0 25px rgba(0, 0, 0, 0.22);
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+/* =========================
+   STAT CARD
+========================= */
+
+.stat {
+  position: relative;
+
+  padding: 18px 10px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 229, 255, 0.075),
+      rgba(255, 255, 255, 0.035)
+    );
+
+  border: 1px solid rgba(0, 229, 255, 0.13);
+
+  border-radius: 16px;
+
+  box-shadow:
+    inset 0 0 20px rgba(0, 229, 255, 0.025);
+
+  transition: 0.25s ease;
+}
+
+.stat:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(0, 229, 255, 0.38);
+
+  box-shadow:
+    0 8px 25px rgba(0, 229, 255, 0.09);
+}
+
+/* Number */
+
+.stat span {
+  display: block;
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  margin-bottom: 6px;
+
+  color: #ffffff;
+
+  text-shadow:
+    0 0 12px rgba(0, 229, 255, 0.28);
+}
+
+/* Label */
+
+.stat small {
+  color: #9eb2c6;
+
+  font-size: 13px;
+}
+
+/* =========================
+   CLEAR BUTTON
+========================= */
+
+button {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border: 1px solid rgba(0, 229, 255, 0.20);
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #d9f8ff
+    );
+
+  color: #071019;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 28px rgba(0, 229, 255, 0.18);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  body {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 32px 20px;
+
+    border-radius: 22px;
+  }
+
+  .logo {
+    font-size: 24px;
+
+    letter-spacing: 4px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  textarea {
+    min-height: 190px;
+
+    font-size: 15px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat {
+    padding: 16px 8px;
+  }
+}

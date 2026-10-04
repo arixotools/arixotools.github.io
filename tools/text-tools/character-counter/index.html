@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Character Counter — ARIXO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../../../index.html">
+    ← Back to ARIXO
+</a>
+
+    <div class="card">
+
+      <div class="logo">ARIXO</div>
+
+      <h1>Character Counter</h1>
+
+      <p class="subtitle">
+        Count characters, letters, numbers and spaces instantly.
+      </p>
+
+      <textarea
+        id="textInput"
+        placeholder="Type or paste your text here..."
+        oninput="countCharacters()"
+      ></textarea>
+
+      <div class="stats">
+
+        <div class="stat">
+          <span id="totalCharacters">0</span>
+          <small>Total Characters</small>
+        </div>
+
+        <div class="stat">
+          <span id="withoutSpaces">0</span>
+          <small>Without Spaces</small>
+        </div>
+
+        <div class="stat">
+          <span id="letters">0</span>
+          <small>Letters</small>
+        </div>
+
+        <div class="stat">
+          <span id="numbers">0</span>
+          <small>Numbers</small>
+        </div>
+
+        <div class="stat">
+          <span id="spaces">0</span>
+          <small>Spaces</small>
+        </div>
+
+      </div>
+
+      <button onclick="clearText()">
+        Clear
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

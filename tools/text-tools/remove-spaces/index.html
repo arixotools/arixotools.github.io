@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Remove Spaces — ARIXO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../../../index.html">
+    ← Back to ARIXO
+</a>
+
+    <div class="card">
+
+      <div class="logo">ARIXO</div>
+
+      <h1>Remove Spaces</h1>
+
+      <p class="subtitle">
+        Remove unwanted spaces from your text instantly.
+      </p>
+
+      <textarea
+        id="textInput"
+        placeholder="Type or paste your text here..."
+        oninput="updateText()"
+      ></textarea>
+
+      <div class="options">
+
+        <button onclick="removeAllSpaces()">
+          Remove All Spaces
+        </button>
+
+        <button onclick="removeExtraSpaces()">
+          Remove Extra Spaces
+        </button>
+
+        <button onclick="removeLineSpaces()">
+          Remove Line Breaks
+        </button>
+
+      </div>
+
+      <button class="clear-btn" onclick="clearText()">
+        Clear
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

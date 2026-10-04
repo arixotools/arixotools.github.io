@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(circle at 15% 15%, rgba(0, 229, 255, 0.14), transparent 32%),
+    radial-gradient(circle at 85% 80%, rgba(34, 211, 238, 0.10), transparent 35%),
+    linear-gradient(135deg, #020617, #06131d 50%, #02060c);
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 620px;
+}
+
+/* =========================
+   BACK TO ARIXO
+========================= */
+
+.back {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 16px;
+  padding: 9px 15px;
+
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  border-radius: 999px;
+
+  background: rgba(0, 229, 255, 0.06);
+
+  color: #bdf8ff;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.25s ease;
+}
+
+.back:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(0, 229, 255, 0.75);
+
+  background: rgba(0, 229, 255, 0.12);
+
+  box-shadow:
+    0 0 22px rgba(0, 229, 255, 0.20);
+}
+
+/* =========================
+   TEXT TOOL CARD
+========================= */
+
+.card {
+  position: relative;
+
+  padding: 38px 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.09),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  border: 1px solid rgba(0, 229, 255, 0.16);
+
+  border-radius: 26px;
+
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 0 35px rgba(0, 229, 255, 0.07);
+
+  overflow: hidden;
+}
+
+/* Cyan ambient glow */
+
+.card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  top: -130px;
+  left: -100px;
+
+  background: rgba(0, 229, 255, 0.13);
+
+  filter: blur(65px);
+
+  pointer-events: none;
+}
+
+/* Secondary glow */
+
+.card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+
+  right: -110px;
+  bottom: -120px;
+
+  background: rgba(6, 182, 212, 0.10);
+
+  filter: blur(65px);
+
+  pointer-events: none;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  font-size: 27px;
+  font-weight: 800;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 20px;
+
+  text-shadow:
+    0 0 12px rgba(0, 229, 255, 0.45),
+    0 0 30px rgba(0, 229, 255, 0.18);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  margin-bottom: 10px;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  color: #9fb3c8;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin-bottom: 24px;
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+textarea {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  min-height: 220px;
+
+  padding: 18px;
+
+  resize: vertical;
+
+  border: 1px solid rgba(0, 229, 255, 0.18);
+
+  border-radius: 16px;
+
+  outline: none;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 0, 0, 0.32),
+      rgba(255, 255, 255, 0.035)
+    );
+
+  color: #f4fbff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  transition: 0.25s ease;
+
+  box-shadow:
+    inset 0 0 25px rgba(0, 0, 0, 0.18);
+}
+
+textarea::placeholder {
+  color: #71859a;
+}
+
+textarea:focus {
+  border-color: rgba(0, 229, 255, 0.65);
+
+  box-shadow:
+    0 0 0 3px rgba(0, 229, 255, 0.08),
+    0 0 25px rgba(0, 229, 255, 0.10),
+    inset 0 0 25px rgba(0, 0, 0, 0.20);
+}
+
+/* =========================
+   RESULT / STATS
+========================= */
+
+.result {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 20px;
+
+  padding: 18px;
+
+  border: 1px solid rgba(0, 229, 255, 0.13);
+
+  border-radius: 16px;
+
+  background: rgba(0, 229, 255, 0.035);
+
+  color: #dceeff;
+
+  text-align: center;
+
+  line-height: 1.7;
+
+  box-shadow:
+    inset 0 0 20px rgba(0, 229, 255, 0.025);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  margin-top: 18px;
+
+  padding: 14px 18px;
+
+  border: 1px solid rgba(0, 229, 255, 0.22);
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #d8f7ff
+    );
+
+  color: #061018;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 28px rgba(0, 229, 255, 0.18);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 32px 20px;
+
+    border-radius: 22px;
+  }
+
+  .logo {
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  textarea {
+    min-height: 190px;
+
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(0, 229, 255, 0.14),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 85%,
+      rgba(236, 72, 153, 0.12),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #020617,
+      #0a0d1c 50%,
+      #030711
+    );
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* =========================
+   BACK TO ARIXO
+========================= */
+
+.back {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 16px;
+  padding: 9px 15px;
+
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  border-radius: 999px;
+
+  background: rgba(0, 229, 255, 0.06);
+
+  color: #c4f9ff;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.25s ease;
+}
+
+.back:hover {
+  transform: translateY(-2px);
+
+  background: rgba(0, 229, 255, 0.12);
+
+  border-color: rgba(0, 229, 255, 0.7);
+
+  box-shadow:
+    0 0 22px rgba(0, 229, 255, 0.2);
+}
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card {
+  position: relative;
+
+  padding: 38px 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.09),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  border: 1px solid rgba(236, 72, 153, 0.17);
+
+  border-radius: 26px;
+
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 0 40px rgba(236, 72, 153, 0.06);
+
+  overflow: hidden;
+}
+
+/* Cyan glow */
+
+.card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 230px;
+  height: 230px;
+
+  top: -140px;
+  left: -110px;
+
+  background: rgba(0, 229, 255, 0.12);
+
+  filter: blur(65px);
+
+  pointer-events: none;
+}
+
+/* Pink transformation glow */
+
+.card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  right: -110px;
+  bottom: -120px;
+
+  background: rgba(236, 72, 153, 0.12);
+
+  filter: blur(65px);
+
+  pointer-events: none;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  font-size: 27px;
+  font-weight: 800;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 21px;
+
+  text-shadow:
+    0 0 12px rgba(0, 229, 255, 0.42),
+    0 0 30px rgba(236, 72, 153, 0.16);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  font-size: 30px;
+
+  margin-bottom: 10px;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+
+  color: #aeb8c8;
+
+  margin-bottom: 25px;
+
+  line-height: 1.6;
+
+  font-size: 14px;
+}
+
+/* =========================
+   TEXT AREA
+========================= */
+
+textarea {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  min-height: 220px;
+
+  resize: vertical;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(236, 72, 153, 0.17);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 0, 0, 0.30),
+      rgba(236, 72, 153, 0.035)
+    );
+
+  color: #f8fbff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  outline: none;
+
+  box-shadow:
+    inset 0 0 28px rgba(0, 0, 0, 0.20);
+
+  transition: 0.25s ease;
+}
+
+textarea::placeholder {
+  color: #8290a3;
+}
+
+textarea:focus {
+  border-color: rgba(236, 72, 153, 0.62);
+
+  box-shadow:
+    0 0 0 3px rgba(236, 72, 153, 0.07),
+    0 0 28px rgba(236, 72, 153, 0.11),
+    inset 0 0 28px rgba(0, 0, 0, 0.22);
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.buttons {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+button {
+  min-height: 50px;
+
+  padding: 14px;
+
+  border: 1px solid rgba(0, 229, 255, 0.17);
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 229, 255, 0.10),
+      rgba(236, 72, 153, 0.08)
+    );
+
+  color: #f2fbff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(236, 72, 153, 0.55);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 229, 255, 0.15),
+      rgba(236, 72, 153, 0.14)
+    );
+
+  box-shadow:
+    0 10px 28px rgba(236, 72, 153, 0.10);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+/* =========================
+   CLEAR BUTTON
+========================= */
+
+.clear-btn {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  margin-top: 15px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  color: #cbd5df;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.clear-btn:hover {
+  background: rgba(255, 255, 255, 0.07);
+
+  border-color: rgba(255, 255, 255, 0.30);
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.20);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  body {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 32px 20px;
+
+    border-radius: 22px;
+  }
+
+  .logo {
+    font-size: 24px;
+
+    letter-spacing: 4px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  textarea {
+    min-height: 190px;
+
+    font-size: 15px;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+  }
+}
