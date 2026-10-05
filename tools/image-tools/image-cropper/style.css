@@ -1,750 +1,1093 @@
+/* =========================================================
+   ARIXO IMAGE CROPPER
+   Smooth / Premium / Mobile Friendly
+========================================================= */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
+    min-height: 100vh;
+    padding: 28px 15px;
 
-  background:
-    radial-gradient(
-      circle at 12% 12%,
-      rgba(0, 229, 255, 0.14),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 88% 80%,
-      rgba(236, 72, 153, 0.13),
-      transparent 32%
-    ),
-    linear-gradient(
-      135deg,
-      #020617,
-      #080b18 50%,
-      #03050c
-    );
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            rgba(0, 229, 255, 0.10),
+            transparent 38%
+        ),
+        linear-gradient(
+            135deg,
+            #020409,
+            #071018 50%,
+            #020308
+        );
 
-  color: #ffffff;
+    color: #ffffff;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
 
-  padding: 22px;
-
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
 
 .container {
-  width: 100%;
-  max-width: 760px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* Back navigation */
+
+/* =========================================================
+   BACK TO ARIXO
+========================================================= */
 
 .back {
-  display: inline-flex;
-  align-items: center;
+    display: inline-block;
 
-  margin-bottom: 16px;
-  padding: 9px 16px;
+    margin-bottom: 18px;
 
-  border: 1px solid rgba(0, 229, 255, 0.35);
-  border-radius: 999px;
+    color: #00e5ff;
 
-  background: rgba(0, 229, 255, 0.055);
+    text-decoration: none;
 
-  color: #c8f9ff;
+    font-size: 14px;
+    font-weight: 600;
 
-  text-decoration: none;
-
-  font-size: 13px;
-  font-weight: 600;
-
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
-  transition: 0.25s ease;
+    transition:
+        color 0.2s ease,
+        text-shadow 0.2s ease;
 }
 
 .back:hover {
-  transform: translateY(-2px);
+    color: #ffffff;
 
-  border-color: rgba(0, 229, 255, 0.75);
-
-  background: rgba(0, 229, 255, 0.11);
-
-  box-shadow:
-    0 0 24px rgba(0, 229, 255, 0.18);
+    text-shadow:
+        0 0 10px rgba(0, 229, 255, 0.75);
 }
 
-/* Main card */
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
 
 .card {
-  position: relative;
+    width: 100%;
 
-  padding: 38px 30px;
+    padding: 36px 30px;
 
-  border-radius: 28px;
+    border-radius: 28px;
 
-  border: 1px solid rgba(255, 255, 255, 0.10);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.075),
+            rgba(255, 255, 255, 0.025)
+        );
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.085),
-      rgba(255, 255, 255, 0.025)
-    );
+    border:
+        1px solid rgba(0, 229, 255, 0.16);
 
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
 
-  box-shadow:
-    0 30px 85px rgba(0, 0, 0, 0.60),
-    0 0 45px rgba(0, 229, 255, 0.055);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
-  overflow: hidden;
+    overflow: hidden;
 }
 
-.card::before {
-  content: "";
 
-  position: absolute;
-
-  width: 270px;
-  height: 270px;
-
-  top: -160px;
-  left: -120px;
-
-  background: rgba(0, 229, 255, 0.13);
-
-  filter: blur(75px);
-
-  pointer-events: none;
-}
-
-.card::after {
-  content: "";
-
-  position: absolute;
-
-  width: 250px;
-  height: 250px;
-
-  right: -130px;
-  bottom: -130px;
-
-  background: rgba(236, 72, 153, 0.12);
-
-  filter: blur(75px);
-
-  pointer-events: none;
-}
-
-/* Logo */
+/* =========================================================
+   LOGO
+========================================================= */
 
 .logo {
-  position: relative;
-  z-index: 1;
+    text-align: center;
 
-  text-align: center;
+    font-size: 28px;
+    font-weight: 800;
 
-  font-size: 28px;
-  font-weight: 800;
+    letter-spacing: 5px;
 
-  letter-spacing: 6px;
+    color: #00e5ff;
 
-  margin-bottom: 20px;
-
-  text-shadow:
-    0 0 13px rgba(0, 229, 255, 0.45),
-    0 0 30px rgba(236, 72, 153, 0.18);
+    text-shadow:
+        0 0 10px rgba(0, 229, 255, 0.50),
+        0 0 25px rgba(0, 229, 255, 0.20);
 }
 
-/* Heading */
+
+/* =========================================================
+   TITLE
+========================================================= */
 
 h1 {
-  position: relative;
-  z-index: 1;
+    margin-top: 12px;
 
-  text-align: center;
+    text-align: center;
 
-  font-size: 30px;
+    font-size: 34px;
+    line-height: 1.2;
 
-  margin-bottom: 9px;
+    font-weight: 800;
+
+    color: #ffffff;
 }
 
-/* Subtitle */
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
 
 .subtitle {
-  position: relative;
-  z-index: 1;
+    max-width: 650px;
 
-  text-align: center;
+    margin: 12px auto 0;
 
-  color: #a7b2c3;
+    text-align: center;
 
-  font-size: 14px;
+    color: rgba(255, 255, 255, 0.63);
 
-  line-height: 1.6;
-
-  margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-/* Upload box */
+
+/* =========================================================
+   UPLOAD BOX
+========================================================= */
 
 .upload-box {
-  position: relative;
-  z-index: 1;
+    margin-top: 28px;
 
-  padding: 27px 20px;
+    padding: 30px 20px;
 
-  border-radius: 20px;
+    border-radius: 22px;
 
-  border: 1px dashed rgba(0, 229, 255, 0.34);
+    border:
+        1px dashed rgba(0, 229, 255, 0.38);
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(0, 229, 255, 0.045),
-      rgba(236, 72, 153, 0.035)
-    );
+    background:
+        linear-gradient(
+            145deg,
+            rgba(0, 229, 255, 0.045),
+            rgba(255, 255, 255, 0.018)
+        );
 
-  text-align: center;
-
-  transition: 0.3s ease;
+    text-align: center;
 }
 
-.upload-box:hover {
-  border-color: rgba(0, 229, 255, 0.68);
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(0, 229, 255, 0.075),
-      rgba(236, 72, 153, 0.055)
-    );
+/* =========================================================
+   FILE INPUT
+========================================================= */
 
-  box-shadow:
-    0 0 28px rgba(0, 229, 255, 0.06);
+input[type="file"] {
+    width: 100%;
+    max-width: 510px;
+
+    min-height: 58px;
+
+    padding: 7px 10px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 17px;
+
+    font-size: 15px;
+
+    cursor: pointer;
 }
 
-#imageInput {
-  display: none;
+input[type="file"]::file-selector-button {
+    margin-right: 12px;
+
+    min-height: 42px;
+
+    padding: 9px 18px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00e5ff,
+            #00c9e8
+        );
+
+    color: #001014;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
 }
+
+
+/* =========================================================
+   CHOOSE IMAGE LABEL
+========================================================= */
 
 .upload-box label {
-  display: inline-flex;
+    display: block;
 
-  align-items: center;
-  justify-content: center;
+    margin-top: 14px;
 
-  min-height: 48px;
+    color: #ffffff;
 
-  padding: 13px 24px;
+    font-size: 18px;
 
-  border-radius: 14px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #00e5ff,
-      #ec4899
-    );
-
-  color: #04101a;
-
-  font-size: 14px;
-  font-weight: 800;
-
-  cursor: pointer;
-
-  box-shadow:
-    0 9px 30px rgba(0, 229, 255, 0.17);
-
-  transition: 0.25s ease;
+    cursor: pointer;
 }
 
-.upload-box label:hover {
-  transform: translateY(-3px);
 
-  box-shadow:
-    0 14px 38px rgba(0, 229, 255, 0.25);
-}
+/* =========================================================
+   FILE NAME
+========================================================= */
 
 #fileName {
-  margin-top: 13px;
+    margin-top: 10px;
 
-  color: #8d9aac;
+    color:
+        rgba(255, 255, 255, 0.55);
 
-  font-size: 13px;
+    font-size: 13px;
 
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    word-break: break-word;
 }
 
-/* Crop workspace */
+
+/* =========================================================
+   CROP AREA
+========================================================= */
 
 .crop-area {
-  position: relative;
+    position: relative;
 
-  z-index: 1;
+    z-index: 1;
 
-  width: 100%;
+    width: 100%;
 
-  min-height: 360px;
+    min-height: 360px;
 
-  margin-top: 20px;
+    margin-top: 20px;
 
-  padding: 18px;
+    padding: 18px;
 
-  border-radius: 22px;
+    border-radius: 22px;
 
-  border: 1px solid rgba(0, 229, 255, 0.13);
+    border:
+        1px solid rgba(0, 229, 255, 0.14);
 
-  background:
-    radial-gradient(
-      circle at center,
-      rgba(255, 255, 255, 0.035),
-      rgba(0, 0, 0, 0.40)
-    );
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 255, 255, 0.035),
+            rgba(0, 0, 0, 0.42)
+        );
 
-  display: flex;
+    display: flex;
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-  overflow: hidden;
+    overflow: hidden;
 
-  box-shadow:
-    inset 0 0 40px rgba(0, 0, 0, 0.28);
+    box-shadow:
+        inset 0 0 40px rgba(0, 0, 0, 0.28);
+
+    touch-action: none;
+
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-/* Preview image */
+
+/* =========================================================
+   IMAGE
+========================================================= */
 
 #preview {
-  display: block;
+    display: block;
 
-  max-width: 100%;
-  max-height: 520px;
+    max-width: 100%;
+    max-height: 520px;
 
-  width: auto;
-  height: auto;
+    width: auto;
+    height: auto;
 
-  object-fit: contain;
+    object-fit: contain;
 
-  border-radius: 12px;
+    border-radius: 12px;
 
-  user-select: none;
-  -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
 
-  box-shadow:
-    0 20px 55px rgba(0, 0, 0, 0.48);
+    -webkit-user-drag: none;
+
+    pointer-events: none;
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.48);
 }
 
-/* Crop selection */
+
+/* =========================================================
+   CROP BOX
+========================================================= */
 
 .crop-box {
-  position: absolute;
+    position: absolute;
 
-  border: 2px solid #00e5ff;
+    border:
+        2px solid #00e5ff;
 
-  background:
-    rgba(0, 229, 255, 0.035);
+    background:
+        rgba(0, 229, 255, 0.035);
 
-  box-shadow:
-    0 0 0 9999px rgba(0, 0, 0, 0.46),
-    0 0 20px rgba(0, 229, 255, 0.35);
+    /*
+       Lightweight glow.
+       No huge 9999px shadow.
+    */
+    box-shadow:
+        0 0 18px rgba(0, 229, 255, 0.35);
 
-  cursor: move;
+    cursor: move;
 
-  z-index: 5;
+    z-index: 10;
 
-  min-width: 30px;
-  min-height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+
+    will-change:
+        transform,
+        width,
+        height;
+
+    transform:
+        translate3d(0, 0, 0);
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    touch-action: none;
+
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-/* Crop grid */
+
+/* =========================================================
+   CROP GRID
+========================================================= */
 
 .grid-v1,
 .grid-v2,
 .grid-h1,
 .grid-h2 {
-  position: absolute;
+    position: absolute;
 
-  background: rgba(255, 255, 255, 0.38);
+    pointer-events: none;
 
-  pointer-events: none;
+    z-index: 2;
+
+    background:
+        rgba(0, 229, 255, 0.38);
 }
+
+
+/* Vertical lines */
 
 .grid-v1,
 .grid-v2 {
-  top: 0;
-  bottom: 0;
+    top: 0;
+    bottom: 0;
 
-  width: 1px;
+    width: 1px;
 }
 
 .grid-v1 {
-  left: 33.333%;
+    left: 33.333%;
 }
 
 .grid-v2 {
-  left: 66.666%;
+    left: 66.666%;
 }
+
+
+/* Horizontal lines */
 
 .grid-h1,
 .grid-h2 {
-  left: 0;
-  right: 0;
+    left: 0;
+    right: 0;
 
-  height: 1px;
+    height: 1px;
 }
 
 .grid-h1 {
-  top: 33.333%;
+    top: 33.333%;
 }
 
 .grid-h2 {
-  top: 66.666%;
+    top: 66.666%;
 }
 
-/* Crop handles */
+
+/* =========================================================
+   CROP HANDLES
+========================================================= */
 
 .handle {
-  position: absolute;
+    position: absolute;
 
-  width: 13px;
-  height: 13px;
+    width: 16px;
+    height: 16px;
 
-  border: 2px solid #ffffff;
+    border-radius: 50%;
 
-  background: #00e5ff;
+    background: #00e5ff;
 
-  border-radius: 4px;
+    border:
+        2px solid #061018;
 
-  box-shadow:
-    0 0 12px rgba(0, 229, 255, 0.65);
+    box-shadow:
+        0 0 8px rgba(0, 229, 255, 0.95),
+        0 0 16px rgba(0, 229, 255, 0.45);
 
-  z-index: 10;
+    z-index: 30;
+
+    display: block;
+
+    pointer-events: auto;
+
+    touch-action: none;
+
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-/* Corners */
+
+/* =========================================================
+   TOP LEFT
+========================================================= */
 
 .handle-nw {
-  top: -7px;
-  left: -7px;
+    top: -9px;
+    left: -9px;
 
-  cursor: nwse-resize;
+    cursor: nwse-resize;
 }
 
-.handle-ne {
-  top: -7px;
-  right: -7px;
 
-  cursor: nesw-resize;
-}
-
-.handle-sw {
-  bottom: -7px;
-  left: -7px;
-
-  cursor: nesw-resize;
-}
-
-.handle-se {
-  bottom: -7px;
-  right: -7px;
-
-  cursor: nwse-resize;
-}
-
-/* Sides */
+/* =========================================================
+   TOP
+========================================================= */
 
 .handle-n {
-  top: -7px;
-  left: 50%;
+    top: -9px;
+    left: 50%;
 
-  transform: translateX(-50%);
+    transform: translateX(-50%);
 
-  cursor: ns-resize;
+    cursor: ns-resize;
 }
 
-.handle-s {
-  bottom: -7px;
-  left: 50%;
 
-  transform: translateX(-50%);
+/* =========================================================
+   TOP RIGHT
+========================================================= */
 
-  cursor: ns-resize;
+.handle-ne {
+    top: -9px;
+    right: -9px;
+
+    cursor: nesw-resize;
 }
+
+
+/* =========================================================
+   LEFT
+========================================================= */
 
 .handle-w {
-  left: -7px;
-  top: 50%;
+    top: 50%;
+    left: -9px;
 
-  transform: translateY(-50%);
+    transform: translateY(-50%);
 
-  cursor: ew-resize;
+    cursor: ew-resize;
 }
+
+
+/* =========================================================
+   RIGHT
+========================================================= */
 
 .handle-e {
-  right: -7px;
-  top: 50%;
+    top: 50%;
+    right: -9px;
 
-  transform: translateY(-50%);
+    transform: translateY(-50%);
 
-  cursor: ew-resize;
+    cursor: ew-resize;
 }
 
-/* Crop info */
+
+/* =========================================================
+   BOTTOM LEFT
+========================================================= */
+
+.handle-sw {
+    bottom: -9px;
+    left: -9px;
+
+    cursor: nesw-resize;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.handle-s {
+    bottom: -9px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    cursor: ns-resize;
+}
+
+
+/* =========================================================
+   BOTTOM RIGHT
+========================================================= */
+
+.handle-se {
+    bottom: -9px;
+    right: -9px;
+
+    cursor: nwse-resize;
+}
+
+
+/* =========================================================
+   CROP INFO
+========================================================= */
 
 .crop-info {
-  position: relative;
-  z-index: 1;
+    width: 100%;
 
-  display: flex;
+    margin-top: 15px;
 
-  justify-content: center;
-  align-items: center;
+    display: flex;
 
-  margin-top: 16px;
+    justify-content: center;
+    align-items: center;
 
-  padding: 13px 18px;
+    text-align: center;
 
-  border-radius: 15px;
+    color:
+        rgba(255, 255, 255, 0.70);
 
-  border: 1px solid rgba(236, 72, 153, 0.18);
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(236, 72, 153, 0.055),
-      rgba(0, 229, 255, 0.035)
-    );
-
-  color: #b9c6d6;
-
-  font-size: 13px;
-
-  text-align: center;
+    font-size: 13px;
 }
 
 .crop-info strong {
-  color: #00e5ff;
+    color: #00e5ff;
 
-  font-size: 14px;
-
-  text-shadow:
-    0 0 10px rgba(0, 229, 255, 0.35);
+    text-shadow:
+        0 0 8px rgba(0, 229, 255, 0.25);
 }
 
-/* Crop button */
+
+/* =========================================================
+   CROP IMAGE BUTTON
+   IMPORTANT:
+   HTML-এ কোনো .actions নেই,
+   তাই direct button selector ব্যবহার করা হয়েছে.
+========================================================= */
 
 .card > button:not(.clear-btn) {
-  position: relative;
-  z-index: 1;
+    display: block;
 
-  width: 100%;
+    margin: 22px auto 0;
 
-  min-height: 52px;
+    min-height: 48px;
 
-  margin-top: 18px;
+    padding: 12px 28px;
 
-  padding: 14px 18px;
+    border: none;
 
-  border: 1px solid rgba(0, 229, 255, 0.25);
+    border-radius: 13px;
 
-  border-radius: 15px;
+    background:
+        linear-gradient(
+            135deg,
+            #00e5ff,
+            #00bdd8
+        );
 
-  background:
-    linear-gradient(
-      135deg,
-      #00e5ff,
-      #6366f1
-    );
+    color: #001014;
 
-  color: #03111b;
+    font-size: 14px;
 
-  font-size: 14px;
-  font-weight: 800;
+    font-weight: 800;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  box-shadow:
-    0 10px 30px rgba(0, 229, 255, 0.16);
+    box-shadow:
+        0 8px 25px rgba(0, 229, 255, 0.20);
 
-  transition: 0.25s ease;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        filter 0.15s ease;
 }
+
+
+/* =========================================================
+   CROP BUTTON HOVER
+========================================================= */
 
 .card > button:not(.clear-btn):hover {
-  transform: translateY(-3px);
+    transform: translateY(-2px);
 
-  box-shadow:
-    0 15px 40px rgba(0, 229, 255, 0.26);
+    box-shadow:
+        0 12px 32px rgba(0, 229, 255, 0.30);
+
+    filter: brightness(1.05);
 }
+
+
+/* =========================================================
+   CROP BUTTON ACTIVE
+========================================================= */
 
 .card > button:not(.clear-btn):active {
-  transform: translateY(-1px);
+    transform: translateY(0);
 }
 
-/* Result */
+
+/* =========================================================
+   RESULT
+========================================================= */
 
 #result {
-  position: relative;
-  z-index: 1;
+    width: 100%;
 
-  margin-top: 15px;
+    min-height: 20px;
 
-  color: #b7c4d3;
+    margin-top: 18px;
 
-  text-align: center;
+    text-align: center;
 
-  font-size: 13px;
+    color:
+        rgba(255, 255, 255, 0.72);
 
-  line-height: 1.6;
+    font-size: 13px;
+
+    line-height: 1.5;
 }
 
-/* Download */
 
-.download-btn {
-  position: relative;
-  z-index: 1;
+/* =========================================================
+   DOWNLOAD BUTTON
+========================================================= */
 
-  display: none;
+#downloadBtn {
+    display: none;
 
-  width: 100%;
+    width: fit-content;
 
-  margin-top: 14px;
+    margin: 15px auto 0;
 
-  padding: 14px 18px;
+    min-height: 46px;
 
-  border-radius: 14px;
+    padding: 12px 24px;
 
-  border: 1px solid rgba(0, 229, 255, 0.30);
+    border-radius: 13px;
 
-  background:
-    rgba(0, 229, 255, 0.065);
+    background:
+        linear-gradient(
+            135deg,
+            #00e5ff,
+            #00bdd8
+        );
 
-  color: #bdf8ff;
+    color: #001014;
 
-  text-align: center;
+    font-size: 14px;
 
-  text-decoration: none;
+    font-weight: 800;
 
-  font-size: 14px;
-  font-weight: 700;
+    text-decoration: none;
 
-  transition: 0.25s ease;
+    box-shadow:
+        0 8px 25px rgba(0, 229, 255, 0.20);
 }
 
-.download-btn:hover {
-  transform: translateY(-2px);
 
-  background:
-    rgba(0, 229, 255, 0.13);
-
-  border-color: rgba(0, 229, 255, 0.65);
-
-  box-shadow:
-    0 0 25px rgba(0, 229, 255, 0.12);
-}
-
-/* Clear */
+/* =========================================================
+   CLEAR BUTTON
+========================================================= */
 
 .clear-btn {
-  position: relative;
-  z-index: 1;
+    display: block;
 
-  width: 100%;
+    margin: 12px auto 0;
 
-  min-height: 48px;
+    min-height: 46px;
 
-  margin-top: 14px;
+    padding: 11px 25px;
 
-  padding: 13px;
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
 
-  border-radius: 14px;
+    border-radius: 13px;
 
-  border: 1px solid rgba(255, 255, 255, 0.13);
+    background:
+        rgba(255, 255, 255, 0.07);
 
-  background:
-    rgba(255, 255, 255, 0.035);
+    color:
+        rgba(255, 255, 255, 0.88);
 
-  color: #c7d0db;
+    font-size: 14px;
 
-  font-size: 14px;
-  font-weight: 700;
+    font-weight: 700;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  transition: 0.25s ease;
+    box-shadow: none;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
 }
 
 .clear-btn:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 
-  background:
-    rgba(255, 255, 255, 0.07);
-
-  border-color: rgba(255, 255, 255, 0.28);
-
-  box-shadow:
-    0 8px 22px rgba(0, 0, 0, 0.22);
+    background:
+        rgba(255, 255, 255, 0.11);
 }
 
-/* Mobile */
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+button:focus-visible,
+input:focus-visible,
+.download-btn:focus-visible,
+.back:focus-visible {
+    outline:
+        2px solid #00e5ff;
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 22px 14px;
+    }
+
+    .card {
+        padding: 32px 22px;
+
+        border-radius: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .crop-area {
+        min-height: 320px;
+    }
+
+    #preview {
+        max-height: 460px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 650px) {
 
-  body {
-    padding: 15px;
-  }
+    body {
+        padding: 15px;
+    }
 
-  .card {
-    padding: 32px 18px;
+    .card {
+        padding: 30px 18px;
 
-    border-radius: 23px;
-  }
+        border-radius: 23px;
+    }
 
-  .logo {
-    font-size: 24px;
+    .logo {
+        font-size: 24px;
 
-    letter-spacing: 4px;
-  }
+        letter-spacing: 4px;
+    }
 
-  h1 {
-    font-size: 26px;
-  }
+    h1 {
+        font-size: 26px;
+    }
 
-  .subtitle {
-    font-size: 13px;
-  }
+    .subtitle {
+        font-size: 13px;
+    }
 
-  .upload-box {
-    padding: 24px 15px;
-  }
+    .upload-box {
+        padding: 24px 15px;
+    }
 
-  .crop-area {
-    min-height: 280px;
+    input[type="file"] {
+        font-size: 14px;
 
-    padding: 10px;
-  }
+        min-height: 56px;
+    }
 
-  #preview {
-    max-height: 400px;
-  }
+    input[type="file"]::file-selector-button {
+        padding: 9px 14px;
 
-  .crop-info {
-    font-size: 12px;
-  }
+        font-size: 14px;
+    }
 
-  .handle {
-    width: 12px;
-    height: 12px;
-  }
+    .crop-area {
+        min-height: 280px;
+
+        padding: 10px;
+
+        touch-action: none;
+    }
+
+    #preview {
+        max-height: 400px;
+    }
+
+    .crop-info {
+        font-size: 12px;
+    }
+
+
+    /* Larger touch points */
+
+    .handle {
+        width: 18px;
+        height: 18px;
+    }
+
+    .handle-nw {
+        top: -10px;
+        left: -10px;
+    }
+
+    .handle-n {
+        top: -10px;
+    }
+
+    .handle-ne {
+        top: -10px;
+        right: -10px;
+    }
+
+    .handle-w {
+        left: -10px;
+    }
+
+    .handle-e {
+        right: -10px;
+    }
+
+    .handle-sw {
+        bottom: -10px;
+        left: -10px;
+    }
+
+    .handle-s {
+        bottom: -10px;
+    }
+
+    .handle-se {
+        bottom: -10px;
+        right: -10px;
+    }
+
+
+    /* Crop button */
+
+    .card > button:not(.clear-btn) {
+        width: 100%;
+
+        margin-top: 20px;
+    }
+
+
+    /* Download */
+
+    #downloadBtn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* Clear */
+
+    .clear-btn {
+        width: 100%;
+
+        margin-top: 10px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 25px 14px;
+    }
+
+    .logo {
+        font-size: 21px;
+
+        letter-spacing: 3px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .crop-area {
+        min-height: 240px;
+
+        padding: 7px;
+    }
+
+    #preview {
+        max-height: 340px;
+    }
+
+    .handle {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Hide browser's default file input */
+#imageInput {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Custom Choose Image button */
+.choose-image-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 12px 22px;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #00e5ff, #00bdd8);
+    color: #001014;
+    font-weight: 800;
+    cursor: pointer;
+    user-select: none;
+}
+
+.choose-image-btn:hover {
+    filter: brightness(1.08);
+}
+
+.clear-btn {
+    display: block;
+    margin: 18px auto 0;
+    padding: 11px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff3b6b, #ff1744);
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.clear-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
 }
