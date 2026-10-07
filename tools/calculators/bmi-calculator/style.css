@@ -1,285 +1,685 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    margin: 0;
     min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
     color: #ffffff;
 
     background:
-        radial-gradient(circle at top left, rgba(0, 255, 255, 0.12), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(140, 0, 255, 0.14), transparent 35%),
-        #05070d;
+        radial-gradient(
+            circle at top,
+            rgba(0, 229, 255, 0.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #05070d,
+            #0b1020 55%,
+            #05070d
+        );
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-    background-size: 45px 45px;
-}
+
+/* ================================
+   PAGE
+================================ */
 
 .page {
     width: 100%;
-    min-height: 100vh;
-    padding: 35px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 30px 16px 50px;
 }
 
+
+/* ================================
+   BACK BUTTON
+================================ */
+
 .back-btn {
-    align-self: flex-start;
-    max-width: 520px;
-    width: 100%;
-    margin: 0 auto 20px;
+    display: block;
 
-    color: #bdefff;
+    width: fit-content;
+
+    margin: 0 auto 18px;
+
+    color: #00e5ff;
+
     text-decoration: none;
-    font-size: 14px;
 
-    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 800;
 }
 
 .back-btn:hover {
-    color: #ffffff;
-    transform: translateX(4px);
+    text-decoration: underline;
 }
+
+
+/* ================================
+   MAIN CARD
+================================ */
 
 .calculator-card {
-    width: 100%;
-    max-width: 520px;
+    width: min(680px, 100%);
 
-    padding: 32px;
+    margin: 0 auto;
 
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 24px;
+    padding: 30px;
 
-    background: rgba(12, 16, 27, 0.78);
-    backdrop-filter: blur(20px);
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.075),
+            rgba(255, 255, 255, 0.025)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
 
     box-shadow:
-        0 25px 80px rgba(0,0,0,0.45),
-        inset 0 1px 0 rgba(255,255,255,0.05);
+        0 30px 80px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 }
 
+
+/* ================================
+   BRAND
+================================ */
+
+.brand {
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 900;
+
+    letter-spacing: 5px;
+
+    color: #00e5ff;
+
+    margin-bottom: 18px;
+
+    text-shadow:
+        0 0 12px rgba(0, 229, 255, 0.55);
+}
+
+
+/* ================================
+   ICON
+================================ */
+
 .icon {
-    width: 60px;
-    height: 60px;
+    width: 68px;
+    height: 68px;
+
+    margin: 0 auto 18px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 18px;
+    border-radius: 20px;
 
-    border-radius: 18px;
+    font-size: 30px;
 
-    background: rgba(0, 229, 255, 0.1);
-    border: 1px solid rgba(0, 229, 255, 0.25);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 229, 255, 0.18),
+            rgba(168, 85, 247, 0.18)
+        );
 
-    font-size: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
+
+/* ================================
+   HEADINGS
+================================ */
+
 h1 {
-    font-size: 32px;
-    margin-bottom: 8px;
+    margin: 0;
+
+    text-align: center;
+
+    font-size: clamp(30px, 6vw, 44px);
+
+    line-height: 1.1;
+
+    font-weight: 900;
+
+    letter-spacing: -1px;
 }
 
 .subtitle {
-    color: #929aaa;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 28px;
+    max-width: 560px;
+
+    margin: 14px auto 28px;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.68);
+
+    line-height: 1.7;
 }
+
+
+/* ================================
+   CALCULATOR BOX
+================================ */
+
+.calculator-box {
+    padding: 24px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+
+/* ================================
+   INPUTS
+================================ */
 
 .input-group {
     margin-bottom: 18px;
 }
 
-label {
+.input-group label {
     display: block;
+
     margin-bottom: 8px;
 
-    color: #cbd2df;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 800;
+
+    color: rgba(255, 255, 255, 0.78);
 }
 
-input {
+.input-group input {
     width: 100%;
-    padding: 15px 16px;
 
-    border: 1px solid rgba(255,255,255,0.1);
+    padding: 14px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
     border-radius: 13px;
 
     outline: none;
 
+    background:
+        rgba(0, 0, 0, 0.24);
+
     color: #ffffff;
-    background: rgba(255,255,255,0.045);
 
-    font-size: 15px;
+    font-size: 16px;
 
-    transition: 0.25s;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
 }
 
-input::placeholder {
-    color: #687080;
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.38);
 }
 
-input:focus {
+.input-group input:focus {
     border-color: rgba(0, 229, 255, 0.65);
-    box-shadow: 0 0 0 3px rgba(0,229,255,0.08);
+
+    background:
+        rgba(0, 0, 0, 0.32);
+
+    box-shadow:
+        0 0 0 3px rgba(0, 229, 255, 0.10);
 }
 
-button {
-    width: 100%;
-    padding: 15px;
 
-    border: none;
+/* ================================
+   BUTTONS
+================================ */
+
+.calculate-btn,
+.clear-btn {
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 13px 18px;
+
     border-radius: 13px;
 
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 900;
 
     cursor: pointer;
-    transition: 0.25s;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
 }
 
 .calculate-btn {
-    color: #001015;
-    background: linear-gradient(135deg, #00e5ff, #67f5ff);
+    border: 0;
 
-    box-shadow: 0 10px 30px rgba(0,229,255,0.18);
+    color: #001014;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00e5ff,
+            #b44cff
+        );
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.25);
 }
 
 .calculate-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 14px 35px rgba(0,229,255,0.28);
+
+    filter: brightness(1.08);
 }
 
 .clear-btn {
-    margin-top: 10px;
+    margin-top: 12px;
 
-    color: #c4cad5;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.08);
+    color: #ffffff;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .clear-btn:hover {
-    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+
+    background:
+        rgba(255, 255, 255, 0.13);
 }
+
+
+/* ================================
+   ERROR
+================================ */
 
 .error {
-    min-height: 22px;
+    min-height: 20px;
+
     margin-top: 12px;
 
-    color: #ff7777;
-    font-size: 13px;
     text-align: center;
+
+    color: #ff9c9c;
+
+    font-size: 14px;
 }
 
+
+/* ================================
+   RESULT BOX
+================================ */
+
 .result-box {
-    margin-top: 8px;
-    padding: 25px;
+    margin-top: 20px;
+
+    padding: 22px;
 
     text-align: center;
 
     border-radius: 18px;
-    border: 1px solid rgba(0,229,255,0.15);
 
-    background: rgba(0,229,255,0.045);
+    background:
+        rgba(0, 229, 255, 0.055);
+
+    border: 1px solid rgba(0, 229, 255, 0.16);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .result-title {
-    color: #8e98a9;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 14px;
+    font-weight: 800;
 }
 
 .bmi-value {
-    margin: 8px 0;
+    margin-top: 8px;
 
     font-size: 48px;
-    font-weight: 800;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    color: #00e5ff;
+
+    text-shadow:
+        0 0 18px rgba(0, 229, 255, 0.35);
+}
+
+.bmi-category {
+    margin-top: 12px;
+
+    font-size: 17px;
+
+    font-weight: 900;
 
     color: #ffffff;
 }
 
-.bmi-category {
-    color: #67edff;
-    font-size: 17px;
-    font-weight: 700;
-}
+
+/* ================================
+   BMI INFO BOX
+================================ */
 
 .info-box {
-    margin-top: 22px;
-    padding: 18px;
+    margin-top: 20px;
 
-    border-radius: 16px;
+    padding: 20px;
 
-    background: rgba(255,255,255,0.035);
-    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 18px;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
 }
 
 .info-box h3 {
-    margin-bottom: 14px;
-    font-size: 15px;
+    margin: 0 0 15px;
+
+    font-size: 19px;
 }
 
 .category-row {
     display: flex;
+
+    align-items: center;
     justify-content: space-between;
 
-    padding: 9px 0;
+    gap: 15px;
 
-    color: #9ca5b5;
-    font-size: 13px;
+    padding: 12px 0;
 
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.07);
 }
 
 .category-row:last-child {
-    border-bottom: none;
+    border-bottom: 0;
+}
+
+.category-row span {
+    color: rgba(255, 255, 255, 0.68);
 }
 
 .category-row strong {
-    color: #dce3ee;
+    color: #ffffff;
 }
+
+
+/* ================================
+   NOTE
+================================ */
 
 .note {
-    margin-top: 18px;
+    margin: 16px 0 0;
 
-    color: #687282;
-    font-size: 11px;
-    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
     text-align: center;
 }
+
+
+/* ================================
+   SEO CONTENT BOX
+================================ */
+
+.seo-content {
+    margin-top: 24px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.seo-content h2 {
+    margin: 0 0 12px;
+
+    font-size: 21px;
+
+    line-height: 1.35;
+}
+
+.seo-content h2:not(:first-child) {
+    margin-top: 25px;
+}
+
+.seo-content p {
+    margin: 0 0 17px;
+
+    color: rgba(255, 255, 255, 0.70);
+
+    line-height: 1.75;
+}
+
+.seo-content ul {
+    margin: 10px 0 0;
+
+    padding-left: 22px;
+
+    color: rgba(255, 255, 255, 0.70);
+
+    line-height: 1.7;
+}
+
+.seo-content li {
+    margin-bottom: 8px;
+}
+
+
+/* ================================
+   RELATED TOOLS BOX
+================================ */
+
+.related-tools {
+    margin-top: 20px;
+
+    padding: 23px 25px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.related-tools h2 {
+    margin: 0 0 16px;
+
+    font-size: 21px;
+}
+
+.related-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.related-links a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 9px 15px;
+
+    border-radius: 12px;
+
+    color: #00e5ff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    background:
+        rgba(0, 229, 255, 0.07);
+
+    border: 1px solid rgba(0, 229, 255, 0.16);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.related-links a:hover {
+    transform: translateY(-2px);
+
+    background:
+        rgba(0, 229, 255, 0.13);
+}
+
+
+/* ================================
+   BOTTOM BACK BUTTON
+================================ */
+
+.bottom-back {
+    margin-top: 25px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
 
 @media (max-width: 600px) {
 
     .page {
-        padding: 22px 14px;
+        padding: 20px 12px 35px;
     }
 
     .calculator-card {
-        padding: 24px 20px;
+        padding: 20px 15px;
+
         border-radius: 20px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
-    .bmi-value {
-        font-size: 42px;
+    .subtitle {
+        font-size: 14px;
+
+        margin-bottom: 22px;
+    }
+
+    .calculator-box {
+        padding: 18px;
+
+        border-radius: 17px;
+    }
+
+    .seo-content,
+    .related-tools {
+        padding: 18px;
+
+        border-radius: 17px;
+    }
+
+    .seo-content h2,
+    .related-tools h2 {
+        font-size: 19px;
+    }
+
+    .category-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+
+    .related-links {
+        display: grid;
+
+        grid-template-columns: 1fr;
+    }
+
+    .related-links a {
+        width: 100%;
+    }
+}
+
+
+/* ================================
+   REDUCED MOTION
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
     }
 }
