@@ -1,104 +1,64 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Password Generator — ARIXO</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Password Generator — Create Strong Random Passwords | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free strong password generator. Choose length and character types and create a secure random password instantly." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/other-tools/password-generator/" rel="canonical"/><meta content="Password Generator — Create Strong Random Passwords | ARIXO" property="og:title"/><meta content="Free strong password generator. Choose length and character types and create a secure random password instantly." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/other-tools/password-generator/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Password Generator — Create Strong Random Passwords | ARIXO" name="twitter:title"/><meta content="Free strong password generator. Choose length and character types and create a secure random password instantly." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long should a strong password be?", "acceptedAnswer": {"@type": "Answer", "text": "At least 12 to 16 characters is a good target. Longer is better, especially for email, banking and password-manager accounts."}}, {"@type": "Question", "name": "Should I reuse passwords?", "acceptedAnswer": {"@type": "Answer", "text": "No. Use a different password for every account and store them in a trusted password manager."}}, {"@type": "Question", "name": "Are generated passwords stored?", "acceptedAnswer": {"@type": "Answer", "text": "No. They are created in your browser and are not saved or sent anywhere."}}]}</script></head>
 <body>
-
-    <div class="container">
-
-        <a class="back" href="../../../index.html">
+<div class="container">
+<a class="back" href="../../../index.html">
         ← Back to ARIXO
     </a>
-
-        <div class="card">
-
-            <div class="logo">ARIXO</div>
-
-            <h1>Password Generator</h1>
-
-            <p class="subtitle">
+<div class="card">
+<div class="logo">ARIXO</div>
+<h1>Password Generator</h1>
+<p class="subtitle">
                 Generate strong random passwords instantly.
             </p>
-
-            <div class="password-box">
-                <input
-                    type="text"
-                    id="passwordOutput"
-                    placeholder="Your password will appear here..."
-                    readonly
-                >
-
-                <button class="copy-small" onclick="copyPassword()">
+<div class="password-box">
+<input id="passwordOutput" placeholder="Your password will appear here..." readonly="" type="text"/>
+<button class="copy-small" onclick="copyPassword()">
                     Copy
                 </button>
-            </div>
-
-            <div class="settings">
-
-                <label for="length">
+</div>
+<div class="settings">
+<label for="length">
                     Password Length:
                     <strong id="lengthValue">16</strong>
-                </label>
-
-                <input
-                    type="range"
-                    id="length"
-                    min="6"
-                    max="50"
-                    value="16"
-                    oninput="updateLength()"
-                >
-
-                <label class="check">
-                    <input type="checkbox" id="uppercase" checked>
+</label>
+<input id="length" max="50" min="6" oninput="updateLength()" type="range" value="16"/>
+<label class="check">
+<input checked="" id="uppercase" type="checkbox"/>
                     Include Uppercase (A-Z)
                 </label>
-
-                <label class="check">
-                    <input type="checkbox" id="lowercase" checked>
+<label class="check">
+<input checked="" id="lowercase" type="checkbox"/>
                     Include Lowercase (a-z)
                 </label>
-
-                <label class="check">
-                    <input type="checkbox" id="numbers" checked>
+<label class="check">
+<input checked="" id="numbers" type="checkbox"/>
                     Include Numbers (0-9)
                 </label>
-
-                <label class="check">
-                    <input type="checkbox" id="symbols" checked>
+<label class="check">
+<input checked="" id="symbols" type="checkbox"/>
                     Include Symbols (!@#$)
                 </label>
-
-            </div>
-
-            <div class="button-grid">
-
-                <button onclick="generatePassword()">
+</div>
+<div class="button-grid">
+<button onclick="generatePassword()">
                     Generate Password
                 </button>
-
-                <button class="clear-btn" onclick="clearTool()">
+<button class="clear-btn" onclick="clearTool()">
                     Clear
                 </button>
-
-            </div>
-
-            <div id="strength"></div>
-
-            <div id="result"></div>
-
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
-
+</div>
+<div id="strength"></div>
+<div id="result"></div>
+</div>
+<section class="ax-seo"><h2>About the Password Generator</h2><p>The Password Generator creates random passwords that are hard to guess. Choose a length from short to long and decide whether to include uppercase letters, lowercase letters, numbers and symbols. Longer passwords with mixed characters are harder to crack.</p><h2>How to use</h2><ol><li>Set the password length with the slider.</li><li>Select the character types you want to include.</li><li>Click Generate Password, then Copy.</li></ol><h2>Frequently asked questions</h2><h3>How long should a strong password be?</h3><p>At least 12 to 16 characters is a good target. Longer is better, especially for email, banking and password-manager accounts.</p><h3>Should I reuse passwords?</h3><p>No. Use a different password for every account and store them in a trusted password manager.</p><h3>Are generated passwords stored?</h3><p>No. They are created in your browser and are not saved or sent anywhere.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../other-tools/random-number-generator/">Random Number Generator</a><a href="../../other-tools/qr-generator/">QR Code Generator</a><a href="../../developer-tools/base64-encoder/">Base64 Encoder</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></div>
+<script src="script.js"></script>
 </body>
 </html>

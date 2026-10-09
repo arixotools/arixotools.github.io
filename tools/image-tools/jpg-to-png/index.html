@@ -1,89 +1,47 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>JPG to PNG — ARIXO</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JPG to PNG Converter — Convert JPG to PNG Online | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free online JPG to PNG converter. Convert JPG and JPEG images to PNG instantly in your browser." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/image-tools/jpg-to-png/" rel="canonical"/><meta content="JPG to PNG Converter — Convert JPG to PNG Online | ARIXO" property="og:title"/><meta content="Free online JPG to PNG converter. Convert JPG and JPEG images to PNG instantly in your browser." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/image-tools/jpg-to-png/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="JPG to PNG Converter — Convert JPG to PNG Online | ARIXO" name="twitter:title"/><meta content="Free online JPG to PNG converter. Convert JPG and JPEG images to PNG instantly in your browser." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does converting JPG to PNG improve quality?", "acceptedAnswer": {"@type": "Answer", "text": "No. The PNG keeps the quality of the JPG but cannot restore detail that was already lost."}}, {"@type": "Question", "name": "Why is the PNG file bigger?", "acceptedAnswer": {"@type": "Answer", "text": "PNG is lossless, so photo files are often larger than JPG files."}}, {"@type": "Question", "name": "Is my image uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. The conversion happens in your browser."}}]}</script></head>
 <body>
-
-  <div class="container">
-
-    <a class="back" href="../../../index.html">
+<div class="container">
+<a class="back" href="../../../index.html">
         ← Back to ARIXO
     </a>
-
-    <div class="card">
-
-      <div class="logo">ARIXO</div>
-
-      <h1>JPG to PNG</h1>
-
-      <p class="subtitle">
+<div class="card">
+<div class="logo">ARIXO</div>
+<h1>JPG to PNG</h1>
+<p class="subtitle">
         Convert JPG and JPEG images to PNG format instantly.
       </p>
-
-      <div class="upload-box">
-
-        <input
-          type="file"
-          id="imageInput"
-          accept="image/jpeg,.jpg,.jpeg"
-          onchange="loadImage(event)"
-        >
-
-        <label for="imageInput">
+<div class="upload-box">
+<input accept="image/jpeg,.jpg,.jpeg" id="imageInput" onchange="loadImage(event)" type="file"/>
+<label for="imageInput">
           📷 Choose JPG Image
         </label>
-
-        <p id="fileName">
+<p id="fileName">
           No image selected
         </p>
-
-      </div>
-
-      <div
-        class="preview-box"
-        id="previewBox"
-      >
-
-        <img
-          id="preview"
-          alt="Image Preview"
-        >
-
-      </div>
-
-      <button onclick="convertToPNG()">
+</div>
+<div class="preview-box" id="previewBox">
+<img alt="Image Preview" id="preview"/>
+</div>
+<button onclick="convertToPNG()">
         Convert to PNG
       </button>
-
-      <div id="result"></div>
-
-      <a
-        id="downloadBtn"
-        class="download-btn"
-        download="arixo-converted.png"
-      >
+<div id="result"></div>
+<a class="download-btn" download="arixo-converted.png" id="downloadBtn">
         Download PNG
       </a>
-
-      <button
-        class="clear-btn"
-        onclick="clearTool()"
-      >
+<button class="clear-btn" onclick="clearTool()">
         Clear
       </button>
-
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
-
+</div>
+<section class="ax-seo"><h2>About the JPG to PNG</h2><p>The JPG to PNG converter turns JPG and JPEG pictures into PNG files. PNG is lossless, so it is useful when you want to edit an image repeatedly without further compression loss. The conversion runs in your browser and your image is not uploaded.</p><h2>How to use</h2><ol><li>Click Choose JPG Image and select your file.</li><li>Click Convert to PNG.</li><li>Download the PNG file.</li></ol><h2>Frequently asked questions</h2><h3>Does converting JPG to PNG improve quality?</h3><p>No. The PNG keeps the quality of the JPG but cannot restore detail that was already lost.</p><h3>Why is the PNG file bigger?</h3><p>PNG is lossless, so photo files are often larger than JPG files.</p><h3>Is my image uploaded?</h3><p>No. The conversion happens in your browser.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../image-tools/image-to-jpg/">Image to JPG</a><a href="../../image-tools/image-compressor/">Image Compressor</a><a href="../../image-tools/image-resizer/">Image Resizer</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></div>
+<script src="script.js"></script>
 </body>
 </html>

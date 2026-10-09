@@ -1,164 +1,102 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GST Calculator - ARIXO</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GST Calculator — Add or Remove GST, CGST &amp; SGST | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free online GST calculator for India. Add or remove GST and see the base amount, GST, CGST, SGST and final price instantly." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/calculators/gst-calculator/" rel="canonical"/><meta content="GST Calculator — Add or Remove GST, CGST &amp; SGST | ARIXO" property="og:title"/><meta content="Free online GST calculator for India. Add or remove GST and see the base amount, GST, CGST, SGST and final price instantly." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/calculators/gst-calculator/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="GST Calculator — Add or Remove GST, CGST &amp; SGST | ARIXO" name="twitter:title"/><meta content="Free online GST calculator for India. Add or remove GST and see the base amount, GST, CGST, SGST and final price instantly." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between GST exclusive and inclusive?", "acceptedAnswer": {"@type": "Answer", "text": "Exclusive means GST is added on top of the amount you enter. Inclusive means the amount already contains GST and the calculator works backwards to find the base price."}}, {"@type": "Question", "name": "What are CGST and SGST?", "acceptedAnswer": {"@type": "Answer", "text": "For sales within one state, the GST is split equally between the Central GST and the State GST. At 18%, for example, CGST is 9% and SGST is 9%."}}, {"@type": "Question", "name": "Which GST rate should I choose?", "acceptedAnswer": {"@type": "Answer", "text": "The rate depends on how your product or service is classified. Always confirm the current rate for your item from the official GST rate schedule or your accountant before invoicing."}}]}</script></head>
 <body>
-
-    <main class="page">
-
-        <a href="../../../../index.html" class="back-btn">
+<main class="page">
+<a class="back-btn" href="../../../index.html">
             ← Back to ARIXO
         </a>
-
-        <section class="calculator-card">
-
-            <div class="icon">🧾</div>
-
-            <h1>GST Calculator</h1>
-
-            <p class="subtitle">
+<section class="calculator-card">
+<div class="icon">🧾</div>
+<h1>GST Calculator</h1>
+<p class="subtitle">
                 Calculate GST, CGST, SGST and final amount easily.
             </p>
-
-            <div class="input-group">
-                <label for="amount">Amount (₹)</label>
-
-                <input
-                    type="number"
-                    id="amount"
-                    placeholder="Enter amount"
-                    min="0"
-                    step="0.01"
-                >
-            </div>
-
-            <div class="input-group">
-                <label for="gstRate">GST Rate</label>
-
-                <select id="gstRate">
-                    <option value="5">5%</option>
-                    <option value="12">12%</option>
-                    <option value="18" selected>18%</option>
-                    <option value="28">28%</option>
-                </select>
-            </div>
-
-            <div class="input-group">
-                <label for="gstType">GST Type</label>
-
-                <select id="gstType">
-                    <option value="exclusive">
+<div class="input-group">
+<label for="amount">Amount (₹)</label>
+<input id="amount" min="0" placeholder="Enter amount" step="0.01" type="number"/>
+</div>
+<div class="input-group">
+<label for="gstRate">GST Rate</label>
+<select id="gstRate">
+<option value="3">3% (gold &amp; silver)</option>
+<option value="5">5%</option>
+<option selected="" value="18">18%</option>
+<option value="40">40% (luxury &amp; sin goods)</option>
+<option value="12">12% (old rate, before 22 Sep 2025)</option>
+<option value="28">28% (old rate, before 22 Sep 2025)</option>
+</select>
+</div>
+<div class="input-group">
+<label for="gstType">GST Type</label>
+<select id="gstType">
+<option value="exclusive">
                         GST Exclusive
                     </option>
-
-                    <option value="inclusive">
+<option value="inclusive">
                         GST Inclusive
                     </option>
-                </select>
-            </div>
-
-            <button
-                type="button"
-                id="calculateBtn"
-                class="calculate-btn"
-            >
+</select>
+</div>
+<button class="calculate-btn" id="calculateBtn" type="button">
                 Calculate GST
             </button>
-
-            <button
-                type="button"
-                id="clearBtn"
-                class="clear-btn"
-            >
+<button class="clear-btn" id="clearBtn" type="button">
                 Clear
             </button>
-
-            <p id="error" class="error"></p>
-
-            <div class="result-box">
-
-                <div class="main-result">
-
-                    <span>Final Amount</span>
-
-                    <strong id="finalAmount">
+<p class="error" id="error"></p>
+<div class="result-box">
+<div class="main-result">
+<span>Final Amount</span>
+<strong id="finalAmount">
                         ₹0.00
                     </strong>
-
-                </div>
-
-                <div class="result-row">
-
-                    <span>Base Amount</span>
-
-                    <strong id="baseAmount">
+</div>
+<div class="result-row">
+<span>Base Amount</span>
+<strong id="baseAmount">
                         ₹0.00
                     </strong>
-
-                </div>
-
-                <div class="result-row">
-
-                    <span>GST Amount</span>
-
-                    <strong id="gstAmount">
+</div>
+<div class="result-row">
+<span>GST Amount</span>
+<strong id="gstAmount">
                         ₹0.00
                     </strong>
-
-                </div>
-
-                <div class="result-row">
-
-                    <span>CGST</span>
-
-                    <strong id="cgst">
+</div>
+<div class="result-row">
+<span>CGST</span>
+<strong id="cgst">
                         ₹0.00
                     </strong>
-
-                </div>
-
-                <div class="result-row">
-
-                    <span>SGST</span>
-
-                    <strong id="sgst">
+</div>
+<div class="result-row">
+<span>SGST</span>
+<strong id="sgst">
                         ₹0.00
                     </strong>
-
-                </div>
-
-                <div class="result-row">
-
-                    <span>GST Rate</span>
-
-                    <strong id="rateResult">
+</div>
+<div class="result-row">
+<span>GST Rate</span>
+<strong id="rateResult">
                         0%
                     </strong>
-
-                </div>
-
-            </div>
-
-            <div class="formula-box">
-
-                <strong>Formula</strong>
-
-                <span id="formula">
+</div>
+</div>
+<div class="formula-box">
+<strong>Formula</strong>
+<span id="formula">
                     GST = Amount × GST Rate ÷ 100
                 </span>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <script src="script.js"></script>
-
+</div>
+</section>
+<section class="ax-seo"><h2>About the GST Calculator</h2><p>ARIXO's GST Calculator helps you work out the Goods and Services Tax on any amount. You can add GST to a price (GST exclusive) or find the original price from a GST-inclusive total, and see the CGST and SGST split. Since 22 September 2025 most goods and services in India fall under 5% or 18%, with 40% for specified luxury and sin goods and 3% for gold and silver. The older 12% and 28% rates are kept only for checking past invoices.</p><h2>How to use</h2><ol><li>Enter the amount in rupees.</li><li>Choose the GST rate that applies to your item.</li><li>Select GST Exclusive (add GST) or GST Inclusive (remove GST), then click Calculate GST.</li></ol><h2>Frequently asked questions</h2><h3>What is the difference between GST exclusive and inclusive?</h3><p>Exclusive means GST is added on top of the amount you enter. Inclusive means the amount already contains GST and the calculator works backwards to find the base price.</p><h3>What are CGST and SGST?</h3><p>For sales within one state, the GST is split equally between the Central GST and the State GST. At 18%, for example, CGST is 9% and SGST is 9%.</p><h3>Which GST rate should I choose?</h3><p>The rate depends on how your product or service is classified. Always confirm the current rate for your item from the official GST rate schedule or your accountant before invoicing.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/discount-calculator/">Discount Calculator</a><a href="../../calculators/percentage-calculator/">Percentage Calculator</a><a href="../../calculators/tip-calculator/">Tip Calculator</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></main>
+<script src="script.js"></script>
 </body>
 </html>

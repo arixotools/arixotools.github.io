@@ -1,118 +1,62 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Image Resizer — ARIXO</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Image Resizer — Resize Images by Pixels Online | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free online image resizer. Set a new width and height in pixels and resize your picture in your browser." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/image-tools/image-resizer/" rel="canonical"/><meta content="Image Resizer — Resize Images by Pixels Online | ARIXO" property="og:title"/><meta content="Free online image resizer. Set a new width and height in pixels and resize your picture in your browser." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/image-tools/image-resizer/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Image Resizer — Resize Images by Pixels Online | ARIXO" name="twitter:title"/><meta content="Free online image resizer. Set a new width and height in pixels and resize your picture in your browser." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is aspect ratio?", "acceptedAnswer": {"@type": "Answer", "text": "It is the proportion between width and height. Keeping it locked means changing one value updates the other so the picture is not stretched."}}, {"@type": "Question", "name": "Does enlarging an image reduce quality?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Making an image larger than the original can make it look soft or pixelated."}}, {"@type": "Question", "name": "Is my image uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. Resizing happens in your browser."}}]}</script></head>
 <body>
-
-  <div class="container">
-
-    <a class="back" href="../../../index.html">
+<div class="container">
+<a class="back" href="../../../index.html">
         ← Back to ARIXO
     </a>
-
-    <div class="card">
-
-      <div class="logo">ARIXO</div>
-
-      <h1>Image Resizer</h1>
-
-      <p class="subtitle">
+<div class="card">
+<div class="logo">ARIXO</div>
+<h1>Image Resizer</h1>
+<p class="subtitle">
         Resize your images to any width and height instantly.
       </p>
-
-      <div class="upload-box">
-
-        <input
-          type="file"
-          id="imageInput"
-          accept="image/*"
-          onchange="loadImage(event)"
-        >
-
-        <label for="imageInput">
+<div class="upload-box">
+<input accept="image/*" id="imageInput" onchange="loadImage(event)" type="file"/>
+<label for="imageInput">
           📷 Choose Image
         </label>
-
-        <p id="fileName">
+<p id="fileName">
           No image selected
         </p>
-
-      </div>
-
-      <div class="preview-box">
-
-        <img id="preview" alt="Image Preview">
-
-        <p id="dimensions"></p>
-
-      </div>
-
-      <div class="resize-box">
-
-        <div class="input-group">
-          <label for="width">Width (px)</label>
-          <input
-            type="number"
-            id="width"
-            min="1"
-            placeholder="Width"
-          >
-        </div>
-
-        <div class="input-group">
-          <label for="height">Height (px)</label>
-          <input
-            type="number"
-            id="height"
-            min="1"
-            placeholder="Height"
-          >
-        </div>
-
-      </div>
-
-      <label class="checkbox">
-        <input
-          type="checkbox"
-          id="keepRatio"
-          checked
-        >
+</div>
+<div class="preview-box">
+<img alt="Image Preview" id="preview"/>
+<p id="dimensions"></p>
+</div>
+<div class="resize-box">
+<div class="input-group">
+<label for="width">Width (px)</label>
+<input id="width" min="1" placeholder="Width" type="number"/>
+</div>
+<div class="input-group">
+<label for="height">Height (px)</label>
+<input id="height" min="1" placeholder="Height" type="number"/>
+</div>
+</div>
+<label class="checkbox">
+<input checked="" id="keepRatio" type="checkbox"/>
         Keep aspect ratio
       </label>
-
-      <button onclick="resizeImage()">
+<button onclick="resizeImage()">
         Resize Image
       </button>
-
-      <div id="result"></div>
-
-      <a
-        id="downloadBtn"
-        class="download-btn"
-        download="arixo-resized-image.jpg"
-      >
+<div id="result"></div>
+<a class="download-btn" download="arixo-resized-image.jpg" id="downloadBtn">
         Download Resized Image
       </a>
-
-      <button
-        class="clear-btn"
-        onclick="clearTool()"
-      >
+<button class="clear-btn" onclick="clearTool()">
         Clear
       </button>
-
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
-
+</div>
+<section class="ax-seo"><h2>About the Image Resizer</h2><p>The Image Resizer changes the width and height of your image in pixels. Keep the aspect ratio locked to avoid stretching, or turn it off for an exact size. Your picture is processed in your browser and is not uploaded.</p><h2>How to use</h2><ol><li>Click Choose Image and select your picture.</li><li>Enter the new width and height, and keep Aspect ratio on to avoid distortion.</li><li>Click Resize Image and download the result.</li></ol><h2>Frequently asked questions</h2><h3>What is aspect ratio?</h3><p>It is the proportion between width and height. Keeping it locked means changing one value updates the other so the picture is not stretched.</p><h3>Does enlarging an image reduce quality?</h3><p>Yes. Making an image larger than the original can make it look soft or pixelated.</p><h3>Is my image uploaded?</h3><p>No. Resizing happens in your browser.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../image-tools/image-compressor/">Image Compressor</a><a href="../../image-tools/image-cropper/">Image Cropper</a><a href="../../image-tools/image-to-jpg/">Image to JPG</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></div>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,75 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Loan Calculator — Calculate Monthly Loan Payment | ARIXO</title>
-
-    <meta
-        name="description"
-        content="Use ARIXO's free Loan Calculator to estimate monthly loan payments, principal, total interest, total repayment and loan tenure."
-    >
-
-    <meta
-        name="keywords"
-        content="loan calculator, loan payment calculator, monthly loan calculator, interest calculator, repayment calculator, personal loan calculator, home loan calculator, car loan calculator"
-    >
-
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="ARIXO">
-    <meta name="theme-color" content="#05070d">
-
-    <link
-        rel="canonical"
-        href="https://arixotools.github.io/tools/calculators/loan-calculator/"
-    >
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Loan Calculator — Calculate Monthly Loan Payment | ARIXO">
-    <meta
-        property="og:description"
-        content="Estimate monthly loan payment, total interest and total repayment with ARIXO's free Loan Calculator."
-    >
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ARIXO">
-    <meta
-        property="og:url"
-        content="https://arixotools.github.io/tools/calculators/loan-calculator/"
-    >
-    <meta
-        property="og:image"
-        content="https://arixotools.github.io/assets/images/arixo-og.png"
-    >
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1536">
-    <meta property="og:image:height" content="1024">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta
-        name="twitter:title"
-        content="Loan Calculator — Calculate Monthly Loan Payment | ARIXO"
-    >
-    <meta
-        name="twitter:description"
-        content="Calculate monthly loan payment, total interest and total repayment with ARIXO."
-    >
-    <meta
-        name="twitter:image"
-        content="https://arixotools.github.io/assets/images/arixo-og.png"
-    >
-
-    <link
-        rel="icon"
-        type="image/jpeg"
-        href="../../../assets/images/arixo-favicon.jpeg"
-    >
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- WebPage Structured Data -->
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Loan Calculator — Calculate Monthly Loan Payment | ARIXO</title>
+<meta content="Use ARIXO's free Loan Calculator to estimate monthly loan payments, principal, total interest, total repayment and loan tenure." name="description"/>
+<meta content="loan calculator, loan payment calculator, monthly loan calculator, interest calculator, repayment calculator, personal loan calculator, home loan calculator, car loan calculator" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/calculators/loan-calculator/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Loan Calculator — Calculate Monthly Loan Payment | ARIXO" property="og:title"/>
+<meta content="Estimate monthly loan payment, total interest and total repayment with ARIXO's free Loan Calculator." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/calculators/loan-calculator/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1536" property="og:image:width"/>
+<meta content="1024" property="og:image:height"/>
+<!-- Twitter -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Loan Calculator — Calculate Monthly Loan Payment | ARIXO" name="twitter:title"/>
+<meta content="Calculate monthly loan payment, total interest and total repayment with ARIXO." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="style.css" rel="stylesheet"/>
+<!-- WebPage Structured Data -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -83,9 +43,8 @@
         }
     }
     </script>
-
-    <!-- Breadcrumb Structured Data -->
-    <script type="application/ld+json">
+<!-- Breadcrumb Structured Data -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -111,9 +70,8 @@
         ]
     }
     </script>
-
-    <!-- FAQ Structured Data -->
-    <script type="application/ld+json">
+<!-- FAQ Structured Data -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -153,218 +111,145 @@
         ]
     }
     </script>
-
-</head>
-
+<link href="../../../assets/css/ax.css" rel="stylesheet"/></head>
 <body>
-
-    <main class="page">
-
-        <a href="../../../../index.html" class="back-btn">
+<main class="page">
+<a class="back-btn" href="../../../index.html">
             ← Back to ARIXO
         </a>
-
-        <section class="calculator-card">
-
-            <div class="brand">ARIXO</div>
-
-            <div class="icon">🏦</div>
-
-            <h1>Loan Calculator</h1>
-
-            <p class="subtitle">
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon">🏦</div>
+<h1>Loan Calculator</h1>
+<p class="subtitle">
                 Estimate your monthly loan payment, total interest and total repayment.
             </p>
-
-            <div class="calculator-box">
-
-                <div class="input-group">
-                    <label for="loanAmount">Loan Amount (₹)</label>
-                    <input
-                        type="number"
-                        id="loanAmount"
-                        placeholder="Example: 500000"
-                        min="1"
-                        step="0.01"
-                    >
-                </div>
-
-                <div class="input-group">
-                    <label for="interestRate">Annual Interest Rate (%)</label>
-                    <input
-                        type="number"
-                        id="interestRate"
-                        placeholder="Example: 8.5"
-                        min="0"
-                        step="0.01"
-                    >
-                </div>
-
-                <div class="input-group">
-                    <label for="loanYears">Loan Tenure (Years)</label>
-                    <input
-                        type="number"
-                        id="loanYears"
-                        placeholder="Example: 5"
-                        min="0.1"
-                        step="0.1"
-                    >
-                </div>
-
-                <button id="calculateBtn" class="calculate-btn">
+<div class="calculator-box">
+<div class="input-group">
+<label for="loanAmount">Loan Amount (₹)</label>
+<input id="loanAmount" min="1" placeholder="Example: 500000" step="0.01" type="number"/>
+</div>
+<div class="input-group">
+<label for="interestRate">Annual Interest Rate (%)</label>
+<input id="interestRate" min="0" placeholder="Example: 8.5" step="0.01" type="number"/>
+</div>
+<div class="input-group">
+<label for="loanYears">Loan Tenure (Years)</label>
+<input id="loanYears" min="0.1" placeholder="Example: 5" step="0.1" type="number"/>
+</div>
+<button class="calculate-btn" id="calculateBtn">
                     Calculate Loan
                 </button>
-
-                <button id="clearBtn" class="clear-btn">
+<button class="clear-btn" id="clearBtn">
                     Clear
                 </button>
-
-                <div id="error" class="error"></div>
-
-                <div class="result-box">
-
-                    <div class="main-result">
-                        <span>Monthly Payment</span>
-                        <strong id="monthlyPayment">₹0.00</strong>
-                    </div>
-
-                    <div class="result-row">
-                        <span>Principal Amount</span>
-                        <strong id="principalAmount">₹0.00</strong>
-                    </div>
-
-                    <div class="result-row">
-                        <span>Total Interest</span>
-                        <strong id="totalInterest">₹0.00</strong>
-                    </div>
-
-                    <div class="result-row">
-                        <span>Total Payment</span>
-                        <strong id="totalPayment">₹0.00</strong>
-                    </div>
-
-                    <div class="result-row">
-                        <span>Total Months</span>
-                        <strong id="totalMonths">0</strong>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <p class="note">
+<div class="error" id="error"></div>
+<div class="result-box">
+<div class="main-result">
+<span>Monthly Payment</span>
+<strong id="monthlyPayment">₹0.00</strong>
+</div>
+<div class="result-row">
+<span>Principal Amount</span>
+<strong id="principalAmount">₹0.00</strong>
+</div>
+<div class="result-row">
+<span>Total Interest</span>
+<strong id="totalInterest">₹0.00</strong>
+</div>
+<div class="result-row">
+<span>Total Payment</span>
+<strong id="totalPayment">₹0.00</strong>
+</div>
+<div class="result-row">
+<span>Total Months</span>
+<strong id="totalMonths">0</strong>
+</div>
+</div>
+</div>
+<p class="note">
                 This calculator uses a standard reducing-balance loan calculation.
                 Results are estimates and actual loan costs may vary by lender.
             </p>
-
-        </section>
-
-        <!-- SEO CONTENT -->
-        <section class="seo-content">
-
-            <h2>How to Use the Loan Calculator</h2>
-
-            <p>
+</section>
+<!-- SEO CONTENT -->
+<section class="seo-content">
+<h2>How to Use the Loan Calculator</h2>
+<p>
                 ARIXO's Loan Calculator helps you estimate your monthly loan
                 payment, total interest and total repayment. Enter your loan
                 details and select <strong>Calculate Loan</strong>.
             </p>
-
-            <ul>
-                <li>Enter the loan amount.</li>
-                <li>Enter the annual interest rate.</li>
-                <li>Enter the loan tenure in years.</li>
-                <li>Click <strong>Calculate Loan</strong>.</li>
-                <li>View the estimated monthly payment and total repayment.</li>
-            </ul>
-
-            <h2>Loan Payment Formula</h2>
-
-            <p>
+<ul>
+<li>Enter the loan amount.</li>
+<li>Enter the annual interest rate.</li>
+<li>Enter the loan tenure in years.</li>
+<li>Click <strong>Calculate Loan</strong>.</li>
+<li>View the estimated monthly payment and total repayment.</li>
+</ul>
+<h2>Loan Payment Formula</h2>
+<p>
                 For a standard reducing-balance loan, the monthly payment can
                 be calculated using the principal amount, monthly interest rate
                 and total number of monthly payments.
             </p>
-
-            <div class="formula-box">
-                <strong>Payment = P × r × (1 + r)ⁿ ÷ ((1 + r)ⁿ − 1)</strong>
-            </div>
-
-            <p>
+<div class="formula-box">
+<strong>Payment = P × r × (1 + r)ⁿ ÷ ((1 + r)ⁿ − 1)</strong>
+</div>
+<p>
                 Here, <strong>P</strong> is the principal loan amount,
                 <strong>r</strong> is the monthly interest rate and
                 <strong>n</strong> is the total number of monthly payments.
             </p>
-
-            <h2>Why Use a Loan Calculator?</h2>
-
-            <p>
+<h2>Why Use a Loan Calculator?</h2>
+<p>
                 A loan calculator can help you understand the approximate cost
                 of borrowing before applying for a loan. You can compare
                 different loan amounts, interest rates and repayment periods.
             </p>
-
-            <ul>
-                <li>Estimate your monthly loan payment.</li>
-                <li>Understand the approximate interest cost.</li>
-                <li>Estimate the total repayment amount.</li>
-                <li>Compare different loan tenures.</li>
-                <li>Plan your monthly budget.</li>
-            </ul>
-
-            <h2>Types of Loans You Can Estimate</h2>
-
-            <p>
+<ul>
+<li>Estimate your monthly loan payment.</li>
+<li>Understand the approximate interest cost.</li>
+<li>Estimate the total repayment amount.</li>
+<li>Compare different loan tenures.</li>
+<li>Plan your monthly budget.</li>
+</ul>
+<h2>Types of Loans You Can Estimate</h2>
+<p>
                 Loan calculations can be useful for personal loans, car loans,
                 home loans, education loans and other loans that use a
                 reducing-balance repayment method.
             </p>
-
-            <h2>Important Note</h2>
-
-            <p>
+<h2>Important Note</h2>
+<p>
                 The result shown by this calculator is an estimate based on
                 the values entered. Actual loan payments may also depend on
                 processing fees, insurance, taxes, lender-specific rules and
                 other loan conditions.
             </p>
-
-        </section>
-
-        <!-- RELATED TOOLS -->
-        <section class="related-tools">
-
-            <h2>Related Calculators</h2>
-
-            <div class="related-links">
-
-                <a href="../emi-calculator/">
+</section>
+<!-- RELATED TOOLS -->
+<section class="related-tools">
+<h2>Related Calculators</h2>
+<div class="related-links">
+<a href="../emi-calculator/">
                     EMI Calculator
                 </a>
-
-                <a href="../simple-interest/">
+<a href="../simple-interest/">
                     Simple Interest Calculator
                 </a>
-
-                <a href="../compound-interest/">
+<a href="../compound-interest/">
                     Compound Interest Calculator
                 </a>
-
-                <a href="../percentage-calculator/">
+<a href="../percentage-calculator/">
                     Percentage Calculator
                 </a>
-
-            </div>
-
-        </section>
-
-        <a href="../../../../index.html" class="bottom-back">
+</div>
+</section>
+<a class="bottom-back" href="../../../index.html">
             ← Back to ARIXO
         </a>
-
-    </main>
-
-    <script src="script.js"></script>
-
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></main>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,55 +1,39 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Date Calculator — ARIXO</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Date Calculator — Days Between Two Dates | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free date calculator. Enter a start date and an end date to find the number of days between them." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/date-time/date-calculator/" rel="canonical"/><meta content="Date Calculator — Days Between Two Dates | ARIXO" property="og:title"/><meta content="Free date calculator. Enter a start date and an end date to find the number of days between them." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/date-time/date-calculator/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Date Calculator — Days Between Two Dates | ARIXO" name="twitter:title"/><meta content="Free date calculator. Enter a start date and an end date to find the number of days between them." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are the start and end dates both counted?", "acceptedAnswer": {"@type": "Answer", "text": "The result is the difference between the two dates. If you need to include both days in your count, add one."}}, {"@type": "Question", "name": "Does it handle leap years?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Calendar dates are handled by your browser, so leap years are counted correctly."}}, {"@type": "Question", "name": "Can I get the result in months?", "acceptedAnswer": {"@type": "Answer", "text": "This tool shows days. For years, months and days, use the Age Difference Calculator."}}]}</script></head>
 <body>
-
-  <div class="container">
-
-    <a class="back" href="../../../index.html">
+<div class="container">
+<a class="back" href="../../../index.html">
     ← Back to ARIXO
 </a>
-
-    <div class="card">
-
-      <div class="logo">ARIXO</div>
-
-      <h1>Date Calculator</h1>
-
-      <p class="subtitle">
+<div class="card">
+<div class="logo">ARIXO</div>
+<h1>Date Calculator</h1>
+<p class="subtitle">
         Calculate the number of days between two dates.
       </p>
-
-      <div class="input-group">
-        <label for="startDate">Start Date</label>
-        <input type="date" id="startDate">
-      </div>
-
-      <div class="input-group">
-        <label for="endDate">End Date</label>
-        <input type="date" id="endDate">
-      </div>
-
-      <button onclick="calculateDate()">
+<div class="input-group">
+<label for="startDate">Start Date</label>
+<input id="startDate" type="date"/>
+</div>
+<div class="input-group">
+<label for="endDate">End Date</label>
+<input id="endDate" type="date"/>
+</div>
+<button onclick="calculateDate()">
         Calculate
       </button>
-
-      <div id="result" class="result">
+<div class="result" id="result">
         Select two dates to calculate.
       </div>
-
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
-
+</div>
+<section class="ax-seo"><h2>About the Date Calculator</h2><p>The Date Calculator tells you how many days lie between a start date and an end date. It is useful for planning projects, counting days to an event, checking notice periods or working out how long something took.</p><h2>How to use</h2><ol><li>Enter the start date.</li><li>Enter the end date.</li><li>Click Calculate to see the number of days.</li></ol><h2>Frequently asked questions</h2><h3>Are the start and end dates both counted?</h3><p>The result is the difference between the two dates. If you need to include both days in your count, add one.</p><h3>Does it handle leap years?</h3><p>Yes. Calendar dates are handled by your browser, so leap years are counted correctly.</p><h3>Can I get the result in months?</h3><p>This tool shows days. For years, months and days, use the Age Difference Calculator.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../date-time/days-between-dates/">Days Between Dates</a><a href="../../date-time/age-difference/">Age Difference Calculator</a><a href="../../date-time/countdown/">Countdown Timer</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></div>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,87 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Discount Calculator — Calculate Sale Price & Savings | ARIXO</title>
-
-    <meta
-        name="description"
-        content="Use ARIXO's free Discount Calculator to calculate discount amount, final sale price, and total savings quickly and easily."
-    >
-
-    <meta
-        name="keywords"
-        content="discount calculator, sale price calculator, discount percentage calculator, calculate discount, discount amount calculator, savings calculator, online discount calculator, free discount calculator, ARIXO"
-    >
-
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="ARIXO">
-    <meta name="theme-color" content="#05070d">
-
-    <link
-        rel="canonical"
-        href="https://arixotools.github.io/tools/calculators/discount-calculator/"
-    >
-
-    <!-- Open Graph -->
-    <meta
-        property="og:title"
-        content="Discount Calculator — Calculate Sale Price & Savings | ARIXO"
-    >
-
-    <meta
-        property="og:description"
-        content="Calculate discount amount, final price, and how much you save with ARIXO's free online Discount Calculator."
-    >
-
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ARIXO">
-
-    <meta
-        property="og:url"
-        content="https://arixotools.github.io/tools/calculators/discount-calculator/"
-    >
-
-    <meta
-        property="og:image"
-        content="https://arixotools.github.io/assets/images/arixo-og.png"
-    >
-
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1536">
-    <meta property="og:image:height" content="1024">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-
-    <meta
-        name="twitter:title"
-        content="Discount Calculator — ARIXO"
-    >
-
-    <meta
-        name="twitter:description"
-        content="Calculate discount amount, final sale price and savings with ARIXO's free online Discount Calculator."
-    >
-
-    <meta
-        name="twitter:image"
-        content="https://arixotools.github.io/assets/images/arixo-og.png"
-    >
-
-    <link
-        rel="icon"
-        type="image/jpeg"
-        href="../../../assets/images/arixo-favicon.jpeg"
-    >
-
-    <link rel="stylesheet" href="style.css">
-
-
-    <!-- WebPage Schema -->
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Discount Calculator — Calculate Sale Price &amp; Savings | ARIXO</title>
+<meta content="Use ARIXO's free Discount Calculator to calculate discount amount, final sale price, and total savings quickly and easily." name="description"/>
+<meta content="discount calculator, sale price calculator, discount percentage calculator, calculate discount, discount amount calculator, savings calculator, online discount calculator, free discount calculator, ARIXO" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/calculators/discount-calculator/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Discount Calculator — Calculate Sale Price &amp; Savings | ARIXO" property="og:title"/>
+<meta content="Calculate discount amount, final price, and how much you save with ARIXO's free online Discount Calculator." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/calculators/discount-calculator/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1536" property="og:image:width"/>
+<meta content="1024" property="og:image:height"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Discount Calculator — ARIXO" name="twitter:title"/>
+<meta content="Calculate discount amount, final sale price and savings with ARIXO's free online Discount Calculator." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="style.css" rel="stylesheet"/>
+<!-- WebPage Schema -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -95,10 +43,8 @@
         }
     }
     </script>
-
-
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json">
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -124,10 +70,8 @@
         ]
     }
     </script>
-
-
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
+<!-- FAQ Schema -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -159,200 +103,112 @@
         ]
     }
     </script>
-
-</head>
-
+<link href="../../../assets/css/ax.css" rel="stylesheet"/></head>
 <body>
-
 <main class="page">
-
-    <div class="card">
-
-        <div class="brand">ARIXO</div>
-
-        <div class="icon">🏷️</div>
-
-        <h1>Discount Calculator</h1>
-
-        <p class="subtitle">
+<div class="card">
+<div class="brand">ARIXO</div>
+<div class="icon">🏷️</div>
+<h1>Discount Calculator</h1>
+<p class="subtitle">
             Calculate discount amount, final sale price and savings instantly.
         </p>
-
-
-        <!-- Calculator -->
-        <section class="calculator-box">
-
-            <div class="input-group">
-
-                <label for="originalPrice">
+<!-- Calculator -->
+<section class="calculator-box">
+<div class="input-group">
+<label for="originalPrice">
                     Original Price
                 </label>
-
-                <input
-                    type="number"
-                    id="originalPrice"
-                    placeholder="Enter original price"
-                    min="0"
-                    step="any"
-                    aria-label="Original price"
-                >
-
-            </div>
-
-
-            <div class="input-group">
-
-                <label for="discountPercent">
+<input aria-label="Original price" id="originalPrice" min="0" placeholder="Enter original price" step="any" type="number"/>
+</div>
+<div class="input-group">
+<label for="discountPercent">
                     Discount Percentage
                 </label>
-
-                <input
-                    type="number"
-                    id="discountPercent"
-                    placeholder="Enter discount %"
-                    min="0"
-                    max="100"
-                    step="any"
-                    aria-label="Discount percentage"
-                >
-
-            </div>
-
-
-            <button id="calculateBtn">
+<input aria-label="Discount percentage" id="discountPercent" max="100" min="0" placeholder="Enter discount %" step="any" type="number"/>
+</div>
+<button id="calculateBtn">
                 Calculate Discount
             </button>
-
-
-            <div
-                class="result-box"
-                aria-live="polite"
-            >
-
-                <div class="result-item">
-                    <span>Discount Amount</span>
-                    <strong id="discountAmount">₹0.00</strong>
-                </div>
-
-                <div class="result-item">
-                    <span>Final Price</span>
-                    <strong id="finalPrice">₹0.00</strong>
-                </div>
-
-                <div class="result-item highlight">
-                    <span>You Save</span>
-                    <strong id="youSave">₹0.00</strong>
-                </div>
-
-            </div>
-
-
-            <button id="clearBtn" class="secondary">
+<div aria-live="polite" class="result-box">
+<div class="result-item">
+<span>Discount Amount</span>
+<strong id="discountAmount">₹0.00</strong>
+</div>
+<div class="result-item">
+<span>Final Price</span>
+<strong id="finalPrice">₹0.00</strong>
+</div>
+<div class="result-item highlight">
+<span>You Save</span>
+<strong id="youSave">₹0.00</strong>
+</div>
+</div>
+<button class="secondary" id="clearBtn">
                 Clear
             </button>
-
-
-            <div
-                id="message"
-                aria-live="polite"
-            ></div>
-
-        </section>
-
-
-        <!-- SEO Content -->
-        <section class="seo-content">
-
-            <h2>How to Use the Discount Calculator</h2>
-
-            <p>
+<div aria-live="polite" id="message"></div>
+</section>
+<!-- SEO Content -->
+<section class="seo-content">
+<h2>How to Use the Discount Calculator</h2>
+<p>
                 ARIXO's Discount Calculator helps you quickly find the discount
                 amount, final price and total savings when an item is offered at
                 a percentage discount.
             </p>
-
-            <p>
+<p>
                 Enter the original price of the product and the discount
                 percentage. Then click the Calculate Discount button to see the
                 discount amount, final price and money saved.
             </p>
-
-
-            <h2>How to Calculate a Discount</h2>
-
-            <p>
+<h2>How to Calculate a Discount</h2>
+<p>
                 The discount amount can be calculated by multiplying the original
                 price by the discount percentage and dividing the result by 100.
             </p>
-
-            <p>
+<p>
                 For example, if an item costs ₹1,000 and has a 20% discount,
                 the discount amount is ₹200 and the final price is ₹800.
             </p>
-
-
-            <h2>What Does the Discount Calculator Show?</h2>
-
-            <ul>
-                <li><strong>Discount Amount:</strong> The amount reduced from the original price.</li>
-                <li><strong>Final Price:</strong> The price you pay after the discount.</li>
-                <li><strong>You Save:</strong> The total amount saved from the original price.</li>
-            </ul>
-
-
-            <h2>Why Use ARIXO Discount Calculator?</h2>
-
-            <ul>
-                <li>Fast and easy discount calculations</li>
-                <li>Free to use online</li>
-                <li>No registration required</li>
-                <li>Works on mobile, tablet and PC</li>
-                <li>Useful for shopping and everyday calculations</li>
-            </ul>
-
-        </section>
-
-
-        <!-- Related Calculators -->
-        <section class="related-tools">
-
-            <h2>Related Calculators</h2>
-
-            <div class="related-links">
-
-                <a href="../percentage-calculator/">
+<h2>What Does the Discount Calculator Show?</h2>
+<ul>
+<li><strong>Discount Amount:</strong> The amount reduced from the original price.</li>
+<li><strong>Final Price:</strong> The price you pay after the discount.</li>
+<li><strong>You Save:</strong> The total amount saved from the original price.</li>
+</ul>
+<h2>Why Use ARIXO Discount Calculator?</h2>
+<ul>
+<li>Fast and easy discount calculations</li>
+<li>Free to use online</li>
+<li>No registration required</li>
+<li>Works on mobile, tablet and PC</li>
+<li>Useful for shopping and everyday calculations</li>
+</ul>
+</section>
+<!-- Related Calculators -->
+<section class="related-tools">
+<h2>Related Calculators</h2>
+<div class="related-links">
+<a href="../percentage-calculator/">
                     Percentage Calculator
                 </a>
-
-                <a href="../gst-calculator/">
+<a href="../gst-calculator/">
                     GST Calculator
                 </a>
-
-                <a href="../tip-calculator/">
+<a href="../tip-calculator/">
                     Tip Calculator
                 </a>
-
-                <a href="../simple-interest/">
+<a href="../simple-interest/">
                     Simple Interest Calculator
                 </a>
-
-            </div>
-
-        </section>
-
-
-        <a
-            class="back"
-            href="../../../index.html"
-        >
+</div>
+</section>
+<a class="back" href="../../../index.html">
             ← Back to ARIXO
         </a>
-
-    </div>
-
-</main>
-
+</div>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></main>
 <script src="script.js"></script>
-
 </body>
 </html>

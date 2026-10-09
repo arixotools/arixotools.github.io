@@ -1,67 +1,39 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>URL Decoder — ARIXO</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>URL Decoder — Decode Percent-Encoded URLs Online | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free online URL decoder. Convert percent-encoded text like %20 back into readable text instantly." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/developer-tools/url-decoder/" rel="canonical"/><meta content="URL Decoder — Decode Percent-Encoded URLs Online | ARIXO" property="og:title"/><meta content="Free online URL decoder. Convert percent-encoded text like %20 back into readable text instantly." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/developer-tools/url-decoder/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="URL Decoder — Decode Percent-Encoded URLs Online | ARIXO" name="twitter:title"/><meta content="Free online URL decoder. Convert percent-encoded text like %20 back into readable text instantly." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does %20 mean?", "acceptedAnswer": {"@type": "Answer", "text": "It is the encoded form of a space character. Other characters have their own percent codes, such as %26 for an ampersand."}}, {"@type": "Question", "name": "Why do URLs need encoding?", "acceptedAnswer": {"@type": "Answer", "text": "URLs can only safely contain certain characters. Encoding replaces the rest with percent codes so browsers and servers read them correctly."}}, {"@type": "Question", "name": "Why does decoding fail?", "acceptedAnswer": {"@type": "Answer", "text": "A stray percent sign that is not followed by two hexadecimal digits makes the input invalid."}}]}</script></head>
 <body>
-
-    <div class="container">
-
-        <a class="back" href="../../../index.html">
+<div class="container">
+<a class="back" href="../../../index.html">
     ← Back to ARIXO
 </a>
-
-        <div class="card">
-
-            <div class="logo">ARIXO</div>
-
-            <h1>URL Decoder</h1>
-
-            <p class="subtitle">
+<div class="card">
+<div class="logo">ARIXO</div>
+<h1>URL Decoder</h1>
+<p class="subtitle">
                 Decode URL-encoded text back into readable text.
             </p>
-
-            <textarea
-                id="textInput"
-                placeholder="Paste encoded URL or text here..."
-            ></textarea>
-
-            <div class="button-grid">
-
-                <button onclick="decodeURL()">
+<textarea id="textInput" placeholder="Paste encoded URL or text here..."></textarea>
+<div class="button-grid">
+<button onclick="decodeURL()">
                     Decode
                 </button>
-
-                <button class="secondary" onclick="copyResult()">
+<button class="secondary" onclick="copyResult()">
                     Copy
                 </button>
-
-                <button class="clear-btn" onclick="clearTool()">
+<button class="clear-btn" onclick="clearTool()">
                     Clear
                 </button>
-
-            </div>
-
-            <textarea
-                id="output"
-                class="output"
-                placeholder="Decoded result will appear here..."
-                readonly
-            ></textarea>
-
-            <div id="result"></div>
-
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
-
+</div>
+<textarea class="output" id="output" placeholder="Decoded result will appear here..." readonly=""></textarea>
+<div id="result"></div>
+</div>
+<section class="ax-seo"><h2>About the URL Decoder</h2><p>The URL Decoder turns percent-encoded text, such as %20 or %26, back into readable characters. It is handy for reading query strings, tracking links and encoded parameters. Decoding happens in your browser.</p><h2>How to use</h2><ol><li>Paste the encoded text or URL.</li><li>Click Decode.</li><li>Copy the readable result.</li></ol><h2>Frequently asked questions</h2><h3>What does %20 mean?</h3><p>It is the encoded form of a space character. Other characters have their own percent codes, such as %26 for an ampersand.</p><h3>Why do URLs need encoding?</h3><p>URLs can only safely contain certain characters. Encoding replaces the rest with percent codes so browsers and servers read them correctly.</p><h3>Why does decoding fail?</h3><p>A stray percent sign that is not followed by two hexadecimal digits makes the input invalid.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../developer-tools/url-encoder/">URL Encoder</a><a href="../../developer-tools/base64-decoder/">Base64 Decoder</a><a href="../../developer-tools/json-formatter/">JSON Formatter</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></div>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,104 +1,54 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Image Compressor — ARIXO</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Image Compressor — Reduce Image Size Online Free | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free online image compressor. Reduce image file size in your browser while keeping good quality. No upload, no sign-up." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/image-tools/image-compressor/" rel="canonical"/><meta content="Image Compressor — Reduce Image Size Online Free | ARIXO" property="og:title"/><meta content="Free online image compressor. Reduce image file size in your browser while keeping good quality. No upload, no sign-up." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/image-tools/image-compressor/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Image Compressor — Reduce Image Size Online Free | ARIXO" name="twitter:title"/><meta content="Free online image compressor. Reduce image file size in your browser while keeping good quality. No upload, no sign-up." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Will compression reduce image quality?", "acceptedAnswer": {"@type": "Answer", "text": "Lower quality settings make smaller files but can add visible blur or artefacts. A setting around 70% to 80% is a good balance for most photos."}}, {"@type": "Question", "name": "Is my image uploaded to a server?", "acceptedAnswer": {"@type": "Answer", "text": "No. The image is processed in your browser."}}, {"@type": "Question", "name": "Which formats work best?", "acceptedAnswer": {"@type": "Answer", "text": "Photos compress best. Images that are already small or heavily compressed may not shrink much."}}]}</script></head>
 <body>
-
-  <div class="container">
-
-    <a class="back" href="../../../index.html">
+<div class="container">
+<a class="back" href="../../../index.html">
         ← Back to ARIXO
     </a>
-
-    <div class="card">
-
-      <div class="logo">ARIXO</div>
-
-      <h1>Image Compressor</h1>
-
-      <p class="subtitle">
+<div class="card">
+<div class="logo">ARIXO</div>
+<h1>Image Compressor</h1>
+<p class="subtitle">
         Compress your images quickly while maintaining good quality.
       </p>
-
-      <div class="upload-box">
-
-        <input
-          type="file"
-          id="imageInput"
-          accept="image/*"
-          onchange="loadImage(event)"
-        >
-
-        <label for="imageInput">
+<div class="upload-box">
+<input accept="image/*" id="imageInput" onchange="loadImage(event)" type="file"/>
+<label for="imageInput">
           📷 Choose Image
         </label>
-
-        <p id="fileName">
+<p id="fileName">
           No image selected
         </p>
-
-      </div>
-
-      <div class="preview-box">
-
-        <img
-          id="preview"
-          alt="Image Preview"
-        >
-
-      </div>
-
-      <div class="quality-box">
-
-        <label for="quality">
+</div>
+<div class="preview-box">
+<img alt="Image Preview" id="preview"/>
+</div>
+<div class="quality-box">
+<label for="quality">
           Compression Quality:
           <span id="qualityValue">70%</span>
-        </label>
-
-        <input
-          type="range"
-          id="quality"
-          min="10"
-          max="100"
-          value="70"
-          oninput="updateQuality()"
-        >
-
-      </div>
-
-      <button onclick="compressImage()">
+</label>
+<input id="quality" max="100" min="10" oninput="updateQuality()" type="range" value="70"/>
+</div>
+<button onclick="compressImage()">
         Compress Image
       </button>
-
-      <div id="result"></div>
-
-      <a
-        id="downloadBtn"
-        class="download-btn"
-        download="arixo-compressed-image.jpg"
-      >
+<div id="result"></div>
+<a class="download-btn" download="arixo-compressed-image.jpg" id="downloadBtn">
         Download Compressed Image
       </a>
-
-      <button
-        class="clear-btn"
-        onclick="clearTool()"
-      >
+<button class="clear-btn" onclick="clearTool()">
         Clear
       </button>
-
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
-
+</div>
+<section class="ax-seo"><h2>About the Image Compressor</h2><p>The Image Compressor reduces the file size of your pictures so they upload faster and use less storage. Choose a quality level, compress, and download. Your image is processed inside your browser and is not uploaded to our servers.</p><h2>How to use</h2><ol><li>Click Choose Image and select your picture.</li><li>Adjust the compression quality slider.</li><li>Click Compress Image and download the result.</li></ol><h2>Frequently asked questions</h2><h3>Will compression reduce image quality?</h3><p>Lower quality settings make smaller files but can add visible blur or artefacts. A setting around 70% to 80% is a good balance for most photos.</p><h3>Is my image uploaded to a server?</h3><p>No. The image is processed in your browser.</p><h3>Which formats work best?</h3><p>Photos compress best. Images that are already small or heavily compressed may not shrink much.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../image-tools/image-resizer/">Image Resizer</a><a href="../../image-tools/image-to-jpg/">Image to JPG</a><a href="../../image-tools/jpg-to-png/">JPG to PNG</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></div>
+<script src="script.js"></script>
 </body>
 </html>

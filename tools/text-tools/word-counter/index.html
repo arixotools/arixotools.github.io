@@ -1,66 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Word Counter — ARIXO</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Word Counter — Count Words, Characters &amp; Spaces | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free online word counter. Count words, characters and spaces in your text instantly as you type." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/text-tools/word-counter/" rel="canonical"/><meta content="Word Counter — Count Words, Characters &amp; Spaces | ARIXO" property="og:title"/><meta content="Free online word counter. Count words, characters and spaces in your text instantly as you type." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/text-tools/word-counter/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Word Counter — Count Words, Characters &amp; Spaces | ARIXO" name="twitter:title"/><meta content="Free online word counter. Count words, characters and spaces in your text instantly as you type." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How are words counted?", "acceptedAnswer": {"@type": "Answer", "text": "Words are groups of characters separated by spaces or line breaks."}}, {"@type": "Question", "name": "Is there a word limit?", "acceptedAnswer": {"@type": "Answer", "text": "There is no fixed limit, but very large texts may be slow to process in your browser."}}, {"@type": "Question", "name": "Is my text uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. Counting happens in your browser."}}]}</script></head>
 <body>
-
-  <div class="container">
-
-    <a class="back" href="../../../index.html">
+<div class="container">
+<a class="back" href="../../../index.html">
     ← Back to ARIXO
 </a>
-
-    <div class="card">
-
-      <div class="logo">ARIXO</div>
-
-      <h1>Word Counter</h1>
-
-      <p class="subtitle">
+<div class="card">
+<div class="logo">ARIXO</div>
+<h1>Word Counter</h1>
+<p class="subtitle">
         Count words, characters and spaces instantly.
       </p>
-
-      <textarea
-        id="textInput"
-        placeholder="Type or paste your text here..."
-        oninput="countText()"
-      ></textarea>
-
-      <div class="stats">
-
-        <div class="stat">
-          <span id="wordCount">0</span>
-          <small>Words</small>
-        </div>
-
-        <div class="stat">
-          <span id="characterCount">0</span>
-          <small>Characters</small>
-        </div>
-
-        <div class="stat">
-          <span id="characterNoSpaceCount">0</span>
-          <small>No Spaces</small>
-        </div>
-
-      </div>
-
-      <button onclick="clearText()">
+<textarea id="textInput" oninput="countText()" placeholder="Type or paste your text here..."></textarea>
+<div class="stats">
+<div class="stat">
+<span id="wordCount">0</span>
+<small>Words</small>
+</div>
+<div class="stat">
+<span id="characterCount">0</span>
+<small>Characters</small>
+</div>
+<div class="stat">
+<span id="characterNoSpaceCount">0</span>
+<small>No Spaces</small>
+</div>
+</div>
+<button onclick="clearText()">
         Clear
       </button>
-
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
-
+</div>
+<section class="ax-seo"><h2>About the Word Counter</h2><p>The Word Counter shows the number of words, characters and spaces in your text as you type. Writers, students and bloggers use it to meet essay limits, article lengths and social media rules.</p><h2>How to use</h2><ol><li>Type or paste your text into the box.</li><li>Read the live word, character and space counts.</li><li>Click Clear to start again.</li></ol><h2>Frequently asked questions</h2><h3>How are words counted?</h3><p>Words are groups of characters separated by spaces or line breaks.</p><h3>Is there a word limit?</h3><p>There is no fixed limit, but very large texts may be slow to process in your browser.</p><h3>Is my text uploaded?</h3><p>No. Counting happens in your browser.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../text-tools/character-counter/">Character Counter</a><a href="../../text-tools/case-converter/">Case Converter</a><a href="../../text-tools/remove-spaces/">Remove Spaces</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></div>
+<script src="script.js"></script>
 </body>
 </html>

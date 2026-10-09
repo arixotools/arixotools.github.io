@@ -1,91 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        Age Calculator — Calculate Your Exact Age | ARIXO
-    </title>
-
-    <meta
-        name="description"
-        content="Calculate your exact age in years, months and days with ARIXO's free online Age Calculator. Fast, simple and easy to use."
-    >
-
-    <meta
-        name="keywords"
-        content="age calculator, exact age calculator, calculate age, date of birth calculator, age in years months days, online age calculator, ARIXO"
-    >
-
-    <meta
-        name="robots"
-        content="index, follow"
-    >
-
-    <meta
-        name="author"
-        content="ARIXO"
-    >
-
-    <meta
-        name="theme-color"
-        content="#05070d"
-    >
-
-    <!-- Open Graph -->
-    <meta
-        property="og:title"
-        content="Age Calculator — Calculate Your Exact Age | ARIXO"
-    >
-
-    <meta
-        property="og:description"
-        content="Calculate your exact age in years, months and days with ARIXO's free online Age Calculator."
-    >
-
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-    <meta
-        property="og:site_name"
-        content="ARIXO"
-    >
-
-    <meta
-        property="og:image"
-        content="../../../assets/images/arixo-og.png"
-    >
-
-    <meta
-        property="og:image:type"
-        content="image/png"
-    >
-
-    <meta
-        property="og:image:width"
-        content="1536"
-    >
-
-    <meta
-        property="og:image:height"
-        content="1024"
-    >
-
-    <!-- Styles -->
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
-    <!-- Breadcrumb Structured Data -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Age Calculator — Calculate Your Exact Age | ARIXO</title>
+<meta content="Calculate your exact age in years, months and days with ARIXO's free online Age Calculator. Fast, simple and easy to use." name="description"/>
+<meta content="age calculator, exact age calculator, calculate age, date of birth calculator, age in years months days, online age calculator, ARIXO" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<!-- Open Graph -->
+<meta content="Age Calculator — Calculate Your Exact Age | ARIXO" property="og:title"/>
+<meta content="Calculate your exact age in years, months and days with ARIXO's free online Age Calculator." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="../../../assets/images/arixo-og.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1536" property="og:image:width"/>
+<meta content="1024" property="og:image:height"/>
+<!-- Styles -->
+<link href="style.css" rel="stylesheet"/>
+<!-- Breadcrumb Structured Data -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -112,9 +48,8 @@
     ]
 }
 </script>
-
-    <!-- WebPage Structured Data -->
-    <script type="application/ld+json">
+<!-- WebPage Structured Data -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -127,152 +62,92 @@
         "inLanguage": "en"
     }
     </script>
-
-</head>
-
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is age calculated?", "acceptedAnswer": {"@type": "Answer", "text": "The calculator subtracts your date of birth from today's date and shows the difference in years, months and days."}}, {"@type": "Question", "name": "Can I calculate the age between two other dates?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use the Age Difference Calculator to find the gap between any two dates."}}, {"@type": "Question", "name": "Is my date of birth saved?", "acceptedAnswer": {"@type": "Answer", "text": "No. The calculation happens in your browser and nothing is sent to a server."}}]}</script></head>
 <body>
-
-    <main class="page">
-
-        <div class="card">
-
-            <div class="brand">
+<main class="page">
+<div class="card">
+<div class="brand">
                 ARIXO
             </div>
-
-            <div class="icon">
+<div class="icon">
                 🎂
             </div>
-
-            <h1>
+<h1>
                 Age Calculator
             </h1>
-
-            <p class="subtitle">
+<p class="subtitle">
                 Calculate your exact age from your date of birth.
             </p>
-
-            <div class="input-group">
-
-                <label for="birthDate">
+<div class="input-group">
+<label for="birthDate">
                     Date of Birth
                 </label>
-
-                <input
-                    type="date"
-                    id="birthDate"
-                    aria-label="Enter your date of birth"
-                >
-
-            </div>
-
-            <button id="calculateBtn">
+<input aria-label="Enter your date of birth" id="birthDate" type="date"/>
+</div>
+<button id="calculateBtn">
                 Calculate Age
             </button>
-
-            <button
-                id="clearBtn"
-                class="secondary"
-            >
+<button class="secondary" id="clearBtn">
                 Clear
             </button>
-
-            <div
-                id="result"
-                class="result"
-                aria-live="polite"
-            >
-
-                <div class="result-title">
+<div aria-live="polite" class="result" id="result">
+<div class="result-title">
                     Your Age
                 </div>
-
-                <div id="ageText">
+<div id="ageText">
                     Enter your date of birth.
                 </div>
-
-            </div>
-
-            <!-- SEO Content -->
-            <section class="seo-content">
-
-                <h2>
+</div>
+<!-- SEO Content -->
+<section class="seo-content">
+<h2>
                     Age Calculator
                 </h2>
-
-                <p>
+<p>
                     ARIXO Age Calculator helps you calculate your exact age
                     from your date of birth. Find your age in years, months
                     and days quickly and easily.
                 </p>
-
-                <h2>
+<h2>
                     How to Calculate Your Age
                 </h2>
-
-                <p>
+<p>
                     Enter your date of birth in the calculator above and
                     click the Calculate Age button. ARIXO calculates your
                     current age based on your selected date of birth.
                 </p>
-
-                <h2>
+<h2>
                     Why Use an Age Calculator?
                 </h2>
-
-                <p>
+<p>
                     An age calculator can help you check your exact age
                     when completing forms, applications, registrations and
                     other situations where your date of birth is required.
                 </p>
-
-            </section>
-
-            <!-- Related Tools -->
-            <section class="related-tools">
-
-                <h2>
+</section>
+<!-- Related Tools -->
+<section class="related-tools">
+<h2>
                     Related Calculators
                 </h2>
-
-                <div class="related-links">
-
-                    <a
-                        href="../percentage-calculator/index.html"
-                    >
+<div class="related-links">
+<a href="../percentage-calculator/index.html">
                         Percentage Calculator
                     </a>
-
-                    <a
-                        href="../bmi-calculator/index.html"
-                    >
+<a href="../bmi-calculator/index.html">
                         BMI Calculator
                     </a>
-
-                    <a
-                        href="../emi-calculator/index.html"
-                    >
+<a href="../emi-calculator/index.html">
                         EMI Calculator
                     </a>
-
-                </div>
-
-            </section>
-
-            <!-- Back Navigation -->
-            <a
-                class="back"
-                href="../../../../index.html"
-            >
+</div>
+</section>
+<!-- Back Navigation -->
+<a class="back" href="../../../index.html">
                 ← Back to ARIXO
             </a>
-
-        </div>
-
-    </main>
-
-    <script src="script.js"></script>
-
+</div>
+<section class="ax-seo"><h2>About the Age Calculator</h2><p>The Age Calculator works out your exact age from your date of birth, in years, months and days. It is useful for forms, school and job applications, eligibility checks and simple curiosity. Pick your date of birth, click Calculate and the result appears instantly. It uses today's date from your device.</p><h2>How to use</h2><ol><li>Select your date of birth.</li><li>Click Calculate.</li><li>Read your age in years, months and days.</li></ol><h2>Frequently asked questions</h2><h3>How is age calculated?</h3><p>The calculator subtracts your date of birth from today's date and shows the difference in years, months and days.</p><h3>Can I calculate the age between two other dates?</h3><p>Yes. Use the Age Difference Calculator to find the gap between any two dates.</p><h3>Is my date of birth saved?</h3><p>No. The calculation happens in your browser and nothing is sent to a server.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../date-time/age-difference/">Age Difference Calculator</a><a href="../../date-time/days-between-dates/">Days Between Dates</a><a href="../../calculators/bmi-calculator/">BMI Calculator</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></main>
+<script src="script.js"></script>
 </body>
-
 </html>

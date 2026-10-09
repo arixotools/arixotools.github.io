@@ -1,67 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>JSON Formatter — ARIXO</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JSON Formatter — Beautify &amp; Minify JSON Online | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free online JSON formatter. Beautify, minify and validate JSON instantly in your browser." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/developer-tools/json-formatter/" rel="canonical"/><meta content="JSON Formatter — Beautify &amp; Minify JSON Online | ARIXO" property="og:title"/><meta content="Free online JSON formatter. Beautify, minify and validate JSON instantly in your browser." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/developer-tools/json-formatter/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="JSON Formatter — Beautify &amp; Minify JSON Online | ARIXO" name="twitter:title"/><meta content="Free online JSON formatter. Beautify, minify and validate JSON instantly in your browser." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between format and minify?", "acceptedAnswer": {"@type": "Answer", "text": "Formatting adds indentation so people can read the data. Minifying removes spaces and line breaks to make it smaller for transfer."}}, {"@type": "Question", "name": "Why does my JSON show an error?", "acceptedAnswer": {"@type": "Answer", "text": "Common causes are missing quotes around keys, trailing commas, single quotes instead of double quotes, or unmatched brackets."}}, {"@type": "Question", "name": "Is my JSON sent to a server?", "acceptedAnswer": {"@type": "Answer", "text": "No. Formatting happens in your browser."}}]}</script></head>
 <body>
-
-    <div class="container">
-
-        <a class="back" href="../../../index.html">
+<div class="container">
+<a class="back" href="../../../index.html">
     ← Back to ARIXO
 </a>
-
-        <div class="card">
-
-            <div class="logo">ARIXO</div>
-
-            <h1>JSON Formatter</h1>
-
-            <p class="subtitle">
+<div class="card">
+<div class="logo">ARIXO</div>
+<h1>JSON Formatter</h1>
+<p class="subtitle">
                 Format, minify and validate JSON instantly.
             </p>
-
-            <textarea
-                id="jsonInput"
-                placeholder='Paste your JSON here...
+<textarea id="jsonInput" placeholder='Paste your JSON here...
 
 Example:
-{"name":"Arikul","age":20}'
-            ></textarea>
-
-            <div class="button-grid">
-
-                <button onclick="formatJSON()">
+{"name":"Arikul","age":20}'></textarea>
+<div class="button-grid">
+<button onclick="formatJSON()">
                     Format JSON
                 </button>
-
-                <button onclick="minifyJSON()">
+<button onclick="minifyJSON()">
                     Minify JSON
                 </button>
-
-                <button class="secondary" onclick="copyJSON()">
+<button class="secondary" onclick="copyJSON()">
                     Copy
                 </button>
-
-                <button class="clear-btn" onclick="clearTool()">
+<button class="clear-btn" onclick="clearTool()">
                     Clear
                 </button>
-
-            </div>
-
-            <div id="result"></div>
-
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
-
+</div>
+<div id="result"></div>
+</div>
+<section class="ax-seo"><h2>About the JSON Formatter</h2><p>The JSON Formatter makes messy JSON easy to read by adding indentation and line breaks, or shrinks it by removing whitespace. It also tells you when your JSON has a syntax error. Everything runs in your browser, so your data stays on your device.</p><h2>How to use</h2><ol><li>Paste your JSON into the input box.</li><li>Click Format JSON to beautify it, or Minify JSON to compress it.</li><li>Copy the result with the Copy button.</li></ol><h2>Frequently asked questions</h2><h3>What is the difference between format and minify?</h3><p>Formatting adds indentation so people can read the data. Minifying removes spaces and line breaks to make it smaller for transfer.</p><h3>Why does my JSON show an error?</h3><p>Common causes are missing quotes around keys, trailing commas, single quotes instead of double quotes, or unmatched brackets.</p><h3>Is my JSON sent to a server?</h3><p>No. Formatting happens in your browser.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../developer-tools/json-validator/">JSON Validator</a><a href="../../developer-tools/base64-encoder/">Base64 Encoder</a><a href="../../developer-tools/url-encoder/">URL Encoder</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></div>
+<script src="script.js"></script>
 </body>
 </html>

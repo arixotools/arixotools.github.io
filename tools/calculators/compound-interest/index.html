@@ -1,120 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compound Interest Calculator - ARIXO</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Compound Interest Calculator — Final Amount &amp; Interest | ARIXO</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/><meta content="Free compound interest calculator. Enter principal, rate, time and compounding frequency to get the interest earned and final amount." name="description"/><meta content="index, follow" name="robots"/><meta content="#05070d" name="theme-color"/><link href="https://arixotools.github.io/tools/calculators/compound-interest/" rel="canonical"/><meta content="Compound Interest Calculator — Final Amount &amp; Interest | ARIXO" property="og:title"/><meta content="Free compound interest calculator. Enter principal, rate, time and compounding frequency to get the interest earned and final amount." property="og:description"/><meta content="website" property="og:type"/><meta content="ARIXO" property="og:site_name"/><meta content="https://arixotools.github.io/tools/calculators/compound-interest/" property="og:url"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Compound Interest Calculator — Final Amount &amp; Interest | ARIXO" name="twitter:title"/><meta content="Free compound interest calculator. Enter principal, rate, time and compounding frequency to get the interest earned and final amount." name="twitter:description"/><meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the compound interest formula?", "acceptedAnswer": {"@type": "Answer", "text": "A = P × (1 + r/n)^(n×t), where P is the principal, r is the annual rate as a decimal, n is the number of compounding periods per year and t is the time in years. Compound interest is A minus P."}}, {"@type": "Question", "name": "Does more frequent compounding give more interest?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, slightly. Monthly compounding earns a little more than yearly compounding at the same rate, because interest is added to the balance more often."}}, {"@type": "Question", "name": "How is it different from simple interest?", "acceptedAnswer": {"@type": "Answer", "text": "Simple interest is calculated only on the original principal. Compound interest is calculated on the growing balance, so the gap widens the longer the money stays invested."}}]}</script></head>
 <body>
-
-    <main class="page">
-
-        <a href="../../../../index.html" class="back-btn">← Back to ARIXO</a>
-
-        <section class="calculator-card">
-
-            <div class="icon">📈</div>
-
-            <h1>Compound Interest Calculator</h1>
-
-            <p class="subtitle">
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="icon">📈</div>
+<h1>Compound Interest Calculator</h1>
+<p class="subtitle">
                 Calculate compound interest and the final amount with different compounding frequencies.
             </p>
-
-            <div class="input-group">
-                <label for="principal">Principal Amount (₹)</label>
-                <input
-                    type="number"
-                    id="principal"
-                    placeholder="Example: 50000"
-                    min="0"
-                    step="0.01"
-                >
-            </div>
-
-            <div class="input-group">
-                <label for="rate">Annual Interest Rate (%)</label>
-                <input
-                    type="number"
-                    id="rate"
-                    placeholder="Example: 8"
-                    min="0"
-                    step="0.01"
-                >
-            </div>
-
-            <div class="input-group">
-                <label for="time">Time (Years)</label>
-                <input
-                    type="number"
-                    id="time"
-                    placeholder="Example: 5"
-                    min="0"
-                    step="0.1"
-                >
-            </div>
-
-            <div class="input-group">
-                <label for="frequency">Compounding Frequency</label>
-
-                <select id="frequency">
-                    <option value="1">Annually</option>
-                    <option value="2">Half-Yearly</option>
-                    <option value="4">Quarterly</option>
-                    <option value="12" selected>Monthly</option>
-                    <option value="365">Daily</option>
-                </select>
-            </div>
-
-            <button id="calculateBtn" class="calculate-btn">
+<div class="input-group">
+<label for="principal">Principal Amount (₹)</label>
+<input id="principal" min="0" placeholder="Example: 50000" step="0.01" type="number"/>
+</div>
+<div class="input-group">
+<label for="rate">Annual Interest Rate (%)</label>
+<input id="rate" min="0" placeholder="Example: 8" step="0.01" type="number"/>
+</div>
+<div class="input-group">
+<label for="time">Time (Years)</label>
+<input id="time" min="0" placeholder="Example: 5" step="0.1" type="number"/>
+</div>
+<div class="input-group">
+<label for="frequency">Compounding Frequency</label>
+<select id="frequency">
+<option value="1">Annually</option>
+<option value="2">Half-Yearly</option>
+<option value="4">Quarterly</option>
+<option selected="" value="12">Monthly</option>
+<option value="365">Daily</option>
+</select>
+</div>
+<button class="calculate-btn" id="calculateBtn">
                 Calculate Compound Interest
             </button>
-
-            <button id="clearBtn" class="clear-btn">
+<button class="clear-btn" id="clearBtn">
                 Clear
             </button>
-
-            <div id="error" class="error"></div>
-
-            <div class="result-box">
-
-                <div class="main-result">
-                    <span>Compound Interest</span>
-                    <strong id="compoundInterest">₹0.00</strong>
-                </div>
-
-                <div class="result-row">
-                    <span>Principal Amount</span>
-                    <strong id="principalResult">₹0.00</strong>
-                </div>
-
-                <div class="result-row">
-                    <span>Interest Rate</span>
-                    <strong id="rateResult">0%</strong>
-                </div>
-
-                <div class="result-row">
-                    <span>Time</span>
-                    <strong id="timeResult">0 Years</strong>
-                </div>
-
-                <div class="result-row">
-                    <span>Final Amount</span>
-                    <strong id="finalAmount">₹0.00</strong>
-                </div>
-
-            </div>
-
-            <div class="formula-box">
-                <strong>Formula</strong>
-                <span>A = P(1 + R/n)<sup>nt</sup></span>
-            </div>
-
-        </section>
-
-    </main>
-
-    <script src="script.js"></script>
+<div class="error" id="error"></div>
+<div class="result-box">
+<div class="main-result">
+<span>Compound Interest</span>
+<strong id="compoundInterest">₹0.00</strong>
+</div>
+<div class="result-row">
+<span>Principal Amount</span>
+<strong id="principalResult">₹0.00</strong>
+</div>
+<div class="result-row">
+<span>Interest Rate</span>
+<strong id="rateResult">0%</strong>
+</div>
+<div class="result-row">
+<span>Time</span>
+<strong id="timeResult">0 Years</strong>
+</div>
+<div class="result-row">
+<span>Final Amount</span>
+<strong id="finalAmount">₹0.00</strong>
+</div>
+</div>
+<div class="formula-box">
+<strong>Formula</strong>
+<span>A = P(1 + R/n)<sup>nt</sup></span>
+</div>
+</section>
+<section class="ax-seo"><h2>About the Compound Interest Calculator</h2><p>Compound interest means you earn interest on your original money and also on the interest added earlier. That is why savings and investments can grow faster over time than with simple interest. This calculator supports yearly, half-yearly, quarterly, monthly and daily compounding, so you can compare how the frequency changes your final amount.</p><h2>How to use</h2><ol><li>Enter the principal amount.</li><li>Enter the annual interest rate and the time in years.</li><li>Pick the compounding frequency and click Calculate Compound Interest.</li></ol><h2>Frequently asked questions</h2><h3>What is the compound interest formula?</h3><p>A = P × (1 + r/n)^(n×t), where P is the principal, r is the annual rate as a decimal, n is the number of compounding periods per year and t is the time in years. Compound interest is A minus P.</p><h3>Does more frequent compounding give more interest?</h3><p>Yes, slightly. Monthly compounding earns a little more than yearly compounding at the same rate, because interest is added to the balance more often.</p><h3>How is it different from simple interest?</h3><p>Simple interest is calculated only on the original principal. Compound interest is calculated on the growing balance, so the gap widens the longer the money stays invested.</p></section><section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/simple-interest/">Simple Interest Calculator</a><a href="../../calculators/emi-calculator/">EMI Calculator</a><a href="../../calculators/percentage-calculator/">Percentage Calculator</a></div></section><footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></main>
+<script src="script.js"></script>
 </body>
 </html>

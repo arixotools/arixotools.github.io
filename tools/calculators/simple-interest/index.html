@@ -1,85 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Simple Interest Calculator — Calculate Simple Interest Online | ARIXO</title>
-
-    <meta
-        name="description"
-        content="Use ARIXO's free Simple Interest Calculator to calculate simple interest and total amount quickly using principal, interest rate and time."
-    >
-
-    <meta
-        name="keywords"
-        content="simple interest calculator, simple interest formula, SI calculator, interest calculator, simple interest online calculator, ARIXO"
-    >
-
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="ARIXO">
-    <meta name="theme-color" content="#05070d">
-
-    <link
-        rel="canonical"
-        href="https://arixotools.github.io/tools/calculators/simple-interest/"
-    >
-
-    <!-- Open Graph -->
-    <meta
-        property="og:title"
-        content="Simple Interest Calculator — Calculate Simple Interest Online | ARIXO"
-    >
-
-    <meta
-        property="og:description"
-        content="Calculate simple interest and total amount easily with ARIXO's free online Simple Interest Calculator."
-    >
-
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ARIXO">
-
-    <meta
-        property="og:url"
-        content="https://arixotools.github.io/tools/calculators/simple-interest/"
-    >
-
-    <meta
-        property="og:image"
-        content="https://arixotools.github.io/assets/images/arixo-og.png"
-    >
-
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1536">
-    <meta property="og:image:height" content="1024">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-
-    <meta
-        name="twitter:title"
-        content="Simple Interest Calculator | ARIXO"
-    >
-
-    <meta
-        name="twitter:description"
-        content="Calculate simple interest and total amount online with ARIXO."
-    >
-
-    <meta
-        name="twitter:image"
-        content="https://arixotools.github.io/assets/images/arixo-og.png"
-    >
-
-    <!-- Favicon -->
-    <link
-        rel="icon"
-        type="image/jpeg"
-        href="../../../assets/images/arixo-favicon.jpeg"
-    >
-
-    <!-- WebPage Structured Data -->
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Simple Interest Calculator — Calculate Simple Interest Online | ARIXO</title>
+<meta content="Use ARIXO's free Simple Interest Calculator to calculate simple interest and total amount quickly using principal, interest rate and time." name="description"/>
+<meta content="simple interest calculator, simple interest formula, SI calculator, interest calculator, simple interest online calculator, ARIXO" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/calculators/simple-interest/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Simple Interest Calculator — Calculate Simple Interest Online | ARIXO" property="og:title"/>
+<meta content="Calculate simple interest and total amount easily with ARIXO's free online Simple Interest Calculator." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/calculators/simple-interest/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1536" property="og:image:width"/>
+<meta content="1024" property="og:image:height"/>
+<!-- Twitter -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Simple Interest Calculator | ARIXO" name="twitter:title"/>
+<meta content="Calculate simple interest and total amount online with ARIXO." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<!-- Favicon -->
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<!-- WebPage Structured Data -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -93,9 +43,8 @@
         }
     }
     </script>
-
-    <!-- Breadcrumb Structured Data -->
-    <script type="application/ld+json">
+<!-- Breadcrumb Structured Data -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -121,9 +70,8 @@
         ]
     }
     </script>
-
-    <!-- FAQ Structured Data -->
-    <script type="application/ld+json">
+<!-- FAQ Structured Data -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -163,254 +111,157 @@
         ]
     }
     </script>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
+<link href="style.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/></head>
 <body>
-
-    <main class="page">
-
-        <a href="../../../../index.html" class="back-btn">
+<main class="page">
+<a class="back-btn" href="../../../index.html">
             ← Back to ARIXO
         </a>
-
-        <section class="calculator-card">
-
-            <div class="brand">ARIXO</div>
-
-            <div class="icon">💰</div>
-
-            <h1>Simple Interest Calculator</h1>
-
-            <p class="subtitle">
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon">💰</div>
+<h1>Simple Interest Calculator</h1>
+<p class="subtitle">
                 Calculate simple interest and the total amount easily.
             </p>
-
-            <div class="calculator-box">
-
-                <div class="input-group">
-                    <label for="principal">
+<div class="calculator-box">
+<div class="input-group">
+<label for="principal">
                         Principal Amount (₹)
                     </label>
-
-                    <input
-                        type="number"
-                        id="principal"
-                        placeholder="Example: 50000"
-                        min="0"
-                        step="0.01"
-                    >
-                </div>
-
-                <div class="input-group">
-                    <label for="rate">
+<input id="principal" min="0" placeholder="Example: 50000" step="0.01" type="number"/>
+</div>
+<div class="input-group">
+<label for="rate">
                         Annual Interest Rate (%)
                     </label>
-
-                    <input
-                        type="number"
-                        id="rate"
-                        placeholder="Example: 8"
-                        min="0"
-                        step="0.01"
-                    >
-                </div>
-
-                <div class="input-group">
-                    <label for="time">
+<input id="rate" min="0" placeholder="Example: 8" step="0.01" type="number"/>
+</div>
+<div class="input-group">
+<label for="time">
                         Time (Years)
                     </label>
-
-                    <input
-                        type="number"
-                        id="time"
-                        placeholder="Example: 3"
-                        min="0"
-                        step="0.1"
-                    >
-                </div>
-
-                <button id="calculateBtn" class="calculate-btn">
+<input id="time" min="0" placeholder="Example: 3" step="0.1" type="number"/>
+</div>
+<button class="calculate-btn" id="calculateBtn">
                     Calculate Interest
                 </button>
-
-                <button id="clearBtn" class="clear-btn">
+<button class="clear-btn" id="clearBtn">
                     Clear
                 </button>
-
-                <div
-                    id="error"
-                    class="error"
-                    aria-live="polite"
-                ></div>
-
-                <div class="result-box">
-
-                    <div class="main-result">
-                        <span>Simple Interest</span>
-                        <strong id="simpleInterest">₹0.00</strong>
-                    </div>
-
-                    <div class="result-row">
-                        <span>Principal Amount</span>
-                        <strong id="principalResult">₹0.00</strong>
-                    </div>
-
-                    <div class="result-row">
-                        <span>Interest Rate</span>
-                        <strong id="rateResult">0%</strong>
-                    </div>
-
-                    <div class="result-row">
-                        <span>Time</span>
-                        <strong id="timeResult">0 Years</strong>
-                    </div>
-
-                    <div class="result-row">
-                        <span>Total Amount</span>
-                        <strong id="totalAmount">₹0.00</strong>
-                    </div>
-
-                </div>
-
-                <div class="formula-box">
-                    <strong>Simple Interest Formula</strong>
-                    <span>SI = (P × R × T) ÷ 100</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SEO CONTENT -->
-
-        <section class="seo-content">
-
-            <h2>How to Use the Simple Interest Calculator</h2>
-
-            <p>
+<div aria-live="polite" class="error" id="error"></div>
+<div class="result-box">
+<div class="main-result">
+<span>Simple Interest</span>
+<strong id="simpleInterest">₹0.00</strong>
+</div>
+<div class="result-row">
+<span>Principal Amount</span>
+<strong id="principalResult">₹0.00</strong>
+</div>
+<div class="result-row">
+<span>Interest Rate</span>
+<strong id="rateResult">0%</strong>
+</div>
+<div class="result-row">
+<span>Time</span>
+<strong id="timeResult">0 Years</strong>
+</div>
+<div class="result-row">
+<span>Total Amount</span>
+<strong id="totalAmount">₹0.00</strong>
+</div>
+</div>
+<div class="formula-box">
+<strong>Simple Interest Formula</strong>
+<span>SI = (P × R × T) ÷ 100</span>
+</div>
+</div>
+</section>
+<!-- SEO CONTENT -->
+<section class="seo-content">
+<h2>How to Use the Simple Interest Calculator</h2>
+<p>
                 ARIXO's Simple Interest Calculator helps you calculate
                 interest and the total amount quickly. Enter the principal
                 amount, annual interest rate and loan or investment period.
             </p>
-
-            <ol>
-                <li>Enter the original principal amount.</li>
-                <li>Enter the annual interest rate.</li>
-                <li>Enter the time period in years.</li>
-                <li>Click <strong>Calculate Interest</strong>.</li>
-                <li>View the simple interest and total amount.</li>
-            </ol>
-
-        </section>
-
-
-        <section class="seo-content">
-
-            <h2>Simple Interest Formula</h2>
-
-            <p>
+<ol>
+<li>Enter the original principal amount.</li>
+<li>Enter the annual interest rate.</li>
+<li>Enter the time period in years.</li>
+<li>Click <strong>Calculate Interest</strong>.</li>
+<li>View the simple interest and total amount.</li>
+</ol>
+</section>
+<section class="seo-content">
+<h2>Simple Interest Formula</h2>
+<p>
                 Simple interest is calculated using the original principal
                 amount throughout the entire period.
             </p>
-
-            <div class="formula-box large-formula">
-                <strong>SI = (P × R × T) ÷ 100</strong>
-
-                <span>
-                    P = Principal Amount<br>
-                    R = Annual Interest Rate<br>
+<div class="formula-box large-formula">
+<strong>SI = (P × R × T) ÷ 100</strong>
+<span>
+                    P = Principal Amount<br/>
+                    R = Annual Interest Rate<br/>
                     T = Time in Years
                 </span>
-            </div>
-
-            <p>
+</div>
+<p>
                 The total amount is calculated as:
             </p>
-
-            <div class="formula-box large-formula">
-                <strong>Total Amount = P + SI</strong>
-            </div>
-
-        </section>
-
-
-        <section class="seo-content">
-
-            <h2>Why Use a Simple Interest Calculator?</h2>
-
-            <p>
+<div class="formula-box large-formula">
+<strong>Total Amount = P + SI</strong>
+</div>
+</section>
+<section class="seo-content">
+<h2>Why Use a Simple Interest Calculator?</h2>
+<p>
                 Calculating interest manually can take time. This calculator
                 provides a quick estimate and reduces calculation errors.
             </p>
-
-            <ul>
-                <li>Quickly calculate simple interest.</li>
-                <li>Find the total repayment or final amount.</li>
-                <li>Useful for loans and basic financial calculations.</li>
-                <li>Helpful for students learning interest formulas.</li>
-                <li>Works directly in your browser.</li>
-            </ul>
-
-        </section>
-
-
-        <section class="seo-content">
-
-            <h2>Where Is Simple Interest Used?</h2>
-
-            <p>
+<ul>
+<li>Quickly calculate simple interest.</li>
+<li>Find the total repayment or final amount.</li>
+<li>Useful for loans and basic financial calculations.</li>
+<li>Helpful for students learning interest formulas.</li>
+<li>Works directly in your browser.</li>
+</ul>
+</section>
+<section class="seo-content">
+<h2>Where Is Simple Interest Used?</h2>
+<p>
                 Simple interest calculations can be useful for basic loan
                 estimates, short-term borrowing, savings calculations and
                 mathematics problems. The exact interest method used by a
                 financial institution may differ, so always check the terms
                 of the relevant loan or investment.
             </p>
-
-        </section>
-
-
-        <!-- RELATED TOOLS -->
-
-        <section class="related-tools">
-
-            <h2>Related Calculators</h2>
-
-            <div class="related-links">
-
-                <a href="../compound-interest/">
+</section>
+<!-- RELATED TOOLS -->
+<section class="related-tools">
+<h2>Related Calculators</h2>
+<div class="related-links">
+<a href="../compound-interest/">
                     Compound Interest Calculator
                 </a>
-
-                <a href="../emi-calculator/">
+<a href="../emi-calculator/">
                     EMI Calculator
                 </a>
-
-                <a href="../loan-calculator/">
+<a href="../loan-calculator/">
                     Loan Calculator
                 </a>
-
-                <a href="../percentage-calculator/">
+<a href="../percentage-calculator/">
                     Percentage Calculator
                 </a>
-
-            </div>
-
-        </section>
-
-
-        <a
-            href="../../../../index.html"
-            class="bottom-back"
-        >
+</div>
+</section>
+<a class="bottom-back" href="../../../index.html">
             ← Back to ARIXO
         </a>
-
-    </main>
-
-    <script src="script.js"></script>
-
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer></main>
+<script src="script.js"></script>
 </body>
 </html>
