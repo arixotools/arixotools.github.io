@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorem Ipsum Generator — Paragraphs, Sentences &amp; Words | ARIXO</title>
+<meta name="description" content="Free Lorem Ipsum generator. Create placeholder text by paragraphs, sentences or words, with the classic opening line, and copy it in one click.">
+<meta name="keywords" content="lorem ipsum generator, lorem ipsum text, placeholder text generator, dummy text generator, random lorem ipsum, lorem ipsum paragraphs">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/text-tools/lorem-ipsum-generator/">
+<meta property="og:title" content="Lorem Ipsum Generator — Paragraphs, Sentences &amp; Words | ARIXO">
+<meta property="og:description" content="Free Lorem Ipsum generator. Create placeholder text by paragraphs, sentences or words, with the classic opening line, and copy it in one click.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/text-tools/lorem-ipsum-generator/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lorem Ipsum Generator — Paragraphs, Sentences &amp; Words | ARIXO">
+<meta name="twitter:description" content="Free Lorem Ipsum generator. Create placeholder text by paragraphs, sentences or words, with the classic opening line, and copy it in one click.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Lorem Ipsum Generator",
+  "url": "https://arixotools.github.io/tools/text-tools/lorem-ipsum-generator/",
+  "description": "Free Lorem Ipsum generator. Create placeholder text by paragraphs, sentences or words, with the classic opening line, and copy it in one click.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lorem Ipsum Generator",
+      "item": "https://arixotools.github.io/tools/text-tools/lorem-ipsum-generator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does Lorem Ipsum mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It has no real meaning. It is scrambled Latin adapted from a classical text and used only as filler so people focus on the design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Lorem Ipsum free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The text is not under copyright and you can use the generated placeholder in any project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the text start with “Lorem ipsum dolor sit amet”?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That opening line is the traditional start of Lorem Ipsum. You can switch it off to get fully random text."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the output the same every time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Each click produces a new random arrangement of words, although the first sentence stays the same when the classic opening is on."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I generate text in other languages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This tool produces the classic Latin-style placeholder only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once the page has loaded, generation happens in your browser and does not need the internet."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">¶</div>
+<h1>Lorem Ipsum Generator</h1>
+<p class="subtitle">Generate placeholder text for designs, mockups and templates in the length you need.</p>
+<div class="tool-box">
+<div class="row2">
+<div class="input-group"><label for="loremType">Generate</label><select id="loremType"><option value="paragraphs" selected>Paragraphs</option><option value="sentences">Sentences</option><option value="words">Words</option></select></div>
+<div class="input-group"><label for="loremCount">How many</label><input id="loremCount" type="number" min="1" step="1" inputmode="numeric" value="3"></div>
+</div>
+<label class="check"><input type="checkbox" id="classic" checked> Start with “Lorem ipsum dolor sit amet…”</label>
+<button class="btn calculate-btn" id="genBtn" type="button">Generate text</button>
+<div class="error" id="error" role="alert"></div>
+<div class="input-group" style="margin-top:12px"><label for="output">Your text</label><textarea id="output" readonly rows="10"></textarea></div>
+<div class="line" id="stats"></div>
+<button class="btn ghost-btn" id="copyBtn" type="button">Copy text</button>
+</div>
+<p class="note">The text is generated in your browser from a bank of Latin words. Nothing is sent to a server.</p>
+</section>
+<section class="ax-seo">
+<h2>What is Lorem Ipsum?</h2><p>Lorem Ipsum is placeholder text that designers and developers use to fill a layout before the real content is ready. Because the words carry no meaning, nobody reads the copy instead of judging the design. The wording is adapted from a passage in Cicero's <em>De finibus bonorum et malorum</em>, written in 45 BC, and has been used in typesetting for centuries.</p><h2>How to use the generator</h2><ol><li>Choose whether you want paragraphs, sentences or words.</li><li>Enter how many you need. The limits are 50 paragraphs, 200 sentences or 5,000 words.</li><li>Keep the classic opening line switched on if you want the text to begin with “Lorem ipsum dolor sit amet”, or turn it off for fully random text.</li><li>Click <strong>Generate text</strong>, then <strong>Copy text</strong> and paste it where you need it.</li></ol><h2>Why designers use placeholder text</h2><p>Real copy pulls attention away from layout. Placeholder text lets you judge spacing, type size, line length and hierarchy on their own, and it lets designers and developers keep working while writers finish the content. It is also useful for filling templates, testing fonts and showing clients how a page will feel once the words arrive.</p><h2>Handy lengths for real layouts</h2><div class="tscroll"><table class="data"><thead><tr><th>Where it goes</th><th>Typical length</th></tr></thead><tbody><tr><td>Headline</td><td>5 to 10 words</td></tr><tr><td>Button or short label</td><td>1 to 3 words</td></tr><tr><td>Meta description</td><td>About 20 to 25 words (150 to 160 characters)</td></tr><tr><td>Card or teaser text</td><td>1 to 2 sentences</td></tr><tr><td>Body paragraph</td><td>40 to 80 words</td></tr><tr><td>Article section</td><td>3 to 5 paragraphs</td></tr></tbody></table></div><h2>Tips for using placeholder text</h2><ul><li><strong>Match the real length.</strong> Placeholder that is much shorter or longer than final copy hides layout problems.</li><li><strong>Replace it before launch.</strong> Leftover dummy text on a live page looks unfinished and gives search engines nothing useful.</li><li><strong>Test long and short.</strong> Try a very short and a very long version to see how your design copes.</li><li><strong>Count as you go.</strong> The <a href="../../text-tools/word-counter/">Word Counter</a> and <a href="../../text-tools/character-counter/">Character Counter</a> help when you need an exact size.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What does Lorem Ipsum mean?</h3><p>It has no real meaning. It is scrambled Latin adapted from a classical text and used only as filler so people focus on the design.</p><h3>Is Lorem Ipsum free to use?</h3><p>Yes. The text is not under copyright and you can use the generated placeholder in any project.</p><h3>Why does the text start with “Lorem ipsum dolor sit amet”?</h3><p>That opening line is the traditional start of Lorem Ipsum. You can switch it off to get fully random text.</p><h3>Is the output the same every time?</h3><p>No. Each click produces a new random arrangement of words, although the first sentence stays the same when the classic opening is on.</p><h3>Can I generate text in other languages?</h3><p>This tool produces the classic Latin-style placeholder only.</p><h3>Does it work offline?</h3><p>Once the page has loaded, generation happens in your browser and does not need the internet.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../text-tools/word-counter/">Word Counter</a><a href="../../text-tools/character-counter/">Character Counter</a><a href="../../text-tools/case-converter/">Case Converter</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

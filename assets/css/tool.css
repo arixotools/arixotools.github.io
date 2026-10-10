@@ -1,0 +1,70 @@
+/* ARIXO shared tool-page styles (used by the newer tools) */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:#fff;background:radial-gradient(circle at 15% 15%,rgba(0,229,255,.12),transparent 30%),radial-gradient(circle at 85% 80%,rgba(0,119,255,.12),transparent 30%),#05070d}
+.page{width:min(900px,92%);margin:0 auto;padding:28px 0 50px}
+.back-btn{display:inline-block;margin-bottom:22px;color:#00e5ff;text-decoration:none;font-weight:700}
+.back-btn:hover{color:#7df5ff}
+.calculator-card{position:relative;padding:32px;border-radius:26px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.11);box-shadow:0 25px 70px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06);overflow:hidden}
+.calculator-card::before{content:"";position:absolute;top:-100px;right:-100px;width:240px;height:240px;border-radius:50%;background:rgba(0,229,255,.08);filter:blur(40px);pointer-events:none}
+.brand{position:relative;margin-bottom:20px;color:#00e5ff;font-size:14px;font-weight:900;letter-spacing:4px}
+.icon{position:relative;width:64px;height:64px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;border-radius:18px;background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.18);font-size:26px;font-weight:800;color:#00e5ff}
+h1{position:relative;margin:0 0 10px;font-size:clamp(30px,5vw,44px);line-height:1.12}
+.subtitle{position:relative;max-width:680px;margin:0 0 26px;color:rgba(255,255,255,.7);line-height:1.6}
+.tool-box{position:relative}
+.input-group{margin-bottom:16px}
+.input-group label,.lbl{display:block;margin-bottom:8px;font-size:14px;font-weight:700;color:rgba(255,255,255,.85)}
+.input-group input,.input-group select,.input-group textarea,.field{width:100%;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(2,6,23,.65);color:#fff;font-size:16px;font-family:inherit;outline:none}
+.input-group select option{background:#0b1220;color:#fff}
+.input-group textarea{min-height:140px;resize:vertical;line-height:1.5}
+.input-group input:focus,.input-group select:focus,.input-group textarea:focus{border-color:#00e5ff;box-shadow:0 0 0 3px rgba(0,229,255,.18)}
+.hint{margin-top:6px;font-size:12.5px;color:rgba(255,255,255,.5)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.row3{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border:0;border-radius:14px;font-size:16px;font-weight:800;cursor:pointer;font-family:inherit}
+.calculate-btn{width:100%;margin-top:6px;color:#021018;background:linear-gradient(135deg,#00e5ff,#3b82f6)}
+.clear-btn,.ghost-btn{width:100%;margin-top:10px;color:#fff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible,.tab:focus-visible,.copy:focus-visible,a:focus-visible{outline:3px solid #7df5ff;outline-offset:2px}
+.swap{width:50px;padding:0;margin:0;background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.25);color:#00e5ff;font-size:20px}
+.error{min-height:20px;margin-top:12px;color:#ff7b7b;font-size:14px}
+.result-box{margin-top:12px;display:none;gap:12px}
+.result-box.show{display:grid}
+.result-item{padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09)}
+.result-item span{display:block;margin-bottom:6px;font-size:13px;color:rgba(255,255,255,.6)}
+.result-item strong{font-size:22px}
+.main-result{background:rgba(0,229,255,.08);border-color:rgba(0,229,255,.3)}
+.main-result strong{font-size:30px;color:#00e5ff}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bar{height:12px;border-radius:99px;background:rgba(0,229,255,.28);overflow:hidden}
+.bar i{display:block;height:100%;background:#3b82f6}
+.legend{margin-top:8px;font-size:13px;color:rgba(255,255,255,.6)}
+.tabs{display:flex;gap:8px;margin-bottom:18px;padding:5px;border-radius:14px;background:rgba(2,6,23,.6);border:1px solid rgba(255,255,255,.1)}
+.tab{flex:1;min-height:44px;border:0;border-radius:10px;background:transparent;color:rgba(255,255,255,.7);font-size:15px;font-weight:800;cursor:pointer;font-family:inherit}
+.tab.active{color:#021018;background:linear-gradient(135deg,#00e5ff,#3b82f6)}
+.fields[hidden]{display:none}
+details.table-wrap{margin-top:14px;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03)}
+details.table-wrap summary{cursor:pointer;padding:14px 16px;font-weight:700;color:#00e5ff}
+.tscroll{overflow-x:auto;padding:0 8px 8px}
+table.data{width:100%;border-collapse:collapse;font-size:14px}
+table.data th,table.data td{padding:10px 12px;text-align:right;border-bottom:1px solid rgba(255,255,255,.07);white-space:nowrap}
+table.data th:first-child,table.data td:first-child{text-align:left}
+table.data th{color:rgba(255,255,255,.6);font-weight:700}
+table.data tr.hit td{color:#00e5ff;font-weight:800}
+.note{margin-top:18px;font-size:13px;line-height:1.6;color:rgba(255,255,255,.55)}
+.hash-row{margin-bottom:12px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09)}
+.hash-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-weight:800;font-size:14px}
+.copy{min-height:34px;padding:0 14px;border:1px solid rgba(0,229,255,.3);border-radius:10px;background:rgba(0,229,255,.08);color:#00e5ff;font-weight:700;cursor:pointer;font-family:inherit}
+.hash-val{display:block;min-height:20px;font-family:Consolas,Menlo,monospace;font-size:13px;line-height:1.5;color:rgba(255,255,255,.85);word-break:break-all}
+.check{display:flex;align-items:center;gap:10px;margin:4px 0 14px;font-size:14px;color:rgba(255,255,255,.8)}
+.check input{width:18px;height:18px;accent-color:#00e5ff}
+.big{font-size:clamp(22px,5vw,30px);font-weight:800;color:#00e5ff;line-height:1.25}
+.line{color:rgba(255,255,255,.6);font-size:14px;margin-bottom:6px}
+.formula-box{margin:12px 0 16px;padding:16px 18px;border-radius:14px;background:rgba(0,229,255,.06);border:1px solid rgba(0,229,255,.2);font-size:15px;line-height:1.7;overflow-x:auto}
+.ax-seo table.data{margin:10px 0 16px}
+.ax-seo table.data th,.ax-seo table.data td{color:rgba(255,255,255,.78)}
+@media(max-width:560px){.calculator-card{padding:22px}.row2,.result-grid{grid-template-columns:1fr}.row3{grid-template-columns:1fr}.swap{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.ax-seo code{font-family:Consolas,Menlo,monospace;font-size:13px;color:#7df5ff;word-break:break-all;overflow-wrap:anywhere}
+.ax-seo p,.ax-seo li{overflow-wrap:anywhere}
+.ax-seo a{color:#00e5ff}.ax-seo a:hover{color:#7df5ff}

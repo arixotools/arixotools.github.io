@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FD &amp; RD Calculator — Maturity Amount &amp; Interest | ARIXO</title>
+<meta name="description" content="Free FD and RD calculator. Work out maturity amount and interest for a fixed deposit or recurring deposit with quarterly, monthly or yearly compounding.">
+<meta name="keywords" content="FD calculator, RD calculator, fixed deposit calculator, recurring deposit calculator, FD maturity amount, RD maturity calculator, bank FD interest">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/calculators/fd-rd-calculator/">
+<meta property="og:title" content="FD &amp; RD Calculator — Maturity Amount &amp; Interest | ARIXO">
+<meta property="og:description" content="Free FD and RD calculator. Work out maturity amount and interest for a fixed deposit or recurring deposit with quarterly, monthly or yearly compounding.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/calculators/fd-rd-calculator/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FD &amp; RD Calculator — Maturity Amount &amp; Interest | ARIXO">
+<meta name="twitter:description" content="Free FD and RD calculator. Work out maturity amount and interest for a fixed deposit or recurring deposit with quarterly, monthly or yearly compounding.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "FD & RD Calculator",
+  "url": "https://arixotools.github.io/tools/calculators/fd-rd-calculator/",
+  "description": "Free FD and RD calculator. Work out maturity amount and interest for a fixed deposit or recurring deposit with quarterly, monthly or yearly compounding.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "FD & RD Calculator",
+      "item": "https://arixotools.github.io/tools/calculators/fd-rd-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is FD maturity amount calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculator uses A = P × (1 + r/n)^(n×t), where n is how many times interest is compounded each year. Most banks use quarterly compounding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is RD interest calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each monthly instalment earns interest for the months it remains deposited, with interest compounded quarterly in most banks. The calculator adds up the growth of every instalment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which compounding should I choose for an FD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose the option your bank states in its deposit terms. If you are unsure, quarterly is the most common in India."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my bank show a slightly different amount?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Banks can round interest, apply day counts, or use different compounding dates, so small differences are normal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I break an FD or RD early?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most banks charge a penalty and pay a lower rate. Check your deposit terms before withdrawing early."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the interest taxable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Interest from FDs and RDs is generally added to your income and taxed as per your slab. Speak to a tax professional for your situation."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">FD</div>
+<h1>FD &amp; RD Calculator</h1>
+<p class="subtitle">Calculate the maturity amount and interest on a fixed deposit or a recurring deposit.</p>
+<div class="tool-box">
+<div class="tabs" role="tablist" aria-label="Deposit type">
+<button class="tab active" id="tabFd" type="button" role="tab">Fixed deposit (FD)</button>
+<button class="tab" id="tabRd" type="button" role="tab">Recurring deposit (RD)</button>
+</div>
+<div class="fields" id="fdFields">
+<div class="row2">
+<div class="input-group"><label for="fdAmount">Deposit amount (₹)</label><input id="fdAmount" type="number" min="1" inputmode="decimal" placeholder="Example: 100000"></div>
+<div class="input-group"><label for="fdRate">Annual interest rate (%)</label><input id="fdRate" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Example: 7"></div>
+</div>
+<div class="row2">
+<div class="input-group"><label for="fdTenure">Tenure</label><input id="fdTenure" type="number" min="1" step="1" inputmode="decimal" placeholder="Example: 5"></div>
+<div class="input-group"><label for="fdUnit">Tenure unit</label><select id="fdUnit"><option value="years">Years</option><option value="months">Months</option></select></div>
+</div>
+<div class="input-group"><label for="fdCompound">Interest compounding</label><select id="fdCompound"><option value="4" selected>Quarterly (most banks)</option><option value="12">Monthly</option><option value="2">Half-yearly</option><option value="1">Yearly</option><option value="0">Simple interest at maturity</option></select></div>
+</div>
+<div class="fields" id="rdFields" hidden>
+<div class="row2">
+<div class="input-group"><label for="rdAmount">Monthly deposit (₹)</label><input id="rdAmount" type="number" min="1" inputmode="decimal" placeholder="Example: 5000"></div>
+<div class="input-group"><label for="rdRate">Annual interest rate (%)</label><input id="rdRate" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Example: 6.5"></div>
+</div>
+<div class="input-group"><label for="rdMonths">Tenure (months)</label><input id="rdMonths" type="number" min="1" step="1" inputmode="decimal" placeholder="Example: 24"></div>
+</div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate maturity amount</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div class="result-box" id="result" aria-live="polite">
+<div class="result-item main-result"><span>Maturity amount</span><strong id="maturity">₹0</strong></div>
+<div class="result-grid">
+<div class="result-item"><span id="labelInvested">Amount deposited</span><strong id="invested">₹0</strong></div>
+<div class="result-item"><span>Interest earned</span><strong id="interest">₹0</strong></div>
+</div>
+</div>
+</div>
+<p class="note">Results are estimates. Banks may round differently, use day counts, or change rates, and early withdrawal usually carries a penalty. Confirm the exact figure with your bank.</p>
+</section>
+<section class="ax-seo">
+<h2>FD and RD calculator for Indian bank deposits</h2><p>A fixed deposit (FD) locks one lump sum for a set period at a fixed interest rate. A recurring deposit (RD) lets you save a fixed amount every month and earn interest on each instalment for the time it stays in the account. Both are popular low-risk ways to save, and this calculator handles them in one place so you can compare maturity amounts side by side.</p>
+<p>Most Indian banks compound deposit interest quarterly, so that is the default here. You can switch the FD to monthly, half-yearly or yearly compounding, or to simple interest paid at maturity.</p><h2>How to use it</h2><ol><li>Choose <strong>Fixed deposit</strong> or <strong>Recurring deposit</strong>.</li><li>For an FD, enter the amount, interest rate, tenure and compounding. For an RD, enter the monthly deposit, interest rate and number of months.</li><li>Click <strong>Calculate maturity amount</strong>.</li><li>Read the maturity amount, the total deposited and the interest earned.</li></ol><h2>Formulas used</h2><p><strong>Fixed deposit:</strong></p>
+<div class="formula-box"><strong>A = P × (1 + r ÷ n)<sup>n × t</sup></strong><br>P = deposit, r = annual rate as a decimal, n = compounding periods per year, t = years</div>
+<p><strong>Recurring deposit (quarterly compounding):</strong> each monthly instalment is treated as deposited at the start of the month and compounded for the number of quarters it stays in the account. This matches the standard bank formula M = R × [(1 + i)<sup>n</sup> − 1] ÷ [1 − (1 + i)<sup>−1/3</sup>], where R is the monthly deposit, i is the annual rate ÷ 400 and n is the number of quarters.</p><h2>Worked examples</h2><p><strong>FD:</strong> ₹1,00,000 at 7% for 5 years with quarterly compounding grows to about ₹1,41,478, so the interest is about ₹41,478. With simple interest at maturity, the same deposit gives ₹1,35,000.</p>
+<p><strong>RD:</strong> ₹1,000 a month at 6% for 12 months means you deposit ₹12,000 and receive about ₹12,395, an interest of about ₹395.</p><h2>FD vs RD at a glance</h2><div class="tscroll"><table class="data"><thead><tr><th></th><th>Fixed deposit</th><th>Recurring deposit</th></tr></thead><tbody><tr><td>How you deposit</td><td>One lump sum</td><td>A fixed amount every month</td></tr><tr><td>Best for</td><td>Money you already have</td><td>Building a habit from monthly income</td></tr><tr><td>Interest</td><td>On the full amount from day one</td><td>On each instalment from its deposit date</td></tr><tr><td>Typical compounding</td><td>Quarterly</td><td>Quarterly</td></tr></tbody></table></div><p>Interest on deposits is generally taxable and banks may deduct TDS above certain limits. Check the current rules with your bank or a tax professional.</p>
+<h2>Frequently asked questions</h2>
+<h3>How is FD maturity amount calculated?</h3><p>The calculator uses A = P × (1 + r/n)^(n×t), where n is how many times interest is compounded each year. Most banks use quarterly compounding.</p><h3>How is RD interest calculated?</h3><p>Each monthly instalment earns interest for the months it remains deposited, with interest compounded quarterly in most banks. The calculator adds up the growth of every instalment.</p><h3>Which compounding should I choose for an FD?</h3><p>Choose the option your bank states in its deposit terms. If you are unsure, quarterly is the most common in India.</p><h3>Why does my bank show a slightly different amount?</h3><p>Banks can round interest, apply day counts, or use different compounding dates, so small differences are normal.</p><h3>What happens if I break an FD or RD early?</h3><p>Most banks charge a penalty and pay a lower rate. Check your deposit terms before withdrawing early.</p><h3>Is the interest taxable?</h3><p>Interest from FDs and RDs is generally added to your income and taxed as per your slab. Speak to a tax professional for your situation.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/sip-calculator/">SIP Calculator</a><a href="../../calculators/compound-interest/">Compound Interest Calculator</a><a href="../../calculators/simple-interest/">Simple Interest Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

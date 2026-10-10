@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hash Generator — MD5, SHA-1, SHA-256 &amp; SHA-512 Online | ARIXO</title>
+<meta name="description" content="Free online hash generator. Get MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text instantly in your browser. Nothing is uploaded.">
+<meta name="keywords" content="hash generator, MD5 generator, SHA-256 generator, SHA-1 hash, SHA-512 hash, text to hash, online checksum generator, md5 hash online">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/developer-tools/hash-generator/">
+<meta property="og:title" content="Hash Generator — MD5, SHA-1, SHA-256 &amp; SHA-512 Online | ARIXO">
+<meta property="og:description" content="Free online hash generator. Get MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text instantly in your browser. Nothing is uploaded.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/developer-tools/hash-generator/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hash Generator — MD5, SHA-1, SHA-256 &amp; SHA-512 Online | ARIXO">
+<meta name="twitter:description" content="Free online hash generator. Get MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text instantly in your browser. Nothing is uploaded.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Hash Generator",
+  "url": "https://arixotools.github.io/tools/developer-tools/hash-generator/",
+  "description": "Free online hash generator. Get MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text instantly in your browser. Nothing is uploaded.",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Hash Generator",
+      "item": "https://arixotools.github.io/tools/developer-tools/hash-generator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I decode a hash back to text?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Hash functions are one-way. Anyone can only guess the input and compare hashes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is MD5 safe to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not for security. MD5 is broken for collision resistance. It is fine for simple checksums where no attacker is involved."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my hash different from another tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hidden spaces, line breaks or a different text encoding change the result. This tool uses UTF-8 and hashes exactly what you type."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my text sent to a server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The hashes are generated in your browser using the Web Crypto API, plus a local MD5 routine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which hash is best for file integrity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SHA-256 is a common choice. This page hashes text only, so use a dedicated tool for files."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do the SHA hashes say “Not available”?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The browser's Web Crypto feature needs a secure HTTPS page. Open the site over HTTPS and try again."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">#</div>
+<h1>Hash Generator</h1>
+<p class="subtitle">Type or paste text to get its MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes at once.</p>
+<div class="tool-box">
+<div class="input-group"><label for="input">Text to hash</label><textarea id="input" rows="5" placeholder="Type or paste your text here" spellcheck="false"></textarea></div>
+<div class="line" id="chars"></div>
+<label class="check"><input type="checkbox" id="upper"> Show hashes in UPPERCASE</label>
+<div class="hash-row"><div class="hash-head"><span>MD5</span><button class="copy" type="button" data-id="md5">Copy</button></div><span class="hash-val" id="out-md5"></span></div>
+<div class="hash-row"><div class="hash-head"><span>SHA-1</span><button class="copy" type="button" data-id="sha1">Copy</button></div><span class="hash-val" id="out-sha1"></span></div>
+<div class="hash-row"><div class="hash-head"><span>SHA-256</span><button class="copy" type="button" data-id="sha256">Copy</button></div><span class="hash-val" id="out-sha256"></span></div>
+<div class="hash-row"><div class="hash-head"><span>SHA-384</span><button class="copy" type="button" data-id="sha384">Copy</button></div><span class="hash-val" id="out-sha384"></span></div>
+<div class="hash-row"><div class="hash-head"><span>SHA-512</span><button class="copy" type="button" data-id="sha512">Copy</button></div><span class="hash-val" id="out-sha512"></span></div>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+</div>
+<p class="note">Hashes are calculated in your browser, so your text never leaves your device. Text is encoded as UTF-8 before hashing. SHA hashes need a secure (HTTPS) connection.</p>
+</section>
+<section class="ax-seo">
+<h2>What is a hash generator?</h2><p>A hash function turns any input into a fixed-length string of letters and numbers. The same input always gives the same hash, and even a one-character change produces a completely different result. This makes hashes useful for checking that data has not changed, comparing values without storing them, and creating identifiers. This tool computes five common hashes from your text at the same time.</p><h2>How to use it</h2><ol><li>Type or paste your text into the box. Hashes appear as you type.</li><li>Tick <strong>UPPERCASE</strong> if you need capital letters.</li><li>Use the <strong>Copy</strong> button next to the hash you want.</li><li>Click <strong>Clear</strong> to start again.</li></ol><h2>Which hash should you pick?</h2><div class="tscroll"><table class="data"><thead><tr><th>Algorithm</th><th>Length</th><th>Typical use</th></tr></thead><tbody><tr><td>MD5</td><td>128 bits (32 hex characters)</td><td>Quick checksums and cache keys. Not secure.</td></tr><tr><td>SHA-1</td><td>160 bits (40 hex characters)</td><td>Legacy systems. Not secure.</td></tr><tr><td>SHA-256</td><td>256 bits (64 hex characters)</td><td>General integrity checks and many modern tools</td></tr><tr><td>SHA-384</td><td>384 bits (96 hex characters)</td><td>Higher-strength integrity checks</td></tr><tr><td>SHA-512</td><td>512 bits (128 hex characters)</td><td>Highest-strength option here</td></tr></tbody></table></div><p>MD5 and SHA-1 have known collision weaknesses, so avoid them where security matters. They are still fine for non-security tasks such as spotting accidental changes.</p><h2>Example</h2><p>The text <code>hello</code> gives these hashes:</p>
+<p>MD5: <code>5d41402abc4b2a76b9719d911017c592</code><br>SHA-1: <code>aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d</code><br>SHA-256: <code>2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</code></p>
+<p>If your hash differs from another tool, check for a hidden trailing space or new line. Either one changes the result.</p><h2>Common uses of hashes</h2><ul><li><strong>Verifying downloads:</strong> publishers list a checksum so you can confirm your copy is unchanged.</li><li><strong>Finding duplicates:</strong> identical content produces identical hashes, which helps spot duplicate files or records.</li><li><strong>Cache keys and ETags:</strong> a short hash of the content makes a convenient identifier.</li><li><strong>Debugging:</strong> comparing hashes is a quick way to see whether two strings are really the same, including hidden characters.</li></ul><h2>Important: hashing is not encryption</h2><p>A hash cannot be turned back into the original text, but short or common inputs can be guessed and checked. For storing passwords, use a dedicated password-hashing method such as bcrypt, scrypt or Argon2 rather than a plain MD5 or SHA hash. This tool hashes text only, not files.</p>
+<h2>Frequently asked questions</h2>
+<h3>Can I decode a hash back to text?</h3><p>No. Hash functions are one-way. Anyone can only guess the input and compare hashes.</p><h3>Is MD5 safe to use?</h3><p>Not for security. MD5 is broken for collision resistance. It is fine for simple checksums where no attacker is involved.</p><h3>Why is my hash different from another tool?</h3><p>Hidden spaces, line breaks or a different text encoding change the result. This tool uses UTF-8 and hashes exactly what you type.</p><h3>Is my text sent to a server?</h3><p>No. The hashes are generated in your browser using the Web Crypto API, plus a local MD5 routine.</p><h3>Which hash is best for file integrity?</h3><p>SHA-256 is a common choice. This page hashes text only, so use a dedicated tool for files.</p><h3>Why do the SHA hashes say “Not available”?</h3><p>The browser&#x27;s Web Crypto feature needs a secure HTTPS page. Open the site over HTTPS and try again.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../developer-tools/base64-encoder/">Base64 Encoder</a><a href="../../developer-tools/json-formatter/">JSON Formatter</a><a href="../../other-tools/password-generator/">Password Generator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

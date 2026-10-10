@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIP Calculator — Monthly SIP Returns &amp; Step-Up SIP | ARIXO</title>
+<meta name="description" content="Free SIP calculator: see the future value of your monthly SIP, total invested and estimated returns. Includes yearly step-up and a year-by-year table.">
+<meta name="keywords" content="SIP calculator, mutual fund SIP calculator, monthly SIP return calculator, step-up SIP calculator, SIP maturity amount, SIP future value">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/calculators/sip-calculator/">
+<meta property="og:title" content="SIP Calculator — Monthly SIP Returns &amp; Step-Up SIP | ARIXO">
+<meta property="og:description" content="Free SIP calculator: see the future value of your monthly SIP, total invested and estimated returns. Includes yearly step-up and a year-by-year table.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/calculators/sip-calculator/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SIP Calculator — Monthly SIP Returns &amp; Step-Up SIP | ARIXO">
+<meta name="twitter:description" content="Free SIP calculator: see the future value of your monthly SIP, total invested and estimated returns. Includes yearly step-up and a year-by-year table.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SIP Calculator",
+  "url": "https://arixotools.github.io/tools/calculators/sip-calculator/",
+  "description": "Free SIP calculator: see the future value of your monthly SIP, total invested and estimated returns. Includes yearly step-up and a year-by-year table.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "SIP Calculator",
+      "item": "https://arixotools.github.io/tools/calculators/sip-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a SIP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A SIP, or Systematic Investment Plan, is a way to invest a fixed amount at regular intervals, usually monthly, in a mutual fund or similar product."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are SIP returns guaranteed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. SIPs in market-linked funds can gain or lose value. The calculator shows a projection at the return you enter, which is an assumption and not a promise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What return rate should I enter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no single correct number. Past returns do not guarantee future returns, so test a few conservative rates to understand the range of outcomes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a step-up SIP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A step-up SIP increases your monthly investment by a fixed percentage every year, for example 10%, so your contribution grows along with your income."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the result include tax and fund charges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The figures are before taxes, expense ratios and exit loads, so your actual returns will usually be lower."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a SIP better than a lump sum?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your cash flow and the market. A SIP spreads purchases over time and suits regular income, while a lump sum invests everything at once. Consider speaking to a registered financial adviser for personal advice."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">SIP</div>
+<h1>SIP Calculator</h1>
+<p class="subtitle">Find out what a monthly SIP could grow to, with an optional yearly step-up as your income rises.</p>
+<div class="tool-box">
+<div class="row2">
+<div class="input-group"><label for="sipAmount">Monthly investment (₹)</label><input id="sipAmount" type="number" min="1" inputmode="decimal" placeholder="Example: 5000"></div>
+<div class="input-group"><label for="sipRate">Expected annual return (%)</label><input id="sipRate" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Example: 12"></div>
+</div>
+<div class="row2">
+<div class="input-group"><label for="sipYears">Investment period (years)</label><input id="sipYears" type="number" min="1" max="50" step="1" inputmode="decimal" placeholder="Example: 10"></div>
+<div class="input-group"><label for="sipStep">Yearly step-up (%) — optional</label><input id="sipStep" type="number" min="0" max="100" step="1" inputmode="decimal" placeholder="Example: 10"><div class="hint">Raises your monthly SIP by this percent every year.</div></div>
+</div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate SIP returns</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div class="result-box" id="result" aria-live="polite">
+<div class="result-item main-result"><span>Estimated total value</span><strong id="totalValue">₹0</strong></div>
+<div class="result-grid">
+<div class="result-item"><span>Total invested</span><strong id="invested">₹0</strong></div>
+<div class="result-item"><span>Estimated returns</span><strong id="returns">₹0</strong></div>
+</div>
+<div class="result-item"><div class="bar"><i id="barInvested" style="width:50%"></i></div><div class="legend" id="barLegend"></div></div>
+<details class="table-wrap"><summary>Year-by-year growth</summary><div class="tscroll"><table class="data"><thead><tr><th>Year</th><th>Monthly SIP</th><th>Invested</th><th>Value</th></tr></thead><tbody id="yearRows"></tbody></table></div></details>
+</div>
+</div>
+<p class="note">Mutual fund returns are market-linked and not guaranteed. This calculator assumes a constant return and investment at the start of each month, so real results will differ.</p>
+</section>
+<section class="ax-seo">
+<h2>What is a SIP calculator?</h2><p>A Systematic Investment Plan (SIP) lets you invest a fixed amount every month, usually in a mutual fund. Because you buy regularly, you do not have to guess the right time to enter the market, and your money gets compounding for as long as you stay invested. This SIP calculator estimates what those monthly instalments could be worth after a number of years at an expected rate of return.</p>
+<p>It also supports a <strong>step-up SIP</strong>. If you expect your income to grow, you can raise the monthly amount by a fixed percentage each year, and the calculator shows how much difference that makes to the final corpus.</p><h2>How to use the SIP calculator</h2><ol><li>Enter the amount you plan to invest every month.</li><li>Enter the annual return you expect. A cautious, realistic figure is better than an optimistic one.</li><li>Enter the number of years you will stay invested.</li><li>Optionally enter a yearly step-up percentage.</li><li>Click <strong>Calculate SIP returns</strong> to see the total value, total invested and estimated returns, plus a year-by-year table.</li></ol><h2>SIP formula</h2><p>Each instalment is assumed to be invested at the start of the month and to earn the monthly rate. For a fixed SIP the future value is:</p>
+<div class="formula-box"><strong>FV = P × [((1 + i)<sup>n</sup> − 1) ÷ i] × (1 + i)</strong><br>P = monthly investment, i = annual rate ÷ 12 ÷ 100, n = number of months</div>
+<p>With a step-up, the monthly amount is multiplied by (1 + step-up %) at the start of every new year, and the calculator rolls the balance forward month by month.</p><h2>Worked examples</h2><p><strong>Fixed SIP:</strong> ₹5,000 a month at 12% a year for 10 years means you invest ₹6,00,000 in total. The estimated value is about ₹11,61,695, so the estimated returns are about ₹5,61,695.</p>
+<p><strong>Step-up SIP:</strong> start with ₹10,000 a month, raise it by 10% every year, and assume 12% a year for 20 years. The total invested is ₹68,73,000 and the estimated value is about ₹1,98,88,715.</p>
+<p>These figures only show the arithmetic of compounding at the rate you enter. They are not forecasts.</p><h2>Tips for using SIP projections sensibly</h2><ul><li><strong>Start early.</strong> Time in the market matters more than the exact amount, because returns compound on earlier returns.</li><li><strong>Use a conservative rate.</strong> Try two or three rates, such as 8%, 10% and 12%, to see a range instead of one number.</li><li><strong>Increase the SIP with your income.</strong> A small yearly step-up often adds more than a slightly higher starting amount.</li><li><strong>Remember costs and tax.</strong> Fund expense ratios and capital gains tax reduce what you actually take home.</li><li><strong>Compare options.</strong> Use the <a href="../../calculators/compound-interest/">Compound Interest Calculator</a> or the <a href="../../calculators/fd-rd-calculator/">FD &amp; RD Calculator</a> to compare with fixed-return choices.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is a SIP?</h3><p>A SIP, or Systematic Investment Plan, is a way to invest a fixed amount at regular intervals, usually monthly, in a mutual fund or similar product.</p><h3>Are SIP returns guaranteed?</h3><p>No. SIPs in market-linked funds can gain or lose value. The calculator shows a projection at the return you enter, which is an assumption and not a promise.</p><h3>What return rate should I enter?</h3><p>There is no single correct number. Past returns do not guarantee future returns, so test a few conservative rates to understand the range of outcomes.</p><h3>What is a step-up SIP?</h3><p>A step-up SIP increases your monthly investment by a fixed percentage every year, for example 10%, so your contribution grows along with your income.</p><h3>Does the result include tax and fund charges?</h3><p>No. The figures are before taxes, expense ratios and exit loads, so your actual returns will usually be lower.</p><h3>Is a SIP better than a lump sum?</h3><p>It depends on your cash flow and the market. A SIP spreads purchases over time and suits regular income, while a lump sum invests everything at once. Consider speaking to a registered financial adviser for personal advice.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/fd-rd-calculator/">FD &amp; RD Calculator</a><a href="../../calculators/compound-interest/">Compound Interest Calculator</a><a href="../../calculators/emi-calculator/">EMI Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
