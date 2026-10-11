@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quadratic Equation Solver — Roots &amp; Discriminant | ARIXO</title>
+<meta name="description" content="Free quadratic equation solver. Enter a, b and c to find the roots, the discriminant and the nature of the roots, including complex roots.">
+<meta name="keywords" content="quadratic equation solver, quadratic formula calculator, roots of quadratic equation, discriminant calculator, solve ax2+bx+c, complex roots">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/math-tools/quadratic-equation-solver/">
+<meta property="og:title" content="Quadratic Equation Solver — Roots &amp; Discriminant | ARIXO">
+<meta property="og:description" content="Free quadratic equation solver. Enter a, b and c to find the roots, the discriminant and the nature of the roots, including complex roots.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/math-tools/quadratic-equation-solver/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quadratic Equation Solver — Roots &amp; Discriminant | ARIXO">
+<meta name="twitter:description" content="Free quadratic equation solver. Enter a, b and c to find the roots, the discriminant and the nature of the roots, including complex roots.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Quadratic Equation Solver",
+  "url": "https://arixotools.github.io/tools/math-tools/quadratic-equation-solver/",
+  "description": "Free quadratic equation solver. Enter a, b and c to find the roots, the discriminant and the nature of the roots, including complex roots.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Quadratic Equation Solver",
+      "item": "https://arixotools.github.io/tools/math-tools/quadratic-equation-solver/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the discriminant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is b² − 4ac. Its sign tells you the type of roots."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if a is zero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Then the equation is linear and has just one solution, so the tool shows an error."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are complex roots?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Roots that contain the imaginary unit i, which occur when the discriminant is negative."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check my roots?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Substitute a root into ax² + bx + c. The result should be 0."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I enter decimals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, decimals and negatives are supported."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">x²</div>
+<h1>Quadratic Equation Solver</h1>
+<p class="subtitle">Solve ax² + bx + c = 0 and see the roots and discriminant.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="a">a (coefficient of x²)</label><input data-in id="a" type="number" step="any" inputmode="decimal" placeholder="Example: 1"></div><div class="input-group"><label for="b">b (coefficient of x)</label><input data-in id="b" type="number" step="any" inputmode="decimal" placeholder="Example: -5"></div><div class="input-group"><label for="c">c (constant)</label><input data-in id="c" type="number" step="any" inputmode="decimal" placeholder="Example: 6"></div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Solve</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div class="result-box" id="result" aria-live="polite"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Quadratic Equation Solver</h2><p>A quadratic equation has the form ax² + bx + c = 0 and appears throughout algebra, physics and geometry. This solver applies the quadratic formula to your coefficients and tells you whether the equation has two real roots, one repeated root or two complex roots, together with the discriminant that decides which case you are in.</p><h2>How to use the Quadratic Equation Solver</h2><ol><li>Write your equation in the form ax² + bx + c = 0.</li><li>Enter the values of a, b and c. Use negative numbers where needed.</li><li>Click <strong>Solve</strong>.</li><li>Read the roots and the discriminant.</li></ol><h2>Where it is useful</h2><ul><li>Algebra homework and exam revision.</li><li>Projectile motion and area problems.</li><li>Checking factorisation results.</li><li>Understanding when an equation has real or complex solutions.</li></ul><h2>Quadratic formula</h2><div class="formula-box"><strong>x = (−b ± √(b² − 4ac)) ÷ 2a</strong><br>Discriminant D = b² − 4ac</div><p>If D is positive there are two real roots, if D is zero there is one repeated root, and if D is negative the roots are complex. For x² − 5x + 6 = 0, D = 1 and the roots are 3 and 2.</p><h2>Examples</h2><div class="tscroll"><table class="data"><thead><tr><th>Equation</th><th>Discriminant</th><th>Roots</th></tr></thead><tbody><tr><td>x² − 5x + 6 = 0</td><td>1</td><td>3 and 2</td></tr><tr><td>x² − 4x + 4 = 0</td><td>0</td><td>2 (repeated)</td></tr><tr><td>x² + 2x + 5 = 0</td><td>−16</td><td>−1 ± 2i</td></tr></tbody></table></div><h2>Tips and common mistakes</h2><ul><li>Move every term to one side first so the right-hand side is zero.</li><li>If a equals zero the equation is linear, not quadratic.</li><li>Check your answer by substituting a root back into the equation.</li><li>Complex roots come in a pair, with the same real part and opposite imaginary parts.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is the discriminant?</h3><p>It is b² − 4ac. Its sign tells you the type of roots.</p><h3>What if a is zero?</h3><p>Then the equation is linear and has just one solution, so the tool shows an error.</p><h3>What are complex roots?</h3><p>Roots that contain the imaginary unit i, which occur when the discriminant is negative.</p><h3>How do I check my roots?</h3><p>Substitute a root into ax² + bx + c. The result should be 0.</p><h3>Can I enter decimals?</h3><p>Yes, decimals and negatives are supported.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../math-tools/fraction-calculator/">Fraction Calculator</a><a href="../../math-tools/hcf-lcm-calculator/">HCF and LCM Calculator</a><a href="../../math-tools/average-calculator/">Average Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

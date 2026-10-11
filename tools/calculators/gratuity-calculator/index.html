@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gratuity Calculator India — Formula &amp; Eligibility | ARIXO</title>
+<meta name="description" content="Free gratuity calculator for India. Enter last drawn salary and years of service to estimate gratuity using the standard 15/26 formula.">
+<meta name="keywords" content="gratuity calculator, gratuity calculation formula, gratuity calculator India, gratuity eligibility, 15/26 formula, gratuity amount">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/calculators/gratuity-calculator/">
+<meta property="og:title" content="Gratuity Calculator India — Formula &amp; Eligibility | ARIXO">
+<meta property="og:description" content="Free gratuity calculator for India. Enter last drawn salary and years of service to estimate gratuity using the standard 15/26 formula.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/calculators/gratuity-calculator/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gratuity Calculator India — Formula &amp; Eligibility | ARIXO">
+<meta name="twitter:description" content="Free gratuity calculator for India. Enter last drawn salary and years of service to estimate gratuity using the standard 15/26 formula.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Gratuity Calculator",
+  "url": "https://arixotools.github.io/tools/calculators/gratuity-calculator/",
+  "description": "Free gratuity calculator for India. Enter last drawn salary and years of service to estimate gratuity using the standard 15/26 formula.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Gratuity Calculator",
+      "item": "https://arixotools.github.io/tools/calculators/gratuity-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the gratuity formula?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For employees covered by the Act: last drawn salary × 15 × years of service ÷ 26."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is eligible for gratuity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally employees with at least five years of continuous service in a covered establishment, with exceptions for death or disability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are partial years counted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A period of six months or more in the last year is rounded up to a full year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is gratuity taxable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Part of it may be exempt up to a limit. Check current income tax rules or consult a tax professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this an official calculation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It is an estimate for planning. Your employer's calculation is final."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">GR</div>
+<h1>Gratuity Calculator</h1>
+<p class="subtitle">Estimate the gratuity payable on leaving a job, using the standard formula for covered employees.</p>
+<div class="tool-box">
+<div class="input-group"><label for="salary">Last drawn monthly salary (basic + DA) (₹)</label><input data-in id="salary" type="number" step="any" inputmode="decimal" placeholder="Example: 50000"></div>
+<div class="row2"><div class="input-group"><label for="years">Completed years of service</label><input data-in id="years" type="number" step="any" inputmode="decimal" placeholder="Example: 10" min="0"></div><div class="input-group"><label for="months">Extra months</label><input data-in id="months" type="number" step="any" inputmode="decimal" placeholder="Example: 3" min="0" max="11" value="0" data-default="0"></div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div class="result-box" id="result" aria-live="polite"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Gratuity Calculator</h2><p>Gratuity is a lump sum an employer pays when an employee leaves after long service, under the Payment of Gratuity Act in India for covered establishments. This calculator estimates the amount from your last drawn monthly salary (basic pay plus dearness allowance) and your length of service, using the standard formula for employees covered by the Act.</p><h2>How to use the Gratuity Calculator</h2><ol><li>Enter your last drawn monthly salary, meaning basic plus dearness allowance.</li><li>Enter completed years of service and any extra months.</li><li>Click <strong>Calculate</strong>.</li><li>Read the estimated gratuity. Service of 6 months or more in the last year is counted as a full year.</li></ol><h2>Where it is useful</h2><ul><li>Estimating your payout before you resign or retire.</li><li>Comparing job offers with different notice and service periods.</li><li>Planning finances around a job change.</li><li>Checking the amount shown in your final settlement.</li></ul><h2>Formula and example</h2><div class="formula-box"><strong>Gratuity = (Last drawn salary × 15 × Years of service) ÷ 26</strong></div><p>For a salary of ₹50,000 and 10 years of service, gratuity is 50,000 × 15 × 10 ÷ 26 = ₹2,88,461.54. The 26 represents the working days in a month, and 15 is the number of days' wages paid for each year of service.</p><h2>Eligibility and limits</h2><p>Gratuity is generally payable after five years of continuous service, though it is payable earlier on death or disability. There is a statutory maximum payable and a tax-exempt limit, and both have been revised in the past. Check the current figures on the labour ministry or income tax website, or ask your employer, before relying on this estimate.</p><h2>Tips and common mistakes</h2><ul><li>Use basic salary plus dearness allowance. Allowances such as HRA are not included.</li><li>Employers not covered by the Act may use a different formula, so check your appointment letter.</li><li>Your final amount depends on company policy, tax rules and any dues, so treat this as an estimate.</li><li>Keep your service records, as proof of continuous service may be needed.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is the gratuity formula?</h3><p>For employees covered by the Act: last drawn salary × 15 × years of service ÷ 26.</p><h3>Who is eligible for gratuity?</h3><p>Generally employees with at least five years of continuous service in a covered establishment, with exceptions for death or disability.</p><h3>How are partial years counted?</h3><p>A period of six months or more in the last year is rounded up to a full year.</p><h3>Is gratuity taxable?</h3><p>Part of it may be exempt up to a limit. Check current income tax rules or consult a tax professional.</p><h3>Is this an official calculation?</h3><p>No. It is an estimate for planning. Your employer&#x27;s calculation is final.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/simple-interest/">Simple Interest Calculator</a><a href="../../calculators/percentage-calculator/">Percentage Calculator</a><a href="../../calculators/lumpsum-calculator/">Lumpsum Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

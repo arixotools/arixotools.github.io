@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lumpsum Calculator — Future Value of One-Time Investment | ARIXO</title>
+<meta content="Free lumpsum calculator. See what a one-time investment could grow to at your expected return, with a year-by-year table of the growth." name="description"/>
+<meta content="lumpsum calculator, lump sum investment calculator, mutual fund lumpsum calculator, one time investment calculator, lumpsum return" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/calculators/lumpsum-calculator/" rel="canonical"/>
+<meta content="Lumpsum Calculator — Future Value of One-Time Investment | ARIXO" property="og:title"/>
+<meta content="Free lumpsum calculator. See what a one-time investment could grow to at your expected return, with a year-by-year table of the growth." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/calculators/lumpsum-calculator/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Lumpsum Calculator — Future Value of One-Time Investment | ARIXO" name="twitter:title"/>
+<meta content="Free lumpsum calculator. See what a one-time investment could grow to at your expected return, with a year-by-year table of the growth." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Lumpsum Calculator",
+  "url": "https://arixotools.github.io/tools/calculators/lumpsum-calculator/",
+  "description": "Free lumpsum calculator. See what a one-time investment could grow to at your expected return, with a year-by-year table of the growth.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lumpsum Calculator",
+      "item": "https://arixotools.github.io/tools/calculators/lumpsum-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a lumpsum investment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a single, one-time investment of a larger amount, as opposed to many small regular instalments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is lumpsum better than SIP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your cash flow and market timing. A lumpsum puts all money to work at once, while a SIP spreads purchases over time. This is general information, not financial advice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the calculator include tax?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The result is before tax and charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the returns guaranteed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The calculator uses a constant return you enter, which real investments rarely deliver."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a period in decimals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for example 2.5 years. The year-by-year table shows whole years."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">LS</div>
+<h1>Lumpsum Calculator</h1>
+<p class="subtitle">Estimate what a one-time investment could be worth after a number of years.</p>
+<div class="tool-box">
+<div class="input-group"><label for="amount">Investment amount (₹)</label><input data-in="" id="amount" inputmode="decimal" placeholder="Example: 100000" step="any" type="number"/></div>
+<div class="row2"><div class="input-group"><label for="rate">Expected annual return (%)</label><input data-in="" id="rate" inputmode="decimal" placeholder="Example: 12" step="any" type="number"/></div><div class="input-group"><label for="years">Time (years)</label><input data-in="" id="years" inputmode="decimal" placeholder="Example: 10" step="any" type="number"/></div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Lumpsum Calculator</h2><p>A lumpsum investment means putting a single amount into a fund, deposit or asset and leaving it to grow. This calculator estimates its future value at the annual return you expect and shows how the value builds year by year. It is useful for comparing a lumpsum against a monthly SIP, or for seeing how long it takes your money to double.</p><h2>How to use the Lumpsum Calculator</h2><ol><li>Enter the amount you will invest once.</li><li>Enter the annual return you expect and the number of years.</li><li>Click <strong>Calculate</strong>.</li><li>Read the estimated value, the gain, and the year-by-year table.</li></ol><h2>Where it is useful</h2><ul><li>Planning with a bonus, maturity amount or savings you can invest in one go.</li><li>Comparing a lumpsum with a SIP using the SIP Calculator.</li><li>Seeing the effect of time and compounding on a fixed amount.</li><li>Setting a target for children's education or retirement.</li></ul><h2>Formula and example</h2><div class="formula-box"><strong>Future value = P × (1 + r)<sup>n</sup></strong><br/>P = amount invested, r = annual return as a decimal, n = years</div><p>₹1,00,000 at 12% a year for 10 years grows to about ₹3,10,584.82, a gain of about ₹2,10,584.82. The returns are an assumption and are not guaranteed.</p><h2>Rule of 72</h2><p>To estimate how long money takes to double, divide 72 by the annual return. At 12% it takes about 6 years, and at 8% about 9 years. It is a rough shortcut, not an exact result.</p><h2>Tips and common mistakes</h2><ul><li>Use a conservative return and try a few rates to see a range.</li><li>Remember that taxes, expense ratios and inflation reduce real returns.</li><li>A longer period matters more than a slightly higher rate.</li><li>Do not assume market returns will be steady every year.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is a lumpsum investment?</h3><p>It is a single, one-time investment of a larger amount, as opposed to many small regular instalments.</p><h3>Is lumpsum better than SIP?</h3><p>It depends on your cash flow and market timing. A lumpsum puts all money to work at once, while a SIP spreads purchases over time. This is general information, not financial advice.</p><h3>Does the calculator include tax?</h3><p>No. The result is before tax and charges.</p><h3>Are the returns guaranteed?</h3><p>No. The calculator uses a constant return you enter, which real investments rarely deliver.</p><h3>Can I use a period in decimals?</h3><p>Yes, for example 2.5 years. The year-by-year table shows whole years.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/sip-calculator/">SIP Calculator</a><a href="../../calculators/cagr-calculator/">CAGR Calculator</a><a href="../../calculators/compound-interest/">Compound Interest Calculator</a><a href="../../calculators/gratuity-calculator/">Gratuity Calculator</a><a href="../../calculators/inflation-calculator/">Inflation Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

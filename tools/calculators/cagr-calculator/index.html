@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CAGR Calculator — Compound Annual Growth Rate Online | ARIXO</title>
+<meta content="Free CAGR calculator. Find the compound annual growth rate from a starting value, an ending value and the number of years." name="description"/>
+<meta content="CAGR calculator, compound annual growth rate calculator, investment CAGR, growth rate calculator, cagr formula, annualised return" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/calculators/cagr-calculator/" rel="canonical"/>
+<meta content="CAGR Calculator — Compound Annual Growth Rate Online | ARIXO" property="og:title"/>
+<meta content="Free CAGR calculator. Find the compound annual growth rate from a starting value, an ending value and the number of years." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/calculators/cagr-calculator/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="CAGR Calculator — Compound Annual Growth Rate Online | ARIXO" name="twitter:title"/>
+<meta content="Free CAGR calculator. Find the compound annual growth rate from a starting value, an ending value and the number of years." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "CAGR Calculator",
+  "url": "https://arixotools.github.io/tools/calculators/cagr-calculator/",
+  "description": "Free CAGR calculator. Find the compound annual growth rate from a starting value, an ending value and the number of years.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "CAGR Calculator",
+      "item": "https://arixotools.github.io/tools/calculators/cagr-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a good CAGR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the asset and risk. Compare it with inflation and with alternatives such as fixed deposits for the same period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can CAGR be negative?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. If the ending value is lower than the starting value the result is negative, but this calculator needs both values above zero."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CAGR the same as average return?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. CAGR accounts for compounding, while a simple average does not."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use CAGR for SIP returns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not accurately, because SIP money goes in at different times. XIRR is better for that."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CAGR a guarantee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It describes the past, not what will happen next."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">CAGR</div>
+<h1>CAGR Calculator</h1>
+<p class="subtitle">Work out the yearly growth rate that links a starting value and an ending value.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="start">Initial value (₹)</label><input data-in="" id="start" inputmode="decimal" placeholder="Example: 100000" step="any" type="number"/></div><div class="input-group"><label for="end">Final value (₹)</label><input data-in="" id="end" inputmode="decimal" placeholder="Example: 200000" step="any" type="number"/></div></div>
+<div class="input-group"><label for="years">Number of years</label><input data-in="" id="years" inputmode="decimal" placeholder="Example: 5" step="any" type="number"/><div class="hint">Decimals are allowed, for example 2.5.</div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the CAGR Calculator</h2><p>CAGR, or Compound Annual Growth Rate, is the steady yearly rate at which an investment would have to grow to move from its starting value to its ending value over a period. It smooths out ups and downs, so it is the standard way to compare mutual funds, stocks, business revenue or any other figure that changes over several years.</p><h2>How to use the CAGR Calculator</h2><ol><li>Enter the value at the start.</li><li>Enter the value at the end.</li><li>Enter the number of years between them.</li><li>Click <strong>Calculate</strong> to see the CAGR, the total growth and the growth multiple.</li></ol><h2>Where it is useful</h2><ul><li>Comparing the performance of two funds over the same period.</li><li>Checking how fast your savings or portfolio has really grown.</li><li>Measuring business metrics such as revenue or users.</li><li>Turning a past result into a yearly rate to compare with a bank deposit.</li></ul><h2>Formula and example</h2><div class="formula-box"><strong>CAGR = (Ending value ÷ Starting value)<sup>1 ÷ years</sup> − 1</strong></div><p>If ₹1,00,000 becomes ₹2,00,000 in 5 years, the CAGR is about 14.87% a year. The money doubled, but the yearly rate is not 20%, because growth compounds.</p><h2>CAGR versus simple average return</h2><p>If an investment gains 50% one year and loses 50% the next, the simple average is 0%, but you have actually lost 25% of your money. CAGR reflects that reality, which is why it is preferred for multi-year comparisons.</p><h2>Tips and common mistakes</h2><ul><li>Use the same period when comparing two CAGRs.</li><li>CAGR hides volatility. Two investments with the same CAGR can feel very different along the way.</li><li>It ignores money added or withdrawn mid-way. For regular investments, XIRR is more accurate.</li><li>A short period can give a misleading CAGR.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is a good CAGR?</h3><p>It depends on the asset and risk. Compare it with inflation and with alternatives such as fixed deposits for the same period.</p><h3>Can CAGR be negative?</h3><p>Yes. If the ending value is lower than the starting value the result is negative, but this calculator needs both values above zero.</p><h3>Is CAGR the same as average return?</h3><p>No. CAGR accounts for compounding, while a simple average does not.</p><h3>Can I use CAGR for SIP returns?</h3><p>Not accurately, because SIP money goes in at different times. XIRR is better for that.</p><h3>Is CAGR a guarantee?</h3><p>No. It describes the past, not what will happen next.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/lumpsum-calculator/">Lumpsum Calculator</a><a href="../../calculators/sip-calculator/">SIP Calculator</a><a href="../../calculators/percentage-calculator/">Percentage Calculator</a><a href="../../calculators/inflation-calculator/">Inflation Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

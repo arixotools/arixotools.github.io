@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fraction Calculator — Add, Subtract, Multiply, Divide | ARIXO</title>
+<meta content="Free fraction calculator. Add, subtract, multiply or divide two fractions and get the simplified answer, mixed number and decimal." name="description"/>
+<meta content="fraction calculator, add fractions, subtract fractions, multiply fractions, divide fractions, simplify fractions, mixed number calculator" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/math-tools/fraction-calculator/" rel="canonical"/>
+<meta content="Fraction Calculator — Add, Subtract, Multiply, Divide | ARIXO" property="og:title"/>
+<meta content="Free fraction calculator. Add, subtract, multiply or divide two fractions and get the simplified answer, mixed number and decimal." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/math-tools/fraction-calculator/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Fraction Calculator — Add, Subtract, Multiply, Divide | ARIXO" name="twitter:title"/>
+<meta content="Free fraction calculator. Add, subtract, multiply or divide two fractions and get the simplified answer, mixed number and decimal." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Fraction Calculator",
+  "url": "https://arixotools.github.io/tools/math-tools/fraction-calculator/",
+  "description": "Free fraction calculator. Add, subtract, multiply or divide two fractions and get the simplified answer, mixed number and decimal.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Fraction Calculator",
+      "item": "https://arixotools.github.io/tools/math-tools/fraction-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I add fractions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Find a common denominator, add the numerators, then simplify. This tool does it for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I simplify a fraction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the numerator and denominator by their highest common factor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a mixed number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A whole number with a proper fraction, such as 1 3/4."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I divide fractions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiply the first fraction by the reciprocal of the second."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use negative fractions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Put the minus sign in the numerator."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">½</div>
+<h1>Fraction Calculator</h1>
+<p class="subtitle">Add, subtract, multiply or divide two fractions with a simplified result.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="n1">First numerator</label><input data-in="" id="n1" inputmode="decimal" placeholder="Example: 1" step="1" type="number"/></div><div class="input-group"><label for="d1">First denominator</label><input data-in="" id="d1" inputmode="decimal" placeholder="Example: 2" step="1" type="number"/></div></div>
+<div class="input-group"><label for="op">Operation</label><select data-default="+" data-in="" id="op"><option selected="" value="+">Add (+)</option><option value="-">Subtract (−)</option><option value="*">Multiply (×)</option><option value="/">Divide (÷)</option></select></div>
+<div class="row2"><div class="input-group"><label for="n2">Second numerator</label><input data-in="" id="n2" inputmode="decimal" placeholder="Example: 1" step="1" type="number"/></div><div class="input-group"><label for="d2">Second denominator</label><input data-in="" id="d2" inputmode="decimal" placeholder="Example: 3" step="1" type="number"/></div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Fraction Calculator</h2><p>Fractions are easy to get wrong by hand because adding or subtracting needs a common denominator, and the answer should then be simplified. This calculator handles all four operations on two fractions and always gives the answer in simplest form, as a mixed number where that applies, and as a decimal.</p><h2>How to use the Fraction Calculator</h2><ol><li>Enter the numerator and denominator of the first fraction.</li><li>Choose add, subtract, multiply or divide.</li><li>Enter the second fraction.</li><li>Click <strong>Calculate</strong>.</li></ol><h2>Where it is useful</h2><ul><li>Checking school homework on fractions.</li><li>Scaling recipes and measurements.</li><li>Carpentry, sewing and DIY measurements.</li><li>Simplifying ratios and probabilities.</li></ul><h2>Rules used</h2><div class="tscroll"><table class="data"><thead><tr><th>Operation</th><th>Rule</th></tr></thead><tbody><tr><td>Add</td><td>a/b + c/d = (ad + bc) / bd</td></tr><tr><td>Subtract</td><td>a/b − c/d = (ad − bc) / bd</td></tr><tr><td>Multiply</td><td>a/b × c/d = ac / bd</td></tr><tr><td>Divide</td><td>a/b ÷ c/d = ad / bc</td></tr></tbody></table></div><p>After each operation, the result is divided by the highest common factor of the numerator and denominator to reach simplest form. For example, 1/2 + 1/3 = 5/6 and 3/4 ÷ 3/8 = 2.</p><h2>Tips and common mistakes</h2><ul><li>Enter negatives in the numerator, for example −1 over 2.</li><li>A zero denominator is not allowed.</li><li>Dividing by a fraction is the same as multiplying by its reciprocal.</li><li>Use the HCF and LCM calculator to see the common denominator.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>How do I add fractions?</h3><p>Find a common denominator, add the numerators, then simplify. This tool does it for you.</p><h3>How do I simplify a fraction?</h3><p>Divide the numerator and denominator by their highest common factor.</p><h3>What is a mixed number?</h3><p>A whole number with a proper fraction, such as 1 3/4.</p><h3>How do I divide fractions?</h3><p>Multiply the first fraction by the reciprocal of the second.</p><h3>Can I use negative fractions?</h3><p>Yes. Put the minus sign in the numerator.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../math-tools/hcf-lcm-calculator/">HCF and LCM Calculator</a><a href="../../calculators/percentage-calculator/">Percentage Calculator</a><a href="../../math-tools/prime-number-checker/">Prime Number Checker</a><a href="../../math-tools/quadratic-equation-solver/">Quadratic Equation Solver</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Add or Subtract Days From a Date — Date Calculator | ARIXO</title>
+<meta content="Free date calculator to add or subtract days, weeks, months or years from any date and see the exact resulting date and weekday." name="description"/>
+<meta content="add days to date, subtract days from date, date calculator, what date is 90 days from today, add months to date, days from date" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/date-time/add-subtract-days/" rel="canonical"/>
+<meta content="Add or Subtract Days From a Date — Date Calculator | ARIXO" property="og:title"/>
+<meta content="Free date calculator to add or subtract days, weeks, months or years from any date and see the exact resulting date and weekday." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/date-time/add-subtract-days/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Add or Subtract Days From a Date — Date Calculator | ARIXO" name="twitter:title"/>
+<meta content="Free date calculator to add or subtract days, weeks, months or years from any date and see the exact resulting date and weekday." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Add or Subtract Days From a Date",
+  "url": "https://arixotools.github.io/tools/date-time/add-subtract-days/",
+  "description": "Free date calculator to add or subtract days, weeks, months or years from any date and see the exact resulting date and weekday.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Add or Subtract Days From a Date",
+      "item": "https://arixotools.github.io/tools/date-time/add-subtract-days/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is 90 days from today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose today as the start date, enter 90, pick Days and Add. The tool shows the date and weekday."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I subtract days from a date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pick Subtract, enter the number of days and click Calculate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when adding months to the 31st?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The result is clamped to the last day of the target month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are leap years handled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it skip weekends?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. For working days, use the Working Days Calculator."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">±d</div>
+<h1>Add or Subtract Days From a Date</h1>
+<p class="subtitle">Add or subtract days, weeks, months or years and see the date it lands on.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="start">Start date</label><input data-in="" id="start" type="date"/></div><div class="input-group"><label for="op">Operation</label><select data-default="add" data-in="" id="op"><option selected="" value="add">Add</option><option value="sub">Subtract</option></select></div></div>
+<div class="row2"><div class="input-group"><label for="amount">Amount</label><input data-in="" id="amount" inputmode="decimal" min="0" placeholder="Example: 90" step="1" type="number"/></div><div class="input-group"><label for="unit">Unit</label><select data-default="d" data-in="" id="unit"><option selected="" value="d">Days</option><option value="w">Weeks</option><option value="m">Months</option><option value="y">Years</option></select></div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Add or Subtract Days From a Date</h2><p>This calculator tells you what date you reach after adding or subtracting a number of days, weeks, months or years. It is handy for deadlines, notice periods, warranty and visa dates, loan terms, delivery estimates and anything else counted from a start date. The start date defaults to today and you can change it freely.</p><h2>How to use the Add or Subtract Days From a Date</h2><ol><li>Pick the start date, or keep today's date.</li><li>Choose <strong>Add</strong> or <strong>Subtract</strong>.</li><li>Enter the amount and choose days, weeks, months or years.</li><li>Click <strong>Calculate</strong> to see the exact date and weekday.</li></ol><h2>Where it is useful</h2><ul><li>Working out a due date, such as 30, 60 or 90 days from today.</li><li>Calculating notice periods and contract end dates.</li><li>Finding the date of a milestone, such as 100 days from a start.</li><li>Checking warranty and subscription expiry dates.</li></ul><h2>How months and years are handled</h2><p>Adding months moves the same day number into a later month. If that day does not exist, the result is the last day of that month. For example, 31 January plus 1 month is 28 February in 2026 (29 February in a leap year). Days and weeks are added exactly, so 1 January 2026 plus 100 days is 11 April 2026.</p><h2>Quick examples</h2><div class="tscroll"><table class="data"><thead><tr><th>Start</th><th>Change</th><th>Result</th></tr></thead><tbody><tr><td>1 Jan 2026</td><td>+ 100 days</td><td>11 April 2026</td></tr><tr><td>31 Jan 2026</td><td>+ 1 month</td><td>28 February 2026</td></tr><tr><td>15 Mar 2026</td><td>− 6 weeks</td><td>1 February 2026</td></tr></tbody></table></div><h2>Tips and common mistakes</h2><ul><li>For business days only, use the Working Days Calculator.</li><li>Dates use the standard calendar, with leap years handled correctly.</li><li>A start date on the 29th, 30th or 31st may shift when adding months, as explained above.</li><li>Check legal deadlines with the exact rule that applies, as some count differently.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is 90 days from today?</h3><p>Choose today as the start date, enter 90, pick Days and Add. The tool shows the date and weekday.</p><h3>How do I subtract days from a date?</h3><p>Pick Subtract, enter the number of days and click Calculate.</p><h3>What happens when adding months to the 31st?</h3><p>The result is clamped to the last day of the target month.</p><h3>Are leap years handled?</h3><p>Yes.</p><h3>Does it skip weekends?</h3><p>No. For working days, use the Working Days Calculator.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../date-time/working-days-calculator/">Working Days Calculator</a><a href="../../date-time/days-between-dates/">Days Between Dates</a><a href="../../date-time/countdown/">Countdown Timer</a><a href="../../health-tools/pregnancy-due-date-calculator/">Pregnancy Due Date Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

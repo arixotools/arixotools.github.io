@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profit Margin Calculator — Margin, Markup &amp; Selling Price | ARIXO</title>
+<meta name="description" content="Free profit margin calculator. Enter cost and selling price to get profit, margin and markup, or set a margin to find the selling price you need.">
+<meta name="keywords" content="profit margin calculator, markup calculator, gross margin calculator, selling price calculator, margin vs markup, profit percentage">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/calculators/profit-margin-calculator/">
+<meta property="og:title" content="Profit Margin Calculator — Margin, Markup &amp; Selling Price | ARIXO">
+<meta property="og:description" content="Free profit margin calculator. Enter cost and selling price to get profit, margin and markup, or set a margin to find the selling price you need.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/calculators/profit-margin-calculator/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Profit Margin Calculator — Margin, Markup &amp; Selling Price | ARIXO">
+<meta name="twitter:description" content="Free profit margin calculator. Enter cost and selling price to get profit, margin and markup, or set a margin to find the selling price you need.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Profit Margin Calculator",
+  "url": "https://arixotools.github.io/tools/calculators/profit-margin-calculator/",
+  "description": "Free profit margin calculator. Enter cost and selling price to get profit, margin and markup, or set a margin to find the selling price you need.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Profit Margin Calculator",
+      "item": "https://arixotools.github.io/tools/calculators/profit-margin-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between margin and markup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Margin is profit divided by selling price. Markup is profit divided by cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I price for a 30% margin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the cost by 0.70. For a cost of ₹700, the price is ₹1,000."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good profit margin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It varies widely by business. Compare against others in your industry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is gross margin the same as net margin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Gross margin uses only direct costs. Net margin subtracts all expenses, tax and interest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this include GST?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Use pre-GST prices, or use the GST Calculator first."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">PM</div>
+<h1>Profit Margin Calculator</h1>
+<p class="subtitle">Find profit, margin and markup, or the price needed to reach a target margin.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="cost">Cost price (₹)</label><input data-in id="cost" type="number" step="any" inputmode="decimal" placeholder="Example: 800"></div><div class="input-group"><label for="price">Selling price (₹)</label><input data-in id="price" type="number" step="any" inputmode="decimal" placeholder="Example: 1000"></div></div>
+<div class="input-group"><label for="target">Or: target margin (%) to find the price</label><input data-in id="target" type="number" step="any" inputmode="decimal" placeholder="Example: 25"><div class="hint">Leave selling price empty to use this.</div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div class="result-box" id="result" aria-live="polite"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Profit Margin Calculator</h2><p>Margin and markup both describe profit, but they use different bases, and confusing them is one of the most expensive pricing mistakes in small business. Margin is profit as a share of the <strong>selling price</strong>, while markup is profit as a share of the <strong>cost</strong>. This calculator shows both from your cost and price, or works backwards to the selling price needed for a target margin.</p><h2>How to use the Profit Margin Calculator</h2><ol><li>Enter your cost price.</li><li>Enter the selling price to see profit, margin and markup.</li><li>Or leave the selling price empty and enter a target margin to find the price you should charge.</li><li>Click <strong>Calculate</strong>.</li></ol><h2>Where it is useful</h2><ul><li>Pricing products for a shop, online store or reseller business.</li><li>Checking whether a discount still leaves a healthy margin.</li><li>Comparing the profitability of different products.</li><li>Quoting a price for services or freelance work with a target margin.</li></ul><h2>Formulas</h2><div class="formula-box"><strong>Margin % = (Selling price − Cost) ÷ Selling price × 100</strong><br><strong>Markup % = (Selling price − Cost) ÷ Cost × 100</strong><br><strong>Price for a target margin = Cost ÷ (1 − margin)</strong></div><h2>Margin versus markup</h2><div class="tscroll"><table class="data"><thead><tr><th>Cost</th><th>Price</th><th>Profit</th><th>Margin</th><th>Markup</th></tr></thead><tbody><tr><td>₹800</td><td>₹1,000</td><td>₹200</td><td>20.00%</td><td>25.00%</td></tr><tr><td>₹500</td><td>₹750</td><td>₹250</td><td>33.33%</td><td>50.00%</td></tr><tr><td>₹100</td><td>₹200</td><td>₹100</td><td>50.00%</td><td>100.00%</td></tr></tbody></table></div><h2>Tips and common mistakes</h2><ul><li>A 50% markup is not a 50% margin. It gives a 33.3% margin.</li><li>Margin can never reach 100%, while markup can go above 100%.</li><li>Include all costs, such as packaging, shipping and fees, in the cost price.</li><li>Check margins after GST and discounts, not before.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is the difference between margin and markup?</h3><p>Margin is profit divided by selling price. Markup is profit divided by cost.</p><h3>How do I price for a 30% margin?</h3><p>Divide the cost by 0.70. For a cost of ₹700, the price is ₹1,000.</p><h3>What is a good profit margin?</h3><p>It varies widely by business. Compare against others in your industry.</p><h3>Is gross margin the same as net margin?</h3><p>No. Gross margin uses only direct costs. Net margin subtracts all expenses, tax and interest.</p><h3>Does this include GST?</h3><p>No. Use pre-GST prices, or use the GST Calculator first.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/discount-calculator/">Discount Calculator</a><a href="../../calculators/gst-calculator/">GST Calculator</a><a href="../../calculators/percentage-calculator/">Percentage Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

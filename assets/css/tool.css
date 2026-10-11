@@ -68,3 +68,7 @@ table.data tr.hit td{color:#00e5ff;font-weight:800}
 .ax-seo code{font-family:Consolas,Menlo,monospace;font-size:13px;color:#7df5ff;word-break:break-all;overflow-wrap:anywhere}
 .ax-seo p,.ax-seo li{overflow-wrap:anywhere}
 .ax-seo a{color:#00e5ff}.ax-seo a:hover{color:#7df5ff}
+
+.out-text{min-height:140px;margin-top:6px;resize:vertical;line-height:1.5}
+.swatch{height:64px;border-radius:14px;border:1px solid rgba(255,255,255,.2)}
+.result-box{gap:12px}

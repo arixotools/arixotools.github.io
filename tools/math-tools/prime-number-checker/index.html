@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prime Number Checker — Is It Prime? Factors &amp; Next Prime | ARIXO</title>
+<meta content="Free prime number checker. Find out if a number is prime, see its prime factorisation, and get the previous and next prime numbers." name="description"/>
+<meta content="prime number checker, is it prime, prime factorization calculator, next prime number, prime number calculator, check prime" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/math-tools/prime-number-checker/" rel="canonical"/>
+<meta content="Prime Number Checker — Is It Prime? Factors &amp; Next Prime | ARIXO" property="og:title"/>
+<meta content="Free prime number checker. Find out if a number is prime, see its prime factorisation, and get the previous and next prime numbers." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/math-tools/prime-number-checker/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Prime Number Checker — Is It Prime? Factors &amp; Next Prime | ARIXO" name="twitter:title"/>
+<meta content="Free prime number checker. Find out if a number is prime, see its prime factorisation, and get the previous and next prime numbers." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Prime Number Checker",
+  "url": "https://arixotools.github.io/tools/math-tools/prime-number-checker/",
+  "description": "Free prime number checker. Find out if a number is prime, see its prime factorisation, and get the previous and next prime numbers.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Prime Number Checker",
+      "item": "https://arixotools.github.io/tools/math-tools/prime-number-checker/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is 1 a prime number?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A prime must have exactly two different divisors, and 1 has only one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is 2 prime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. It is the only even prime number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is prime factorisation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is writing a number as a product of primes, such as 12 = 2 × 2 × 3."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is 91 prime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. 91 = 7 × 13."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How large a number can I test?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Up to 1,000,000,000,000 (one trillion)."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">P</div>
+<h1>Prime Number Checker</h1>
+<p class="subtitle">Check whether a number is prime and see its prime factors.</p>
+<div class="tool-box">
+<div class="input-group"><label for="n">Whole number (2 to 1,000,000,000,000)</label><input data-in="" id="n" inputmode="decimal" min="2" placeholder="Example: 97" step="1" type="number"/></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Check number</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Prime Number Checker</h2><p>A prime number is a whole number greater than 1 that has no divisors other than 1 and itself. Primes are the building blocks of all whole numbers, and they matter in school mathematics, puzzles and cryptography. Enter a number and this tool tells you whether it is prime, shows its prime factorisation if it is not, and gives the nearest primes either side.</p><h2>How to use the Prime Number Checker</h2><ol><li>Enter a whole number from 2 up to one trillion.</li><li>Click <strong>Check number</strong>.</li><li>See whether it is prime, its prime factors, and the previous and next primes.</li></ol><h2>Where it is useful</h2><ul><li>Homework and exam practice on primes and factors.</li><li>Finding prime factors to simplify fractions or find HCF and LCM.</li><li>Number puzzles and programming exercises.</li><li>Quick checks of large numbers without a script.</li></ul><h2>How the check works</h2><p>The tool divides the number by every candidate up to its square root. If nothing divides it exactly, it is prime. For a composite number, repeated division builds the prime factorisation. For example, 91 = 7 × 13 and 360 = 2<sup>3</sup> × 3<sup>2</sup> × 5.</p><h2>The first primes</h2><p>2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97. Two is the only even prime.</p><h2>Tips and common mistakes</h2><ul><li>1 is not a prime number, and neither is any number below 2.</li><li>A quick test: any number ending in 0, 2, 4, 5, 6 or 8 (other than 2 and 5) is not prime.</li><li>Use the factorisation with the HCF and LCM calculator to simplify fractions.</li><li>Numbers close to one trillion may take a moment to check.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>Is 1 a prime number?</h3><p>No. A prime must have exactly two different divisors, and 1 has only one.</p><h3>Is 2 prime?</h3><p>Yes. It is the only even prime number.</p><h3>What is prime factorisation?</h3><p>It is writing a number as a product of primes, such as 12 = 2 × 2 × 3.</p><h3>Is 91 prime?</h3><p>No. 91 = 7 × 13.</p><h3>How large a number can I test?</h3><p>Up to 1,000,000,000,000 (one trillion).</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../math-tools/hcf-lcm-calculator/">HCF and LCM Calculator</a><a href="../../math-tools/fraction-calculator/">Fraction Calculator</a><a href="../../math-tools/number-base-converter/">Number Base Converter</a><a href="../../math-tools/roman-numeral-converter/">Roman Numeral Converter</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

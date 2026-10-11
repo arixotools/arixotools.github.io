@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Number Base Converter — Binary, Octal, Decimal &amp; Hex | ARIXO</title>
+<meta content="Free number base converter. Convert between binary, octal, decimal and hexadecimal, and any base from 2 to 36, with big numbers supported." name="description"/>
+<meta content="binary to decimal, decimal to binary, hex to decimal, decimal to hex, number base converter, binary to hexadecimal, octal converter" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/math-tools/number-base-converter/" rel="canonical"/>
+<meta content="Number Base Converter — Binary, Octal, Decimal &amp; Hex | ARIXO" property="og:title"/>
+<meta content="Free number base converter. Convert between binary, octal, decimal and hexadecimal, and any base from 2 to 36, with big numbers supported." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/math-tools/number-base-converter/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Number Base Converter — Binary, Octal, Decimal &amp; Hex | ARIXO" name="twitter:title"/>
+<meta content="Free number base converter. Convert between binary, octal, decimal and hexadecimal, and any base from 2 to 36, with big numbers supported." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Number Base Converter",
+  "url": "https://arixotools.github.io/tools/math-tools/number-base-converter/",
+  "description": "Free number base converter. Convert between binary, octal, decimal and hexadecimal, and any base from 2 to 36, with big numbers supported.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Number Base Converter",
+      "item": "https://arixotools.github.io/tools/math-tools/number-base-converter/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I convert binary to decimal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiply each binary digit by a power of 2 and add them up, or paste it here and choose base 2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is 255 in hex?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "255 is FF in hexadecimal and 11111111 in binary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is base 36?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It uses digits 0 to 9 and letters A to Z, giving 36 symbols."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it support fractions or negatives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It converts non-negative whole numbers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How big a number can I convert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Very large numbers work, because the tool uses exact big-integer arithmetic."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">2↔16</div>
+<h1>Number Base Converter</h1>
+<p class="subtitle">Convert between binary, octal, decimal, hexadecimal and base 36.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="val">Number</label><input data-in="" id="val" placeholder="Example: 255" type="text"/></div><div class="input-group"><label for="from">From base</label><select data-default="10" data-in="" id="from"><option value="2">Binary (2)</option><option value="8">Octal (8)</option><option selected="" value="10">Decimal (10)</option><option value="16">Hexadecimal (16)</option><option value="36">Base 36</option></select></div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Convert</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Number Base Converter</h2><p>Computers store numbers in binary, programmers read them in hexadecimal, and everyday life uses decimal. This converter changes a number from binary, octal, decimal, hexadecimal or base 36 into all the others at once. It handles very large numbers exactly, so long binary strings and big hex values convert without rounding.</p><h2>How to use the Number Base Converter</h2><ol><li>Type the number. A leading 0x or 0b prefix is accepted.</li><li>Choose the base the number is written in.</li><li>Click <strong>Convert</strong>.</li><li>Read the decimal, binary, octal, hexadecimal and base 36 forms.</li></ol><h2>Where it is useful</h2><ul><li>Computer science and electronics homework.</li><li>Reading memory addresses, colour codes and bit flags.</li><li>Debugging network masks and permissions.</li><li>Understanding how numbers look in different bases.</li></ul><h2>How base conversion works</h2><p>Each digit of a number is multiplied by the base raised to its position. For example, binary 1011 is 1×8 + 0×4 + 1×2 + 1×1 = 11 in decimal. Hexadecimal uses the digits 0 to 9 and A to F, where A is 10 and F is 15.</p><h2>Handy equivalents</h2><div class="tscroll"><table class="data"><thead><tr><th>Decimal</th><th>Binary</th><th>Octal</th><th>Hex</th></tr></thead><tbody><tr><td>10</td><td>1010</td><td>12</td><td>A</td></tr><tr><td>15</td><td>1111</td><td>17</td><td>F</td></tr><tr><td>16</td><td>10000</td><td>20</td><td>10</td></tr><tr><td>255</td><td>1111 1111</td><td>377</td><td>FF</td></tr><tr><td>1024</td><td>100 0000 0000</td><td>2000</td><td>400</td></tr></tbody></table></div><h2>Tips and common mistakes</h2><ul><li>Letters are not case sensitive. FF and ff are the same.</li><li>Only whole non-negative numbers are supported.</li><li>Enter only digits valid for the base. Binary accepts only 0 and 1.</li><li>One hex digit equals exactly four binary digits, which makes hex a compact way to write binary.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>How do I convert binary to decimal?</h3><p>Multiply each binary digit by a power of 2 and add them up, or paste it here and choose base 2.</p><h3>What is 255 in hex?</h3><p>255 is FF in hexadecimal and 11111111 in binary.</p><h3>What is base 36?</h3><p>It uses digits 0 to 9 and letters A to Z, giving 36 symbols.</p><h3>Does it support fractions or negatives?</h3><p>No. It converts non-negative whole numbers.</p><h3>How big a number can I convert?</h3><p>Very large numbers work, because the tool uses exact big-integer arithmetic.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../developer-tools/hash-generator/">Hash Generator</a><a href="../../developer-tools/base64-encoder/">Base64 Encoder</a><a href="../../math-tools/roman-numeral-converter/">Roman Numeral Converter</a><a href="../../math-tools/prime-number-checker/">Prime Number Checker</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

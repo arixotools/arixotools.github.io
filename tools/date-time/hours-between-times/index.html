@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hours Between Two Times — Time Duration Calculator | ARIXO</title>
+<meta content="Free time duration calculator. Find the hours and minutes between two times, including overnight shifts, with an optional break deducted." name="description"/>
+<meta content="hours between two times, time duration calculator, time difference calculator, work hours calculator, shift hours calculator, time calculator" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/date-time/hours-between-times/" rel="canonical"/>
+<meta content="Hours Between Two Times — Time Duration Calculator | ARIXO" property="og:title"/>
+<meta content="Free time duration calculator. Find the hours and minutes between two times, including overnight shifts, with an optional break deducted." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/date-time/hours-between-times/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Hours Between Two Times — Time Duration Calculator | ARIXO" name="twitter:title"/>
+<meta content="Free time duration calculator. Find the hours and minutes between two times, including overnight shifts, with an optional break deducted." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Hours Between Two Times Calculator",
+  "url": "https://arixotools.github.io/tools/date-time/hours-between-times/",
+  "description": "Free time duration calculator. Find the hours and minutes between two times, including overnight shifts, with an optional break deducted.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Hours Between Two Times Calculator",
+      "item": "https://arixotools.github.io/tools/date-time/hours-between-times/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I calculate hours between two times?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subtract the start time from the end time. If the end is earlier, add 24 hours. This tool does it for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it handle night shifts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. An end time earlier than the start time is treated as the next day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I convert hours and minutes to decimal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the minutes by 60 and add them to the hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I deduct a lunch break?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Enter the break in minutes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What about durations over 24 hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Days Between Dates or Date Calculator tools."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">hh:mm</div>
+<h1>Hours Between Two Times Calculator</h1>
+<p class="subtitle">Find the time between a start and end time, with overnight shifts and breaks.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="start">Start time</label><input data-default="09:00" data-in="" id="start" type="time" value="09:00"/></div><div class="input-group"><label for="end">End time</label><input data-default="17:30" data-in="" id="end" type="time" value="17:30"/></div></div>
+<div class="input-group"><label for="brk">Break to deduct (minutes)</label><input data-default="0" data-in="" id="brk" inputmode="decimal" min="0" placeholder="Example: 30" step="1" type="number" value="0"/></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Hours Between Two Times Calculator</h2><p>This time duration calculator tells you how many hours and minutes lie between two clock times. If the end time is earlier than the start time, it treats the span as crossing midnight, which is how night shifts and overnight travel are normally measured. You can also deduct an unpaid break and see the result as decimal hours, which is handy for timesheets and payroll.</p><h2>How to use the Hours Between Two Times Calculator</h2><ol><li>Choose the start time and the end time.</li><li>Enter any break to deduct, in minutes.</li><li>Click <strong>Calculate</strong>.</li><li>Read the duration in hours and minutes, and as decimal hours.</li></ol><h2>Where it is useful</h2><ul><li>Filling timesheets and calculating paid hours.</li><li>Working out shift lengths, including night shifts.</li><li>Measuring travel, study or exercise duration.</li><li>Billing clients by the hour.</li></ul><h2>Examples</h2><div class="tscroll"><table class="data"><thead><tr><th>Start</th><th>End</th><th>Break</th><th>Result</th></tr></thead><tbody><tr><td>09:00</td><td>17:30</td><td>30 min</td><td>8 h 0 min (8.00 hours)</td></tr><tr><td>22:30</td><td>06:15</td><td>0</td><td>7 h 45 min (7.75 hours)</td></tr><tr><td>08:15</td><td>12:45</td><td>0</td><td>4 h 30 min (4.50 hours)</td></tr></tbody></table></div><p>To convert minutes to a decimal, divide by 60. For example, 45 minutes is 0.75 hours and 20 minutes is 0.33 hours.</p><h2>Why decimal hours matter</h2><p>Payroll systems often need hours as decimals, not hours and minutes. 7 h 45 min is 7.75 hours, so at an hourly rate of ₹200 the pay is ₹1,550.</p><h2>Tips and common mistakes</h2><ul><li>If the two times are the same, the tool treats the span as zero.</li><li>This tool handles spans under 24 hours. For longer spans, use the Days Between Dates tool.</li><li>Enter times in 24-hour or 12-hour format, depending on your device's time picker.</li><li>Always deduct unpaid breaks before computing pay.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>How do I calculate hours between two times?</h3><p>Subtract the start time from the end time. If the end is earlier, add 24 hours. This tool does it for you.</p><h3>Does it handle night shifts?</h3><p>Yes. An end time earlier than the start time is treated as the next day.</p><h3>How do I convert hours and minutes to decimal?</h3><p>Divide the minutes by 60 and add them to the hours.</p><h3>Can I deduct a lunch break?</h3><p>Yes. Enter the break in minutes.</p><h3>What about durations over 24 hours?</h3><p>Use the Days Between Dates or Date Calculator tools.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../date-time/stopwatch/">Stopwatch</a><a href="../../date-time/working-days-calculator/">Working Days Calculator</a><a href="../../date-time/countdown/">Countdown Timer</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

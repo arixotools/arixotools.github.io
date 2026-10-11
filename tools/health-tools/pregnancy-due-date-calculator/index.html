@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pregnancy Due Date Calculator — EDD From LMP | ARIXO</title>
+<meta name="description" content="Free pregnancy due date calculator. Enter the first day of your last period to estimate your due date, current week and trimester dates.">
+<meta name="keywords" content="pregnancy due date calculator, due date calculator, EDD calculator, LMP due date, how many weeks pregnant am I, trimester calculator">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/health-tools/pregnancy-due-date-calculator/">
+<meta property="og:title" content="Pregnancy Due Date Calculator — EDD From LMP | ARIXO">
+<meta property="og:description" content="Free pregnancy due date calculator. Enter the first day of your last period to estimate your due date, current week and trimester dates.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/health-tools/pregnancy-due-date-calculator/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pregnancy Due Date Calculator — EDD From LMP | ARIXO">
+<meta name="twitter:description" content="Free pregnancy due date calculator. Enter the first day of your last period to estimate your due date, current week and trimester dates.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Pregnancy Due Date Calculator",
+  "url": "https://arixotools.github.io/tools/health-tools/pregnancy-due-date-calculator/",
+  "description": "Free pregnancy due date calculator. Enter the first day of your last period to estimate your due date, current week and trimester dates.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Pregnancy Due Date Calculator",
+      "item": "https://arixotools.github.io/tools/health-tools/pregnancy-due-date-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is the due date calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By adding 280 days to the first day of your last period, with an adjustment for cycle length."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is an estimate. Few babies arrive on the exact date, and a scan can refine it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my cycle is not 28 days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your usual cycle length so the date is adjusted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does the first trimester end?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At about 13 weeks from the first day of the last period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this medical advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Please confirm dates and care plans with a qualified doctor or midwife."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">EDD</div>
+<h1>Pregnancy Due Date Calculator</h1>
+<p class="subtitle">Estimate your due date from the first day of your last period.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="lmp">First day of last period</label><input data-in id="lmp" type="date"></div><div class="input-group"><label for="cycle">Average cycle length (days)</label><input data-in id="cycle" type="number" step="1" inputmode="decimal" placeholder="28" min="21" max="45" value="28" data-default="28"></div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div class="result-box" id="result" aria-live="polite"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Pregnancy Due Date Calculator</h2><p>This calculator estimates your due date using Naegele's rule: 280 days (40 weeks) counted from the first day of your last menstrual period (LMP), adjusted if your cycle is longer or shorter than 28 days. It also shows how far along you are today and the approximate dates when each trimester ends.</p><h2>How to use the Pregnancy Due Date Calculator</h2><ol><li>Choose the first day of your last period.</li><li>Enter your average cycle length, or keep 28 days.</li><li>Click <strong>Calculate</strong>.</li><li>Read your estimated due date, current week and key dates.</li></ol><h2>Where it is useful</h2><ul><li>Getting a first estimate of your due date before your first scan.</li><li>Planning prenatal appointments and leave from work.</li><li>Understanding what week you are in.</li><li>Sharing an estimated timeline with family.</li></ul><h2>How the date is calculated</h2><div class="formula-box"><strong>Due date = first day of LMP + 280 days + (cycle length − 28) days</strong></div><p>If your last period began on 1 January 2026 and your cycle is 28 days, your estimated due date is 8 October 2026. Weeks are counted from the first day of the last period, not from conception, which is why pregnancy is described as 40 weeks.</p><h2>Important</h2><p>Only about 5% of babies are born exactly on the due date. Your doctor may adjust your due date after an ultrasound scan, which is often more accurate if your periods are irregular. This tool gives general information only and is not medical advice.</p><h2>Tips and common mistakes</h2><ul><li>Use the first day of full bleeding, not spotting.</li><li>If your cycles are irregular or you do not remember the date, your doctor's scan date is more reliable.</li><li>Pregnancy is counted in weeks from LMP, so you are already about 2 weeks pregnant at conception.</li><li>Trimester dates here are approximate.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>How is the due date calculated?</h3><p>By adding 280 days to the first day of your last period, with an adjustment for cycle length.</p><h3>How accurate is it?</h3><p>It is an estimate. Few babies arrive on the exact date, and a scan can refine it.</p><h3>What if my cycle is not 28 days?</h3><p>Enter your usual cycle length so the date is adjusted.</p><h3>When does the first trimester end?</h3><p>At about 13 weeks from the first day of the last period.</p><h3>Is this medical advice?</h3><p>No. Please confirm dates and care plans with a qualified doctor or midwife.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/age-calculator/">Age Calculator</a><a href="../../date-time/add-subtract-days/">Add or Subtract Days From a Date</a><a href="../../health-tools/bmr-tdee-calculator/">BMR and TDEE Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

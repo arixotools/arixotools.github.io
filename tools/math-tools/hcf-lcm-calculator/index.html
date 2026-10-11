@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HCF and LCM Calculator — GCD &amp; Least Common Multiple | ARIXO</title>
+<meta content="Free HCF and LCM calculator. Find the highest common factor (GCD) and least common multiple of two or more numbers instantly." name="description"/>
+<meta content="HCF and LCM calculator, HCF calculator, LCM calculator, GCD calculator, highest common factor, least common multiple, hcf lcm of two numbers" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/math-tools/hcf-lcm-calculator/" rel="canonical"/>
+<meta content="HCF and LCM Calculator — GCD &amp; Least Common Multiple | ARIXO" property="og:title"/>
+<meta content="Free HCF and LCM calculator. Find the highest common factor (GCD) and least common multiple of two or more numbers instantly." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/math-tools/hcf-lcm-calculator/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="HCF and LCM Calculator — GCD &amp; Least Common Multiple | ARIXO" name="twitter:title"/>
+<meta content="Free HCF and LCM calculator. Find the highest common factor (GCD) and least common multiple of two or more numbers instantly." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "HCF and LCM Calculator",
+  "url": "https://arixotools.github.io/tools/math-tools/hcf-lcm-calculator/",
+  "description": "Free HCF and LCM calculator. Find the highest common factor (GCD) and least common multiple of two or more numbers instantly.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "HCF and LCM Calculator",
+      "item": "https://arixotools.github.io/tools/math-tools/hcf-lcm-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is HCF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the highest common factor, the largest number that divides all the given numbers without a remainder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is HCF the same as GCD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. GCD and HCF are two names for the same thing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find the LCM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the product of two numbers by their HCF, or use prime factorisation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I find the HCF of three numbers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Enter all of them and the tool finds the common factor of the whole set."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the HCF of co-prime numbers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is 1."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">HCF</div>
+<h1>HCF and LCM Calculator</h1>
+<p class="subtitle">Find the HCF (GCD) and LCM of two or more whole numbers.</p>
+<div class="tool-box">
+<div class="input-group"><label for="nums">Whole numbers (separated by spaces or commas)</label><textarea data-in="" id="nums" placeholder="Example: 12, 18, 24" rows="3" spellcheck="false"></textarea></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the HCF and LCM Calculator</h2><p>The HCF (highest common factor), also called GCD (greatest common divisor), is the largest number that divides all the given numbers exactly. The LCM (least common multiple) is the smallest number that all of them divide into. They come up in fractions, ratios, timetables and school exams. This calculator finds both for two or more whole numbers at once.</p><h2>How to use the HCF and LCM Calculator</h2><ol><li>Enter two or more positive whole numbers, separated by spaces or commas.</li><li>Click <strong>Calculate</strong>.</li><li>Read the HCF and the LCM.</li></ol><h2>Where it is useful</h2><ul><li>Simplifying fractions with the HCF.</li><li>Adding fractions with different denominators using the LCM.</li><li>Solving timetable and repeating-event problems, such as when two buses meet again.</li><li>Checking homework and exam answers.</li></ul><h2>Methods and example</h2><p>The calculator uses the Euclidean algorithm for the HCF and the relation <strong>LCM(a, b) = a × b ÷ HCF(a, b)</strong>. For 12 and 18, the HCF is 6 and the LCM is 36. For 12, 18 and 24, the HCF is 6 and the LCM is 72.</p><div class="formula-box"><strong>HCF × LCM = product of the two numbers</strong> (true for exactly two numbers)</div><h2>Example worksheet</h2><div class="tscroll"><table class="data"><thead><tr><th>Numbers</th><th>HCF</th><th>LCM</th></tr></thead><tbody><tr><td>8, 12</td><td>4</td><td>24</td></tr><tr><td>15, 20</td><td>5</td><td>60</td></tr><tr><td>9, 28</td><td>1</td><td>252</td></tr><tr><td>12, 18, 24</td><td>6</td><td>72</td></tr></tbody></table></div><h2>Tips and common mistakes</h2><ul><li>Numbers must be whole and greater than zero.</li><li>If the HCF is 1, the numbers are co-prime.</li><li>The identity HCF × LCM = a × b only holds for two numbers, not three or more.</li><li>Use the HCF to reduce a fraction to its simplest form.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is HCF?</h3><p>It is the highest common factor, the largest number that divides all the given numbers without a remainder.</p><h3>Is HCF the same as GCD?</h3><p>Yes. GCD and HCF are two names for the same thing.</p><h3>How do I find the LCM?</h3><p>Divide the product of two numbers by their HCF, or use prime factorisation.</p><h3>Can I find the HCF of three numbers?</h3><p>Yes. Enter all of them and the tool finds the common factor of the whole set.</p><h3>What is the HCF of co-prime numbers?</h3><p>It is 1.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../math-tools/fraction-calculator/">Fraction Calculator</a><a href="../../math-tools/prime-number-checker/">Prime Number Checker</a><a href="../../math-tools/average-calculator/">Average Calculator</a><a href="../../math-tools/quadratic-equation-solver/">Quadratic Equation Solver</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

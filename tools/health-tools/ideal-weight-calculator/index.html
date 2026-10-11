@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ideal Weight Calculator — Devine, Robinson &amp; Miller | ARIXO</title>
+<meta content="Free ideal weight calculator. Enter height and sex to see estimates from four formulas plus a healthy BMI weight range in kg." name="description"/>
+<meta content="ideal weight calculator, ideal body weight, healthy weight for height, Devine formula, Robinson formula, weight for height calculator" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/health-tools/ideal-weight-calculator/" rel="canonical"/>
+<meta content="Ideal Weight Calculator — Devine, Robinson &amp; Miller | ARIXO" property="og:title"/>
+<meta content="Free ideal weight calculator. Enter height and sex to see estimates from four formulas plus a healthy BMI weight range in kg." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/health-tools/ideal-weight-calculator/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Ideal Weight Calculator — Devine, Robinson &amp; Miller | ARIXO" name="twitter:title"/>
+<meta content="Free ideal weight calculator. Enter height and sex to see estimates from four formulas plus a healthy BMI weight range in kg." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Ideal Weight Calculator",
+  "url": "https://arixotools.github.io/tools/health-tools/ideal-weight-calculator/",
+  "description": "Free ideal weight calculator. Enter height and sex to see estimates from four formulas plus a healthy BMI weight range in kg.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ideal Weight Calculator",
+      "item": "https://arixotools.github.io/tools/health-tools/ideal-weight-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is my ideal weight for my height?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no single value. Use the BMI range here as a general guide and discuss goals with a health professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which formula is best?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "None is perfect. They give different results, so look at the range as a whole."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are these formulas accurate for children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. They are for adults."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do the formulas differ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They were developed from different data and for different purposes, such as dosing medicine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it consider muscle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Muscular people may weigh more than the range and still be healthy."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">IW</div>
+<h1>Ideal Weight Calculator</h1>
+<p class="subtitle">See ideal body weight estimates from four formulas and a healthy BMI range.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="sex">Sex</label><select data-default="m" data-in="" id="sex"><option selected="" value="m">Male</option><option value="f">Female</option></select></div><div class="input-group"><label for="height">Height (cm)</label><input data-in="" id="height" inputmode="decimal" max="250" min="100" placeholder="Example: 170" step="any" type="number"/></div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Ideal Weight Calculator</h2><p>"Ideal weight" is not one number. Several formulas, created for different purposes, estimate a reasonable weight for a given height and sex. This tool shows four of them (Devine, Robinson, Miller and Hamwi) side by side, plus a healthy range based on a BMI between 18.5 and 24.9, the range the World Health Organization describes as normal for most adults.</p><h2>How to use the Ideal Weight Calculator</h2><ol><li>Choose your sex.</li><li>Enter your height in centimeters.</li><li>Click <strong>Calculate</strong>.</li><li>Compare the formulas and the healthy BMI range.</li></ol><h2>Where it is useful</h2><ul><li>Getting a rough weight target to discuss with a doctor.</li><li>Understanding the spread between different ideal weight formulas.</li><li>Setting realistic fitness goals.</li><li>Checking a healthy range for a given height.</li></ul><h2>The formulas</h2><div class="tscroll"><table class="data"><thead><tr><th>Formula</th><th>Men (kg)</th><th>Women (kg)</th></tr></thead><tbody><tr><td>Devine</td><td>50 + 2.3 × inches over 60</td><td>45.5 + 2.3 × inches over 60</td></tr><tr><td>Robinson</td><td>52 + 1.9 × inches over 60</td><td>49 + 1.7 × inches over 60</td></tr><tr><td>Miller</td><td>56.2 + 1.41 × inches over 60</td><td>53.1 + 1.36 × inches over 60</td></tr><tr><td>Hamwi</td><td>48 + 2.7 × inches over 60</td><td>45.5 + 2.2 × inches over 60</td></tr></tbody></table></div><p>For a man of 175 cm, Devine gives about 70.5 kg, and the healthy BMI range is about 56.7 to 76.3 kg.</p><h2>Important</h2><p>These formulas ignore muscle mass, bone structure, age and health conditions, so an athlete can be healthy above the range. They give general information only and are not medical advice. For personal guidance, speak to a doctor or dietitian.</p><h2>Tips and common mistakes</h2><ul><li>Treat the range as a guide, not a target you must hit.</li><li>BMI does not distinguish muscle from fat.</li><li>Children and teenagers use different growth charts.</li><li>Check your height in centimeters, or convert it first with the cm to feet converter.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is my ideal weight for my height?</h3><p>There is no single value. Use the BMI range here as a general guide and discuss goals with a health professional.</p><h3>Which formula is best?</h3><p>None is perfect. They give different results, so look at the range as a whole.</p><h3>Are these formulas accurate for children?</h3><p>No. They are for adults.</p><h3>Why do the formulas differ?</h3><p>They were developed from different data and for different purposes, such as dosing medicine.</p><h3>Does it consider muscle?</h3><p>No. Muscular people may weigh more than the range and still be healthy.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../calculators/bmi-calculator/">BMI Calculator</a><a href="../../health-tools/bmr-tdee-calculator/">BMR and TDEE Calculator</a><a href="../../converters/cm-to-feet-inches/">CM to Feet and Inches Converter</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

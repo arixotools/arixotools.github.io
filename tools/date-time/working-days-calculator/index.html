@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Working Days Calculator — Business Days Between Dates | ARIXO</title>
+<meta content="Free working days calculator. Count business days between two dates, with a choice of weekend days and an optional list of holidays." name="description"/>
+<meta content="working days calculator, business days calculator, days between dates excluding weekends, workdays between dates, count working days" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/date-time/working-days-calculator/" rel="canonical"/>
+<meta content="Working Days Calculator — Business Days Between Dates | ARIXO" property="og:title"/>
+<meta content="Free working days calculator. Count business days between two dates, with a choice of weekend days and an optional list of holidays." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/date-time/working-days-calculator/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Working Days Calculator — Business Days Between Dates | ARIXO" name="twitter:title"/>
+<meta content="Free working days calculator. Count business days between two dates, with a choice of weekend days and an optional list of holidays." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Working Days Calculator",
+  "url": "https://arixotools.github.io/tools/date-time/working-days-calculator/",
+  "description": "Free working days calculator. Count business days between two dates, with a choice of weekend days and an optional list of holidays.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Working Days Calculator",
+      "item": "https://arixotools.github.io/tools/date-time/working-days-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I count working days between two dates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Count all days in the range and remove weekends and holidays. This tool does it automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the weekend days in Bangladesh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Friday and Saturday are the usual weekend days, so choose that option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it include public holidays by default?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You add the holiday dates you want to skip."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it include the end date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes by default. You can untick the option to exclude it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I count back from a date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculator counts between two dates. To step back by days, use Add or Subtract Days."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">WD</div>
+<h1>Working Days Calculator</h1>
+<p class="subtitle">Count working days between two dates, skipping weekends and holidays you list.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="start">Start date</label><input data-in="" id="start" type="date"/></div><div class="input-group"><label for="end">End date</label><input data-in="" id="end" type="date"/></div></div>
+<div class="input-group"><label for="weekend">Weekend days</label><select data-default="sat-sun" data-in="" id="weekend"><option selected="" value="sat-sun">Saturday and Sunday</option><option value="fri-sat">Friday and Saturday (Bangladesh and Middle East)</option><option value="fri">Friday only</option><option value="sun">Sunday only</option></select></div>
+<label class="check"><input checked="" data-default="1" data-in="" id="incl" type="checkbox"/> Include the end date</label>
+<div class="input-group"><label for="hol">Holidays to skip (optional, one date per line as YYYY-MM-DD)</label><textarea data-in="" id="hol" placeholder="2026-10-02
+2026-10-20" rows="3" spellcheck="false"></textarea></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Calculate</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Working Days Calculator</h2><p>The Working Days Calculator counts the business days between two dates. Unlike a plain days-between-dates tool, it leaves out weekends and any public holidays you list. Because weekends differ around the world, you can choose Saturday and Sunday, Friday and Saturday (as in Bangladesh and much of the Middle East), or a single weekend day.</p><h2>How to use the Working Days Calculator</h2><ol><li>Choose the start and end dates.</li><li>Select which days are your weekend.</li><li>Tick or untick <strong>Include the end date</strong>.</li><li>Optionally list holidays, one date per line in the format YYYY-MM-DD, then click <strong>Calculate</strong>.</li></ol><h2>Where it is useful</h2><ul><li>Estimating project timelines and delivery times.</li><li>Counting notice periods or leave in working days.</li><li>Payroll, billing and invoice due dates.</li><li>Planning exams, courses and study schedules.</li></ul><h2>Example</h2><p>October 2026 has 31 days. Counting from 1 to 31 October with Saturday and Sunday as the weekend gives 22 working days, 9 weekend days and no holidays. Add two holiday dates and the result drops to 20.</p><h2>How holidays are entered</h2><p>Type each holiday on its own line as year-month-day, for example 2026-12-16. A holiday that falls on a weekend is counted once, as a weekend day.</p><h2>Tips and common mistakes</h2><ul><li>Public holidays differ by country, state and year, so enter your own list.</li><li>Decide whether the end date counts, because it can change the answer by a day.</li><li>If start and end are reversed, the tool swaps them for you.</li><li>For simply adding days to a date, use the Add or Subtract Days tool.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>How do I count working days between two dates?</h3><p>Count all days in the range and remove weekends and holidays. This tool does it automatically.</p><h3>What are the weekend days in Bangladesh?</h3><p>Friday and Saturday are the usual weekend days, so choose that option.</p><h3>Does it include public holidays by default?</h3><p>No. You add the holiday dates you want to skip.</p><h3>Does it include the end date?</h3><p>Yes by default. You can untick the option to exclude it.</p><h3>Can I count back from a date?</h3><p>The calculator counts between two dates. To step back by days, use Add or Subtract Days.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../date-time/add-subtract-days/">Add or Subtract Days From a Date</a><a href="../../date-time/days-between-dates/">Days Between Dates</a><a href="../../date-time/hours-between-times/">Hours Between Two Times Calculator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
