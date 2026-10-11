@@ -27,3 +27,11 @@ body.ax-page{margin:0;min-height:100vh;padding:22px;font-family:Arial,sans-serif
 .cat-grid strong{display:block;margin-bottom:6px;color:#00e5ff;font-size:16px}
 .cat-grid span{font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.68)}
 .cat-others{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:6px}
+
+.ax-seo ul{margin:8px 0 14px;padding-left:22px;color:rgba(255,255,255,.72);line-height:1.7;font-size:15px}
+.ax-seo code{font-family:Consolas,Menlo,monospace;font-size:13px;color:#7df5ff;overflow-wrap:anywhere}
+.ax-seo .tscroll{overflow-x:auto;margin:10px 0 16px}
+.ax-seo table.data{width:100%;border-collapse:collapse;font-size:14px}
+.ax-seo table.data th,.ax-seo table.data td{padding:9px 12px;text-align:left;border-bottom:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.78)}
+.ax-seo table.data th{color:rgba(255,255,255,.6);font-weight:700}
+.ax-seo a{color:#00e5ff}
