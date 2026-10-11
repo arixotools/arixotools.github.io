@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dice Roller — Roll D6, D20 &amp; Other Dice Online | ARIXO</title>
+<meta content="Free online dice roller. Roll one or many dice with 4, 6, 8, 10, 12, 20 or 100 sides and see each roll, the total and the average instantly." name="description"/>
+<meta content="dice roller, roll a dice, online dice, d20 roller, d6 roller, roll two dice, dnd dice roller, random dice" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/other-tools/dice-roller/" rel="canonical"/>
+<meta content="Dice Roller — Roll D6, D20 &amp; Other Dice Online | ARIXO" property="og:title"/>
+<meta content="Free online dice roller. Roll one or many dice with 4, 6, 8, 10, 12, 20 or 100 sides and see each roll, the total and the average instantly." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/other-tools/dice-roller/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Dice Roller — Roll D6, D20 &amp; Other Dice Online | ARIXO" name="twitter:title"/>
+<meta content="Free online dice roller. Roll one or many dice with 4, 6, 8, 10, 12, 20 or 100 sides and see each roll, the total and the average instantly." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dice Roller",
+  "url": "https://arixotools.github.io/tools/other-tools/dice-roller/",
+  "description": "Free online dice roller. Roll one or many dice with 4, 6, 8, 10, 12, 20 or 100 sides and see each roll, the total and the average instantly.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Dice Roller",
+      "item": "https://arixotools.github.io/tools/other-tools/dice-roller/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are the rolls fair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They use your browser's secure random generator, so each side is equally likely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I roll two dice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Set the number of dice to 2 and sides to d6, then click Roll dice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a d20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A twenty-sided die, common in tabletop role-playing games."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the odds of rolling a 7 with two dice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "6 out of 36, or about 16.7%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I roll different dice types together?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not in one roll. Roll each type separately."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">⚀</div>
+<h1>Dice Roller</h1>
+<p class="subtitle">Roll up to 20 dice with different numbers of sides.</p>
+<div class="tool-box">
+<div class="row2"><div class="input-group"><label for="count">Number of dice</label><input data-default="2" data-in="" id="count" inputmode="decimal" max="20" min="1" placeholder="2" step="1" type="number" value="2"/></div><div class="input-group"><label for="sides">Sides per die</label><select data-default="6" data-in="" id="sides"><option value="4">d4</option><option selected="" value="6">d6</option><option value="8">d8</option><option value="10">d10</option><option value="12">d12</option><option value="20">d20</option><option value="100">d100</option></select></div></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Roll dice</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Dice Roller</h2><p>Lost your dice, or need a d20 for a tabletop game? This roller lets you roll up to 20 dice at once with 4, 6, 8, 10, 12, 20 or 100 sides. It shows every individual roll, the total and the average. Rolls use your browser's secure random generator, so every face is equally likely.</p><h2>How to use the Dice Roller</h2><ol><li>Choose how many dice to roll.</li><li>Choose the number of sides, for example d6 for a normal die or d20 for role-playing games.</li><li>Click <strong>Roll dice</strong>.</li><li>Read each roll and the total. Click again to roll again.</li></ol><h2>Where it is useful</h2><ul><li>Board games when the dice are missing.</li><li>Tabletop role-playing games such as Dungeons &amp; Dragons.</li><li>Teaching probability in class.</li><li>Quick random decisions between a few options.</li></ul><h2>Dice probabilities</h2><div class="tscroll"><table class="data"><thead><tr><th>Dice</th><th>Possible totals</th><th>Most likely total</th></tr></thead><tbody><tr><td>1 × d6</td><td>1 to 6</td><td>Every number equally likely</td></tr><tr><td>2 × d6</td><td>2 to 12</td><td>7 (6 out of 36 ways)</td></tr><tr><td>1 × d20</td><td>1 to 20</td><td>Every number equally likely</td></tr><tr><td>3 × d6</td><td>3 to 18</td><td>10 and 11</td></tr></tbody></table></div><p>When you roll two or more dice, middle totals appear more often than extreme ones, because there are more ways to make them. With two six-sided dice, there is only one way to roll a 2 but six ways to roll a 7.</p><h2>Dice names</h2><p>The letter d stands for die, and the number is how many sides it has. A d6 is the common cube, and a d20 is the twenty-sided die used in many role-playing games.</p><h2>Tips and common mistakes</h2><ul><li>Each roll is independent. A number that has not appeared recently is not 'due'.</li><li>Use the total for games like Monopoly, and individual rolls for games with separate results.</li><li>d100 rolls are often done with two d10 dice. This tool rolls it directly.</li><li>For a simple yes or no, roll one d6 and use odd or even.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>Are the rolls fair?</h3><p>They use your browser's secure random generator, so each side is equally likely.</p><h3>How do I roll two dice?</h3><p>Set the number of dice to 2 and sides to d6, then click Roll dice.</p><h3>What is a d20?</h3><p>A twenty-sided die, common in tabletop role-playing games.</p><h3>What are the odds of rolling a 7 with two dice?</h3><p>6 out of 36, or about 16.7%.</p><h3>Can I roll different dice types together?</h3><p>Not in one roll. Roll each type separately.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../other-tools/random-name-picker/">Random Name Picker</a><a href="../../other-tools/random-number-generator/">Random Number Generator</a><a href="../../other-tools/password-generator/">Password Generator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+<script src="../../../assets/js/track.js" defer></script>
+</body>
+</html>

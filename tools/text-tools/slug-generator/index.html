@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slug Generator — Turn Titles Into SEO-Friendly URL Slugs | ARIXO</title>
+<meta name="description" content="Free slug generator. Turn any title or sentence into a clean, lowercase URL slug with hyphens, removing accents and special characters.">
+<meta name="keywords" content="slug generator, url slug generator, seo friendly url, text to slug, slugify, blog post url, permalink generator">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/text-tools/slug-generator/">
+<meta property="og:title" content="Slug Generator — Turn Titles Into SEO-Friendly URL Slugs | ARIXO">
+<meta property="og:description" content="Free slug generator. Turn any title or sentence into a clean, lowercase URL slug with hyphens, removing accents and special characters.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/text-tools/slug-generator/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Slug Generator — Turn Titles Into SEO-Friendly URL Slugs | ARIXO">
+<meta name="twitter:description" content="Free slug generator. Turn any title or sentence into a clean, lowercase URL slug with hyphens, removing accents and special characters.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Slug Generator",
+  "url": "https://arixotools.github.io/tools/text-tools/slug-generator/",
+  "description": "Free slug generator. Turn any title or sentence into a clean, lowercase URL slug with hyphens, removing accents and special characters.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Slug Generator",
+      "item": "https://arixotools.github.io/tools/text-tools/slug-generator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a URL slug?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the human-readable end of a web address that identifies a page, like /my-first-post."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should slugs use hyphens or underscores?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hyphens are generally recommended for readability and SEO."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should a slug be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Short and descriptive. Under about 60 characters is a good guide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I keep Bangla letters in a slug?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, tick 'Keep non-English letters', but plain English slugs are often more compatible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the slug affect rankings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a minor hint at most. Good content and links matter far more."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">/-/</div>
+<h1>Slug Generator</h1>
+<p class="subtitle">Convert a title into a clean URL slug as you type.</p>
+<div class="tool-box">
+<div class="input-group"><label for="txt">Title or text</label><input data-in id="txt" type="text" placeholder="Example: Café au Lait — 10 Easy Recipes!"></div>
+<div class="row2"><div class="input-group"><label for="sep">Separator</label><select data-in id="sep" data-default="-"><option value="-" selected>Hyphen (-)</option><option value="_">Underscore (_)</option></select></div><div class="input-group"><label for="max">Maximum length</label><select data-in id="max" data-default="0"><option value="0" selected>No limit</option><option value="50">50 characters</option><option value="60">60 characters</option><option value="75">75 characters</option></select></div></div>
+<label class="check"><input type="checkbox" data-in id="lc" data-default="1" checked> Lowercase</label>
+<label class="check"><input type="checkbox" data-in id="keep" data-default="0"> Keep non-English letters (Bangla, Hindi, etc.)</label>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div class="result-box" id="result" aria-live="polite"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Slug Generator</h2><p>A slug is the readable last part of a web address, such as <em>easy-chicken-curry</em> in a recipe URL. Clean slugs help people understand a link before they click it, and search engines use them as a small hint about the page. This generator turns any title into a tidy slug as you type: it lowercases the text, removes accents and punctuation, and joins the words with hyphens.</p><h2>How to use the Slug Generator</h2><ol><li>Type or paste the title of your page or post.</li><li>Choose a hyphen or underscore, and an optional length limit.</li><li>Tick <strong>Keep non-English letters</strong> if your URL should keep Bangla or Hindi letters.</li><li>Copy the slug into your CMS or website.</li></ol><h2>Where it is useful</h2><ul><li>Writing permalinks for blog posts and product pages.</li><li>Naming files and folders consistently.</li><li>Creating IDs for categories and tags.</li><li>Cleaning titles that contain symbols and accents.</li></ul><h2>Slug best practices</h2><ul><li>Use hyphens, not underscores, between words. Search engines read hyphens as word separators.</li><li>Keep slugs short and descriptive, ideally under about 60 characters.</li><li>Use lowercase letters, numbers and hyphens only.</li><li>Drop filler words such as 'a', 'the' or 'and' when the meaning stays clear.</li><li>Avoid changing a slug after the page is live, or add a redirect from the old one.</li></ul><h2>Example</h2><p>"Café au Lait — 10 Easy Recipes!" becomes <code>cafe-au-lait-10-easy-recipes</code>. Accented letters are converted to plain ones, the dash and exclamation mark are removed, and spaces become hyphens.</p><h2>Tips and common mistakes</h2><ul><li>Turn on Keep non-English letters only if your site and server handle them well.</li><li>Use a length limit for readability, and the tool trims at a word boundary.</li><li>Do not include dates in slugs unless the date truly matters.</li><li>Check for an existing page with the same slug before publishing.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is a URL slug?</h3><p>It is the human-readable end of a web address that identifies a page, like /my-first-post.</p><h3>Should slugs use hyphens or underscores?</h3><p>Hyphens are generally recommended for readability and SEO.</p><h3>How long should a slug be?</h3><p>Short and descriptive. Under about 60 characters is a good guide.</p><h3>Can I keep Bangla letters in a slug?</h3><p>Yes, tick &#x27;Keep non-English letters&#x27;, but plain English slugs are often more compatible.</p><h3>Does the slug affect rankings?</h3><p>It is a minor hint at most. Good content and links matter far more.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../text-tools/case-converter/">Case Converter</a><a href="../../developer-tools/url-encoder/">URL Encoder</a><a href="../../text-tools/remove-spaces/">Remove Spaces</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+<script src="../../../assets/js/track.js" defer></script>
+</body>
+</html>

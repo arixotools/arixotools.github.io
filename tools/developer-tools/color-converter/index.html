@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Converter — HEX, RGB &amp; HSL Color Codes | ARIXO</title>
+<meta name="description" content="Free color converter. Convert between HEX, RGB and HSL color codes instantly and see a live color preview. Accepts any common CSS color format.">
+<meta name="keywords" content="color converter, hex to rgb, rgb to hex, hex to hsl, rgb to hsl, hsl to rgb, color code converter, css color converter">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/developer-tools/color-converter/">
+<meta property="og:title" content="Color Converter — HEX, RGB &amp; HSL Color Codes | ARIXO">
+<meta property="og:description" content="Free color converter. Convert between HEX, RGB and HSL color codes instantly and see a live color preview. Accepts any common CSS color format.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/developer-tools/color-converter/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Color Converter — HEX, RGB &amp; HSL Color Codes | ARIXO">
+<meta name="twitter:description" content="Free color converter. Convert between HEX, RGB and HSL color codes instantly and see a live color preview. Accepts any common CSS color format.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Color Converter",
+  "url": "https://arixotools.github.io/tools/developer-tools/color-converter/",
+  "description": "Free color converter. Convert between HEX, RGB and HSL color codes instantly and see a live color preview. Accepts any common CSS color format.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Color Converter",
+      "item": "https://arixotools.github.io/tools/developer-tools/color-converter/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I convert HEX to RGB?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Split the HEX into three pairs and convert each from base 16 to decimal. This tool does it instantly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is HSL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A color format using hue, saturation and lightness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I enter a color name like red?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet. Use HEX, RGB or HSL values."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does #fff mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is short for #ffffff, which is white."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it support alpha transparency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alpha values are accepted but ignored in the converted result."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">◐</div>
+<h1>Color Converter</h1>
+<p class="subtitle">Convert a color between HEX, RGB and HSL with a live preview.</p>
+<div class="tool-box">
+<div class="input-group"><label for="val">Color</label><input data-in id="val" type="text" placeholder="Example: #1e90ff or rgb(30, 144, 255) or hsl(210, 100%, 56%)" value="#1e90ff" data-default="#1e90ff"><div class="hint">Paste a HEX, RGB or HSL value. A leading # is optional for HEX.</div></div>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div class="result-box" id="result" aria-live="polite"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Color Converter</h2><p>Designers and developers move between color formats all the time. HEX codes are common in CSS and design tools, RGB is used in code and image editors, and HSL describes color the way people think about it, as a hue, a saturation and a lightness. This converter reads any of the three and shows the others with a live color swatch.</p><h2>How to use the Color Converter</h2><ol><li>Paste or type a color, such as #1e90ff, rgb(30, 144, 255) or hsl(210, 100%, 56%).</li><li>The HEX, RGB and HSL values and a color preview appear instantly.</li><li>Copy the format your project needs.</li></ol><h2>Where it is useful</h2><ul><li>Matching colors between a design file and CSS.</li><li>Building color palettes and shades with HSL.</li><li>Converting brand colors for web, print references and apps.</li><li>Learning how color codes relate to each other.</li></ul><h2>How the formats relate</h2><div class="tscroll"><table class="data"><thead><tr><th>Format</th><th>Example</th><th>Meaning</th></tr></thead><tbody><tr><td>HEX</td><td>#1E90FF</td><td>Red, green and blue as two hex digits each</td></tr><tr><td>RGB</td><td>rgb(30, 144, 255)</td><td>Red, green and blue from 0 to 255</td></tr><tr><td>HSL</td><td>hsl(210, 100%, 56%)</td><td>Hue in degrees, saturation and lightness in percent</td></tr></tbody></table></div><p>A short HEX such as <code>#f80</code> expands to <code>#ff8800</code>. In HSL, keeping the hue and changing the lightness gives lighter or darker shades of the same color.</p><h2>Tips for choosing colors</h2><p>For readable text, use enough contrast between the text color and its background. Web accessibility guidelines recommend a contrast ratio of at least 4.5 to 1 for normal text.</p><h2>Tips and common mistakes</h2><ul><li>A # in front of a HEX code is optional.</li><li>Transparency (alpha) values are accepted but not shown in the result.</li><li>HSL is the easiest format for making consistent lighter and darker shades.</li><li>Colors may look slightly different on different screens.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>How do I convert HEX to RGB?</h3><p>Split the HEX into three pairs and convert each from base 16 to decimal. This tool does it instantly.</p><h3>What is HSL?</h3><p>A color format using hue, saturation and lightness.</p><h3>Can I enter a color name like red?</h3><p>Not yet. Use HEX, RGB or HSL values.</p><h3>What does #fff mean?</h3><p>It is short for #ffffff, which is white.</p><h3>Does it support alpha transparency?</h3><p>Alpha values are accepted but ignored in the converted result.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../developer-tools/hash-generator/">Hash Generator</a><a href="../../math-tools/number-base-converter/">Number Base Converter</a><a href="../../developer-tools/json-formatter/">JSON Formatter</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+<script src="../../../assets/js/track.js" defer></script>
+</body>
+</html>

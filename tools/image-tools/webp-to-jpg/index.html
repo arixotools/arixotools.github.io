@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WebP to JPG Converter — Convert WebP Images Online | ARIXO</title>
+<meta content="Free WebP to JPG converter. Turn WebP images into JPG files in your browser, with adjustable quality. No upload, no sign-up, batch supported." name="description"/>
+<meta content="webp to jpg, convert webp to jpg, webp to jpeg, webp converter, webp to jpg online, open webp file, save webp as jpg" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/image-tools/webp-to-jpg/" rel="canonical"/>
+<meta content="WebP to JPG Converter — Convert WebP Images Online | ARIXO" property="og:title"/>
+<meta content="Free WebP to JPG converter. Turn WebP images into JPG files in your browser, with adjustable quality. No upload, no sign-up, batch supported." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/image-tools/webp-to-jpg/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="WebP to JPG Converter — Convert WebP Images Online | ARIXO" name="twitter:title"/>
+<meta content="Free WebP to JPG converter. Turn WebP images into JPG files in your browser, with adjustable quality. No upload, no sign-up, batch supported." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "WebP to JPG Converter",
+  "url": "https://arixotools.github.io/tools/image-tools/webp-to-jpg/",
+  "description": "Free WebP to JPG converter. Turn WebP images into JPG files in your browser, with adjustable quality. No upload, no sign-up, batch supported.",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "WebP to JPG Converter",
+      "item": "https://arixotools.github.io/tools/image-tools/webp-to-jpg/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I convert WebP to JPG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose your WebP files, click Convert to JPG and download the results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the conversion private?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. It happens in your browser and nothing is uploaded."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will quality be lost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A little, as JPG is lossy. Using a high quality setting keeps it small enough to notice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I convert many files at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, up to 30 images at a time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to transparency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPG cannot store it, so transparent areas get the background color you pick."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">JPG</div>
+<h1>WebP to JPG Converter</h1>
+<p class="subtitle">Convert WebP pictures to widely supported JPG files, right in your browser.</p>
+<div class="tool-box">
+<div class="input-group"><label for="files">Choose image files</label><input accept="image/webp,.webp" id="files" multiple="" type="file"/></div>
+<div class="input-group"><label for="quality">Quality: <span id="qv">90</span>%</label><input id="quality" max="100" min="40" type="range" value="90"/><div class="hint">Higher quality gives a larger file.</div></div>
+<div class="input-group"><label for="bg">Background for transparent areas</label><input id="bg" type="color" value="#ffffff"/><div class="hint">JPG cannot be transparent, so clear areas are filled with this color.</div></div>
+<button class="btn calculate-btn" id="convBtn" type="button">Convert to JPG</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="img-list" id="list"></div>
+</div>
+<p class="note">Your images are converted inside your browser. They are not uploaded to any server.</p>
+</section>
+<section class="ax-seo">
+<h2>About the WebP to JPG Converter</h2><p>WebP is a modern image format used by many websites because it makes pictures smaller. The problem is that some older apps, printers, email programs, government portals and upload forms still refuse WebP files. This converter turns WebP images into ordinary JPG files that open nearly anywhere. The conversion runs inside your browser, so your images are never uploaded.</p><h2>How to use the WebP to JPG Converter</h2><ol><li>Click <strong>Choose image files</strong> and select one or more WebP images.</li><li>Adjust the quality slider if you want a smaller or sharper file.</li><li>Pick a background color in case your image has transparent areas.</li><li>Click <strong>Convert to JPG</strong> and download each result.</li></ol><h2>Where it is useful</h2><ul><li>Saving images from websites that download as WebP.</li><li>Uploading pictures to forms and portals that only accept JPG.</li><li>Opening WebP files in older editing software.</li><li>Sending photos by email or messaging apps that do not show WebP.</li></ul><h2>WebP versus JPG</h2><div class="tscroll"><table class="data"><thead><tr><th></th><th>WebP</th><th>JPG</th></tr></thead><tbody><tr><td>Compression</td><td>Usually smaller files at the same look</td><td>Slightly larger files</td></tr><tr><td>Transparency</td><td>Supported</td><td>Not supported</td></tr><tr><td>Compatibility</td><td>Most modern browsers and apps</td><td>Almost everything</td></tr><tr><td>Best for</td><td>Websites</td><td>Sharing, printing, uploading</td></tr></tbody></table></div><p>If your WebP has a transparent background, JPG cannot keep it. Those areas are filled with the background color you choose, white by default. If you need to keep transparency, convert to PNG instead.</p><h2>Tips and common mistakes</h2><ul><li>Use 85 to 95% quality for photos. Lower values make the file smaller but may add visible blocks.</li><li>Converting from a lossy format loses a little quality each time, so keep the original.</li><li>For logos or screenshots with sharp text, PNG is usually a better choice than JPG.</li><li>Large images may take a moment, so be patient with batches.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>How do I convert WebP to JPG?</h3><p>Choose your WebP files, click Convert to JPG and download the results.</p><h3>Is the conversion private?</h3><p>Yes. It happens in your browser and nothing is uploaded.</p><h3>Will quality be lost?</h3><p>A little, as JPG is lossy. Using a high quality setting keeps it small enough to notice.</p><h3>Can I convert many files at once?</h3><p>Yes, up to 30 images at a time.</p><h3>What happens to transparency?</h3><p>JPG cannot store it, so transparent areas get the background color you pick.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../image-tools/png-to-jpg/">PNG to JPG Converter</a><a href="../../image-tools/image-to-jpg/">Image to JPG</a><a href="../../image-tools/image-compressor/">Image Compressor</a><a href="../../image-tools/image-to-webp/">Image to WebP Converter</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="script.js"></script>
+<script src="../../../assets/js/track.js" defer></script>
+</body>
+</html>

@@ -73,6 +73,62 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is ARIXO really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every tool on ARIXO is free to use, and you do not need to create an account or sign in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are my files and text uploaded to a server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most tools run entirely in your browser, so the text, numbers and images you enter stay on your device. The one exception is the QR Code Generator, which uses a third-party service to draw the QR image. The Privacy Policy explains this in detail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I trust the results of the calculators?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each calculator uses a standard, published formula and shows it on the page together with a worked example. Results are estimates for planning. For loans, tax, investments or health decisions, check with your bank, a qualified adviser or a doctor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ARIXO work on my phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every page is built to work on small screens as well as computers, and you can star your favorite tools to find them quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do favorites and recently used work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are saved in your own browser using local storage. They never leave your device, and clearing your browser data removes them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I suggest a new tool or report a problem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Contact page. Bug reports and tool requests are very welcome, and new tools are added regularly."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -96,6 +152,8 @@
         <nav class="main-nav">
             <a href="#tools">Tools</a>
             <a href="#categories">Categories</a>
+            <a href="#popular">Popular</a>
+            <a href="about/">About</a>
         </nav>
 
         <a href="#tools" class="header-action">
@@ -136,7 +194,7 @@
 
                 <div class="hero-actions">
                     <a href="#tools" class="primary-button">
-                        <span>Explore 63 Tools</span>
+                        <span>Explore 78 Tools</span>
                         <span class="button-arrow">↗</span>
                     </a>
 
@@ -147,13 +205,13 @@
 
                 <div class="trust-row">
                     <span>
-                        <b>63</b> Tools
+                        <b>78</b> Tools
                     </span>
 
                     <i></i>
 
                     <span>
-                        <b>6</b> Categories
+                        <b>9</b> Categories
                     </span>
 
                     <i></i>
@@ -206,7 +264,7 @@
 
                         <div>
                             <small>AVAILABLE</small>
-                            <strong>63</strong>
+                            <strong>78</strong>
                         </div>
 
                         <div>
@@ -240,7 +298,7 @@
         <div class="stats-grid">
 
             <div class="stat-item">
-                <span class="stat-number">63+</span>
+                <span class="stat-number">78+</span>
                 <span class="stat-label">FREE TOOLS</span>
             </div>
 
@@ -265,6 +323,27 @@
 
 
     <!-- TOOLS -->
+        <section class="quick-section reveal" id="personal" hidden>
+        <div id="favBlock" hidden>
+            <div class="quick-head"><div><h2>Your favorites</h2><p>Tools you starred. Saved only in this browser.</p></div></div>
+            <div class="quick-grid" id="favGrid"></div>
+        </div>
+        <div id="recentBlock" hidden style="margin-top:30px">
+            <div class="quick-head"><div><h2>Recently used</h2><p>Pick up where you left off.</p></div><button type="button" id="clearRecent">Clear</button></div>
+            <div class="quick-grid" id="recentGrid"></div>
+        </div>
+    </section>
+
+    <section class="quick-section reveal" id="popular">
+        <div class="quick-head"><div><h2>Popular tools</h2><p>The tools people reach for most.</p></div></div>
+        <div class="quick-grid"><a class="quick-card" href="tools/calculators/emi-calculator/index.html"><span class="quick-icon">₹</span><span class="quick-text"><strong>EMI Calculator</strong><small>CALCULATOR</small></span></a><a class="quick-card" href="tools/calculators/gst-calculator/index.html"><span class="quick-icon">GST</span><span class="quick-text"><strong>GST Calculator</strong><small>CALCULATOR</small></span></a><a class="quick-card" href="tools/calculators/sip-calculator/index.html"><span class="quick-icon">SIP</span><span class="quick-text"><strong>SIP Calculator</strong><small>CALCULATOR</small></span></a><a class="quick-card" href="tools/calculators/age-calculator/index.html"><span class="quick-icon">◷</span><span class="quick-text"><strong>Age Calculator</strong><small>CALCULATOR</small></span></a><a class="quick-card" href="tools/calculators/bmi-calculator/index.html"><span class="quick-icon">⚖</span><span class="quick-text"><strong>BMI Calculator</strong><small>CALCULATOR</small></span></a><a class="quick-card" href="tools/converters/kg-to-lbs/index.html"><span class="quick-icon">kg</span><span class="quick-text"><strong>Kg to Lbs Converter</strong><small>CONVERTER</small></span></a><a class="quick-card" href="tools/calculators/land-area-converter/index.html"><span class="quick-icon">▦</span><span class="quick-text"><strong>Land Area Converter</strong><small>CALCULATOR</small></span></a><a class="quick-card" href="tools/image-tools/image-compressor/index.html"><span class="quick-icon">◈</span><span class="quick-text"><strong>Image Compressor</strong><small>IMAGE</small></span></a><a class="quick-card" href="tools/text-tools/word-counter/index.html"><span class="quick-icon">Aa</span><span class="quick-text"><strong>Word Counter</strong><small>TEXT</small></span></a><a class="quick-card" href="tools/other-tools/password-generator/index.html"><span class="quick-icon">⌘</span><span class="quick-text"><strong>Password Generator</strong><small>UTILITY</small></span></a><a class="quick-card" href="tools/text-tools/number-to-words/index.html"><span class="quick-icon">123</span><span class="quick-text"><strong>Number to Words Converter</strong><small>TEXT</small></span></a><a class="quick-card" href="tools/image-tools/png-to-jpg/index.html"><span class="quick-icon">PNG</span><span class="quick-text"><strong>PNG to JPG Converter</strong><small>IMAGE</small></span></a></div>
+    </section>
+
+    <section class="quick-section reveal" id="newtools">
+        <div class="quick-head"><div><h2>New and recently added</h2><p>Fresh tools added to ARIXO.</p></div></div>
+        <div class="quick-grid"><a class="quick-card" href="tools/image-tools/webp-to-jpg/index.html"><span class="quick-icon">JPG</span><span class="quick-text"><strong>WebP to JPG Converter</strong><small>IMAGE</small></span></a><a class="quick-card" href="tools/image-tools/image-to-webp/index.html"><span class="quick-icon">WebP</span><span class="quick-text"><strong>Image to WebP Converter</strong><small>IMAGE</small></span></a><a class="quick-card" href="tools/text-tools/number-to-words/index.html"><span class="quick-icon">123</span><span class="quick-text"><strong>Number to Words Converter</strong><small>TEXT</small></span></a><a class="quick-card" href="tools/text-tools/slug-generator/index.html"><span class="quick-icon">/-/</span><span class="quick-text"><strong>Slug Generator</strong><small>TEXT</small></span></a><a class="quick-card" href="tools/developer-tools/color-converter/index.html"><span class="quick-icon">◐</span><span class="quick-text"><strong>Color Converter</strong><small>DEVELOPER</small></span></a><a class="quick-card" href="tools/developer-tools/unix-timestamp-converter/index.html"><span class="quick-icon">⏱</span><span class="quick-text"><strong>Unix Timestamp Converter</strong><small>DEVELOPER</small></span></a><a class="quick-card" href="tools/health-tools/bmr-tdee-calculator/index.html"><span class="quick-icon">BMR</span><span class="quick-text"><strong>BMR and TDEE Calculator</strong><small>HEALTH</small></span></a><a class="quick-card" href="tools/date-time/working-days-calculator/index.html"><span class="quick-icon">WD</span><span class="quick-text"><strong>Working Days Calculator</strong><small>DATE &amp; TIME</small></span></a><a class="quick-card" href="tools/math-tools/cgpa-to-percentage/index.html"><span class="quick-icon">%</span><span class="quick-text"><strong>CGPA to Percentage Converter</strong><small>MATH</small></span></a><a class="quick-card" href="tools/calculators/lumpsum-calculator/index.html"><span class="quick-icon">LS</span><span class="quick-text"><strong>Lumpsum Calculator</strong><small>CALCULATOR</small></span></a><a class="quick-card" href="tools/calculators/fd-rd-calculator/index.html"><span class="quick-icon">FD</span><span class="quick-text"><strong>FD &amp; RD Calculator</strong><small>CALCULATOR</small></span></a><a class="quick-card" href="tools/calculators/land-area-converter/index.html"><span class="quick-icon">▦</span><span class="quick-text"><strong>Land Area Converter</strong><small>CALCULATOR</small></span></a></div>
+    </section>
+
     <section class="tools-section" id="tools">
 
         <div class="section-heading reveal">
@@ -285,7 +364,7 @@
             </div>
 
             <div class="tool-counter">
-                <span id="resultCount">63</span>
+                <span id="resultCount">78</span>
                 <small>TOOLS FOUND</small>
             </div>
 
@@ -378,6 +457,7 @@
                     Other
                 </button>
 
+
                 <button
                     type="button"
                     class="filter-chip"
@@ -424,7 +504,7 @@
                         <span class="category-index">01</span>
 
                         <div>
-                            <h3>Calculators</h3>
+                            <h3><a href="calculators/">Calculators</a></h3>
                             <p>Numbers made simple.</p>
                         </div>
                     </div>
@@ -623,6 +703,7 @@
                         <span class="tool-category">CALCULATOR</span>
                         <h4>SIP Calculator</h4>
                         <p>Plan your SIP and see its future value.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -639,6 +720,7 @@
                         <span class="tool-category">CALCULATOR</span>
                         <h4>FD &amp; RD Calculator</h4>
                         <p>Maturity amount for fixed and recurring deposits.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -655,6 +737,7 @@
                         <span class="tool-category">CALCULATOR</span>
                         <h4>Land Area Converter</h4>
                         <p>Convert katha, bigha, decimal and acre.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -670,6 +753,7 @@
                         <span class="tool-category">CALCULATOR</span>
                         <h4>Lumpsum Calculator</h4>
                         <p>One-time investment growth.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -686,6 +770,7 @@
                         <span class="tool-category">CALCULATOR</span>
                         <h4>CAGR Calculator</h4>
                         <p>Annualised growth rate.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -702,6 +787,7 @@
                         <span class="tool-category">CALCULATOR</span>
                         <h4>Profit Margin Calculator</h4>
                         <p>Margin, markup and pricing.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -718,6 +804,7 @@
                         <span class="tool-category">CALCULATOR</span>
                         <h4>Gratuity Calculator</h4>
                         <p>Gratuity on leaving a job.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -734,6 +821,7 @@
                         <span class="tool-category">CALCULATOR</span>
                         <h4>Inflation Calculator</h4>
                         <p>What money buys in the future.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -753,7 +841,7 @@
                     <div>
                         <span class="category-index">02</span>
                         <div>
-                            <h3>Date & Time</h3>
+                            <h3><a href="date-time/">Date & Time</a></h3>
                             <p>Make time work for you.</p>
                         </div>
                     </div>
@@ -845,6 +933,7 @@
                         <span class="tool-category">DATE & TIME</span>
                         <h4>Add or Subtract Days From a Date</h4>
                         <p>The date after adding or subtracting.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -861,6 +950,7 @@
                         <span class="tool-category">DATE & TIME</span>
                         <h4>Working Days Calculator</h4>
                         <p>Business days between two dates.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -877,6 +967,7 @@
                         <span class="tool-category">DATE & TIME</span>
                         <h4>Hours Between Two Times Calculator</h4>
                         <p>Hours and minutes between two times.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -895,12 +986,12 @@
                     <div>
                         <span class="category-index">03</span>
                         <div>
-                            <h3>Text Tools</h3>
+                            <h3><a href="text-tools/">Text Tools</a></h3>
                             <p>Write. Edit. Transform.</p>
                         </div>
                     </div>
 
-                    <span class="category-count">06 TOOLS</span>
+                    <span class="category-count">12 TOOLS</span>
                 </div>
 
 
@@ -987,8 +1078,111 @@
                         <span class="tool-category">TEXT</span>
                         <h4>Lorem Ipsum Generator</h4>
                         <p>Create placeholder text in seconds.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
+
+                    <a
+                        href="tools/text-tools/number-to-words/index.html"
+                        class="tool-card"
+                        data-category="text-tools"
+                        data-name="Number to Words Converter"
+                        data-description="Convert numbers to words in lakh crore and million billion"
+                    >
+                        <span class="tool-number">07</span>
+                        <span class="tool-icon">123</span>
+                        <span class="tool-category">TEXT</span>
+                        <h4>Number to Words Converter</h4>
+                        <p>Numbers in words, Indian and global style.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/text-tools/remove-duplicate-lines/index.html"
+                        class="tool-card"
+                        data-category="text-tools"
+                        data-name="Remove Duplicate Lines"
+                        data-description="Remove duplicate lines from a list of text"
+                    >
+                        <span class="tool-number">08</span>
+                        <span class="tool-icon">≠</span>
+                        <span class="tool-category">TEXT</span>
+                        <h4>Remove Duplicate Lines</h4>
+                        <p>Unique lines only.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/text-tools/sort-lines/index.html"
+                        class="tool-card"
+                        data-category="text-tools"
+                        data-name="Sort Lines Alphabetically"
+                        data-description="Sort lines of text alphabetically by length or by number"
+                    >
+                        <span class="tool-number">09</span>
+                        <span class="tool-icon">A→Z</span>
+                        <span class="tool-category">TEXT</span>
+                        <h4>Sort Lines Alphabetically</h4>
+                        <p>Alphabetical, numeric and length sorting.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/text-tools/slug-generator/index.html"
+                        class="tool-card"
+                        data-category="text-tools"
+                        data-name="Slug Generator"
+                        data-description="Generate SEO friendly URL slugs from titles"
+                    >
+                        <span class="tool-number">10</span>
+                        <span class="tool-icon">/-/</span>
+                        <span class="tool-category">TEXT</span>
+                        <h4>Slug Generator</h4>
+                        <p>Clean URL slugs from titles.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/text-tools/reading-time-calculator/index.html"
+                        class="tool-card"
+                        data-category="text-tools"
+                        data-name="Reading Time Calculator"
+                        data-description="Estimate reading time and speaking time of text"
+                    >
+                        <span class="tool-number">11</span>
+                        <span class="tool-icon">min</span>
+                        <span class="tool-category">TEXT</span>
+                        <h4>Reading Time Calculator</h4>
+                        <p>Reading and speaking time.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/text-tools/morse-code-translator/index.html"
+                        class="tool-card"
+                        data-category="text-tools"
+                        data-name="Morse Code Translator"
+                        data-description="Translate text to Morse code and Morse code to text"
+                    >
+                        <span class="tool-number">12</span>
+                        <span class="tool-icon">·−</span>
+                        <span class="tool-category">TEXT</span>
+                        <h4>Morse Code Translator</h4>
+                        <p>Text and Morse, both ways.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
 
 
                 </div>
@@ -1005,12 +1199,12 @@
                     <div>
                         <span class="category-index">04</span>
                         <div>
-                            <h3>Image Tools</h3>
+                            <h3><a href="image-tools/">Image Tools</a></h3>
                             <p>Transform your visuals.</p>
                         </div>
                     </div>
 
-                    <span class="category-count">05 TOOLS</span>
+                    <span class="category-count">08 TOOLS</span>
                 </div>
 
 
@@ -1085,6 +1279,57 @@
                         <span class="tool-arrow">↗</span>
                     </a>
 
+                    <a
+                        href="tools/image-tools/webp-to-jpg/index.html"
+                        class="tool-card"
+                        data-category="image-tools"
+                        data-name="WebP to JPG Converter"
+                        data-description="Convert WebP images to JPG online in your browser"
+                    >
+                        <span class="tool-number">06</span>
+                        <span class="tool-icon">JPG</span>
+                        <span class="tool-category">IMAGE</span>
+                        <h4>WebP to JPG Converter</h4>
+                        <p>WebP images to JPG, privately.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/image-tools/png-to-jpg/index.html"
+                        class="tool-card"
+                        data-category="image-tools"
+                        data-name="PNG to JPG Converter"
+                        data-description="Convert PNG images to JPG to reduce file size"
+                    >
+                        <span class="tool-number">07</span>
+                        <span class="tool-icon">PNG</span>
+                        <span class="tool-category">IMAGE</span>
+                        <h4>PNG to JPG Converter</h4>
+                        <p>PNG to smaller JPG, privately.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/image-tools/image-to-webp/index.html"
+                        class="tool-card"
+                        data-category="image-tools"
+                        data-name="Image to WebP Converter"
+                        data-description="Convert JPG and PNG images to WebP for faster websites"
+                    >
+                        <span class="tool-number">08</span>
+                        <span class="tool-icon">WebP</span>
+                        <span class="tool-category">IMAGE</span>
+                        <h4>Image to WebP Converter</h4>
+                        <p>JPG and PNG to WebP, privately.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
                 </div>
             </section>
 
@@ -1099,12 +1344,12 @@
                     <div>
                         <span class="category-index">05</span>
                         <div>
-                            <h3>Developer Tools</h3>
+                            <h3><a href="developer-tools/">Developer Tools</a></h3>
                             <p>Build faster. Work smarter.</p>
                         </div>
                     </div>
 
-                    <span class="category-count">07 TOOLS</span>
+                    <span class="category-count">11 TOOLS</span>
                 </div>
 
 
@@ -1205,8 +1450,77 @@
                         <span class="tool-category">DEVELOPER</span>
                         <h4>Hash Generator</h4>
                         <p>MD5, SHA-1, SHA-256 and SHA-512 hashes.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
+
+                    <a
+                        href="tools/developer-tools/color-converter/index.html"
+                        class="tool-card"
+                        data-category="developer-tools"
+                        data-name="Color Converter"
+                        data-description="Convert HEX RGB and HSL color codes with a live preview"
+                    >
+                        <span class="tool-number">08</span>
+                        <span class="tool-icon">◐</span>
+                        <span class="tool-category">DEVELOPER</span>
+                        <h4>Color Converter</h4>
+                        <p>HEX, RGB and HSL with preview.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/developer-tools/uuid-generator/index.html"
+                        class="tool-card"
+                        data-category="developer-tools"
+                        data-name="UUID Generator"
+                        data-description="Generate random version 4 UUIDs online"
+                    >
+                        <span class="tool-number">09</span>
+                        <span class="tool-icon">ID</span>
+                        <span class="tool-category">DEVELOPER</span>
+                        <h4>UUID Generator</h4>
+                        <p>Random v4 UUIDs, many at once.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/developer-tools/jwt-decoder/index.html"
+                        class="tool-card"
+                        data-category="developer-tools"
+                        data-name="JWT Decoder"
+                        data-description="Decode a JSON Web Token and read its header and payload"
+                    >
+                        <span class="tool-number">10</span>
+                        <span class="tool-icon">JWT</span>
+                        <span class="tool-category">DEVELOPER</span>
+                        <h4>JWT Decoder</h4>
+                        <p>Decode tokens in your browser.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/developer-tools/unix-timestamp-converter/index.html"
+                        class="tool-card"
+                        data-category="developer-tools"
+                        data-name="Unix Timestamp Converter"
+                        data-description="Convert Unix timestamps to dates and dates to Unix timestamps"
+                    >
+                        <span class="tool-number">11</span>
+                        <span class="tool-icon">⏱</span>
+                        <span class="tool-category">DEVELOPER</span>
+                        <h4>Unix Timestamp Converter</h4>
+                        <p>Epoch time and dates, both ways.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
 
 
                 </div>
@@ -1223,12 +1537,12 @@
                     <div>
                         <span class="category-index">06</span>
                         <div>
-                            <h3>Other Tools</h3>
+                            <h3><a href="other-tools/">Other Tools</a></h3>
                             <p>Small tools. Big convenience.</p>
                         </div>
                     </div>
 
-                    <span class="category-count">03 TOOLS</span>
+                    <span class="category-count">05 TOOLS</span>
                 </div>
 
 
@@ -1275,6 +1589,40 @@
                         <span class="tool-arrow">↗</span>
                     </a>
 
+                    <a
+                        href="tools/other-tools/random-name-picker/index.html"
+                        class="tool-card"
+                        data-category="other-tools"
+                        data-name="Random Name Picker"
+                        data-description="Pick random winners from a list of names"
+                    >
+                        <span class="tool-number">04</span>
+                        <span class="tool-icon">🎲</span>
+                        <span class="tool-category">UTILITY</span>
+                        <h4>Random Name Picker</h4>
+                        <p>Fair random draws from a list.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
+                    <a
+                        href="tools/other-tools/dice-roller/index.html"
+                        class="tool-card"
+                        data-category="other-tools"
+                        data-name="Dice Roller"
+                        data-description="Roll dice online with different numbers of sides"
+                    >
+                        <span class="tool-number">05</span>
+                        <span class="tool-icon">⚀</span>
+                        <span class="tool-category">UTILITY</span>
+                        <h4>Dice Roller</h4>
+                        <p>Roll any dice and see the total.</p>
+                        <span class="new-badge">NEW</span>
+                        <span class="tool-arrow">↗</span>
+                    </a>
+
+
                 </div>
             </section>
 
@@ -1288,7 +1636,7 @@
                     <div>
                         <span class="category-index">07</span>
                         <div>
-                            <h3>Converters</h3>
+                            <h3><a href="converters/">Converters</a></h3>
                             <p>Every unit, instantly.</p>
                         </div>
                     </div>
@@ -1312,6 +1660,7 @@
                         <span class="tool-category">CONVERTER</span>
                         <h4>Kg to Lbs Converter</h4>
                         <p>Kilograms to pounds, both ways.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1328,6 +1677,7 @@
                         <span class="tool-category">CONVERTER</span>
                         <h4>CM to Feet and Inches Converter</h4>
                         <p>Height in cm, feet and inches.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1344,6 +1694,7 @@
                         <span class="tool-category">CONVERTER</span>
                         <h4>Celsius to Fahrenheit Converter</h4>
                         <p>Celsius, Fahrenheit and Kelvin.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1360,6 +1711,7 @@
                         <span class="tool-category">CONVERTER</span>
                         <h4>Km to Miles Converter</h4>
                         <p>Kilometers and miles, both ways.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1377,7 +1729,7 @@
                     <div>
                         <span class="category-index">08</span>
                         <div>
-                            <h3>Math &amp; Education</h3>
+                            <h3><a href="math-tools/">Math &amp; Education</a></h3>
                             <p>Numbers, made clear.</p>
                         </div>
                     </div>
@@ -1401,6 +1753,7 @@
                         <span class="tool-category">MATH</span>
                         <h4>CGPA to Percentage Converter</h4>
                         <p>CGPA and percentage, both ways.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1417,6 +1770,7 @@
                         <span class="tool-category">MATH</span>
                         <h4>Average Calculator</h4>
                         <p>Mean, median, mode and range.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1433,6 +1787,7 @@
                         <span class="tool-category">MATH</span>
                         <h4>HCF and LCM Calculator</h4>
                         <p>Highest common factor and LCM.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1449,6 +1804,7 @@
                         <span class="tool-category">MATH</span>
                         <h4>Number Base Converter</h4>
                         <p>Binary, octal, decimal and hex.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1465,6 +1821,7 @@
                         <span class="tool-category">MATH</span>
                         <h4>Prime Number Checker</h4>
                         <p>Prime test and factorisation.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1481,6 +1838,7 @@
                         <span class="tool-category">MATH</span>
                         <h4>Fraction Calculator</h4>
                         <p>Fractions, simplified.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1497,6 +1855,7 @@
                         <span class="tool-category">MATH</span>
                         <h4>Quadratic Equation Solver</h4>
                         <p>Roots from a, b and c.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1513,6 +1872,7 @@
                         <span class="tool-category">MATH</span>
                         <h4>Roman Numeral Converter</h4>
                         <p>Numbers and Roman numerals.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1530,7 +1890,7 @@
                     <div>
                         <span class="category-index">09</span>
                         <div>
-                            <h3>Health &amp; Fitness</h3>
+                            <h3><a href="health-tools/">Health &amp; Fitness</a></h3>
                             <p>Know your numbers.</p>
                         </div>
                     </div>
@@ -1554,6 +1914,7 @@
                         <span class="tool-category">HEALTH</span>
                         <h4>BMR and TDEE Calculator</h4>
                         <p>Calories your body burns each day.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1570,6 +1931,7 @@
                         <span class="tool-category">HEALTH</span>
                         <h4>Ideal Weight Calculator</h4>
                         <p>A healthy weight range for your height.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1586,6 +1948,7 @@
                         <span class="tool-category">HEALTH</span>
                         <h4>Pregnancy Due Date Calculator</h4>
                         <p>Your estimated due date and week.</p>
+                        <span class="new-badge">NEW</span>
                         <span class="tool-arrow">↗</span>
                     </a>
 
@@ -1617,6 +1980,23 @@
 
 
     <!-- CTA -->
+        <section class="about-section reveal" id="about">
+        <h2>Free online tools that are simple, fast and private</h2>
+        <p>ARIXO is a growing collection of free online tools for everyday tasks. You can work out an EMI or SIP, convert katha and bigha to square feet, count words, compress an image, generate a strong password, decode a JSON Web Token or find the working days between two dates. Every tool is a single page that loads quickly and works on your phone, with a short explanation, a worked example and answers to common questions so you understand the result and not only the number.</p>
+        <div class="about-points">
+            <div><strong>No sign-up</strong><span>Open a tool and use it. There is no account, no email form and no paywall.</span></div>
+            <div><strong>Runs in your browser</strong><span>Most tools process your input on your own device, so your text and images stay with you.</span></div>
+            <div><strong>Explained, not just answered</strong><span>Formulas, examples and tips sit next to each tool, so you can check the logic.</span></div>
+            <div><strong>Made with regional needs in mind</strong><span>Rupee formats, Indian number words, land units like katha and bigha, and Friday-Saturday weekends.</span></div>
+        </div>
+        <h3>Browse by category</h3>
+        <p class="footer-cats"><a href="calculators/">Calculators</a><a href="converters/">Unit Converters</a><a href="math-tools/">Math &amp; Education Tools</a><a href="health-tools/">Health &amp; Fitness Calculators</a><a href="date-time/">Date &amp; Time Tools</a><a href="text-tools/">Text Tools</a><a href="image-tools/">Image Tools</a><a href="developer-tools/">Developer Tools</a><a href="other-tools/">Other Tools</a></p>
+        <h2 style="margin-top:34px">Frequently asked questions</h2>
+        <div class="faq-list">
+            <details><summary>Is ARIXO really free?</summary><p>Yes. Every tool on ARIXO is free to use, and you do not need to create an account or sign in.</p></details><details><summary>Are my files and text uploaded to a server?</summary><p>Most tools run entirely in your browser, so the text, numbers and images you enter stay on your device. The one exception is the QR Code Generator, which uses a third-party service to draw the QR image. The Privacy Policy explains this in detail.</p></details><details><summary>Can I trust the results of the calculators?</summary><p>Each calculator uses a standard, published formula and shows it on the page together with a worked example. Results are estimates for planning. For loans, tax, investments or health decisions, check with your bank, a qualified adviser or a doctor.</p></details><details><summary>Does ARIXO work on my phone?</summary><p>Yes. Every page is built to work on small screens as well as computers, and you can star your favorite tools to find them quickly.</p></details><details><summary>How do favorites and recently used work?</summary><p>They are saved in your own browser using local storage. They never leave your device, and clearing your browser data removes them.</p></details><details><summary>How can I suggest a new tool or report a problem?</summary><p>Use the Contact page. Bug reports and tool requests are very welcome, and new tools are added regularly.</p></details>
+        </div>
+    </section>
+
     <section class="final-cta reveal">
 
         <div class="cta-glow"></div>
@@ -1666,6 +2046,7 @@
         </div>
 
 
+        <div class="footer-cats" aria-label="Tool categories"><a href="calculators/">Calculators</a><a href="converters/">Unit Converters</a><a href="math-tools/">Math &amp; Education Tools</a><a href="health-tools/">Health &amp; Fitness Calculators</a><a href="date-time/">Date &amp; Time Tools</a><a href="text-tools/">Text Tools</a><a href="image-tools/">Image Tools</a><a href="developer-tools/">Developer Tools</a><a href="other-tools/">Other Tools</a></div>
         <div class="footer-links">
 
             <a href="#tools">Tools</a>
@@ -1689,6 +2070,7 @@
 
 
 <script src="assets/js/home.js"></script>
+<script src="assets/js/home-extra.js"></script>
 
 </body>
 </html>

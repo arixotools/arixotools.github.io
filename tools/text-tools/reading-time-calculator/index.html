@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Time Calculator — Estimate Reading &amp; Speaking Time | ARIXO</title>
+<meta name="description" content="Free reading time calculator. Paste your text to see words, characters, sentences, estimated reading time and speaking time for a speech.">
+<meta name="keywords" content="reading time calculator, how long to read, estimated reading time, speaking time calculator, speech length calculator, words per minute">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ARIXO">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://arixotools.github.io/tools/text-tools/reading-time-calculator/">
+<meta property="og:title" content="Reading Time Calculator — Estimate Reading &amp; Speaking Time | ARIXO">
+<meta property="og:description" content="Free reading time calculator. Paste your text to see words, characters, sentences, estimated reading time and speaking time for a speech.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARIXO">
+<meta property="og:url" content="https://arixotools.github.io/tools/text-tools/reading-time-calculator/">
+<meta property="og:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reading Time Calculator — Estimate Reading &amp; Speaking Time | ARIXO">
+<meta name="twitter:description" content="Free reading time calculator. Paste your text to see words, characters, sentences, estimated reading time and speaking time for a speech.">
+<meta name="twitter:image" content="https://arixotools.github.io/assets/images/arixo-og.png">
+<link rel="icon" type="image/jpeg" href="../../../assets/images/arixo-favicon.jpeg">
+<link rel="stylesheet" href="../../../assets/css/tool.css">
+<link rel="stylesheet" href="../../../assets/css/ax.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Reading Time Calculator",
+  "url": "https://arixotools.github.io/tools/text-tools/reading-time-calculator/",
+  "description": "Free reading time calculator. Paste your text to see words, characters, sentences, estimated reading time and speaking time for a speech.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Reading Time Calculator",
+      "item": "https://arixotools.github.io/tools/text-tools/reading-time-calculator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does it take to read 1000 words?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "About 4 minutes at an average adult reading speed of 238 words per minute."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many words per minute is average reading speed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Roughly 200 to 250 words per minute for adults reading silently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is a 5 minute speech in words?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Around 650 words at a speaking pace of about 130 words per minute."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work for Bangla and Hindi text?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, words are counted by spaces. Reading speeds in other languages may differ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my text uploaded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It stays in your browser."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div class="icon" aria-hidden="true">min</div>
+<h1>Reading Time Calculator</h1>
+<p class="subtitle">Paste text to estimate how long it takes to read or to say aloud.</p>
+<div class="tool-box">
+<div class="input-group"><label for="txt">Your text</label><textarea data-in id="txt" rows="8" placeholder="Paste an article, essay or speech here..." spellcheck="false"></textarea></div>
+<div class="input-group"><label for="wpm">Reading speed</label><select data-in id="wpm" data-default="238"><option value="200">Slow (200 words per minute)</option><option value="238" selected>Average adult (238 words per minute)</option><option value="300">Fast (300 words per minute)</option></select></div>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div class="result-box" id="result" aria-live="polite"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Reading Time Calculator</h2><p>Readers like to know how long an article will take, and speakers need to know whether a speech fits its slot. This calculator counts the words in your text and divides by a reading speed to estimate the time, then separately estimates how long it would take to read aloud at a normal speaking pace of about 130 words per minute. It also counts characters, sentences and paragraphs.</p><h2>How to use the Reading Time Calculator</h2><ol><li>Paste or type your text into the box.</li><li>Choose a reading speed: slow, average or fast.</li><li>The reading time, speaking time and counts update instantly.</li><li>Edit the text and watch the numbers change.</li></ol><h2>Where it is useful</h2><ul><li>Adding 'X min read' labels to blog posts and articles.</li><li>Timing speeches, presentations and voice-overs.</li><li>Checking essay or assignment length.</li><li>Planning video scripts and podcasts.</li></ul><h2>How the estimate works</h2><div class="formula-box"><strong>Reading time = words ÷ words per minute</strong></div><p>Silent reading speed for adults averages around 200 to 250 words per minute, and public speaking is slower, typically 120 to 150 words per minute. A 1,000-word article takes about 4 minutes 12 seconds at 238 wpm and about 7 minutes 42 seconds to read aloud.</p><h2>Quick guide</h2><div class="tscroll"><table class="data"><thead><tr><th>Words</th><th>Reading (238 wpm)</th><th>Speaking (130 wpm)</th></tr></thead><tbody><tr><td>300</td><td>1 min 16 sec</td><td>2 min 18 sec</td></tr><tr><td>600</td><td>2 min 31 sec</td><td>4 min 37 sec</td></tr><tr><td>1,000</td><td>4 min 12 sec</td><td>7 min 42 sec</td></tr><tr><td>2,000</td><td>8 min 24 sec</td><td>15 min 23 sec</td></tr></tbody></table></div><h2>Tips and common mistakes</h2><ul><li>Technical or dense text is read more slowly, so pick a lower speed.</li><li>Add time for pauses, slides and examples when timing a speech.</li><li>Reading speed varies a lot between people and languages.</li><li>Use the Word Counter if you also need exact limits for a form.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>How long does it take to read 1000 words?</h3><p>About 4 minutes at an average adult reading speed of 238 words per minute.</p><h3>How many words per minute is average reading speed?</h3><p>Roughly 200 to 250 words per minute for adults reading silently.</p><h3>How long is a 5 minute speech in words?</h3><p>Around 650 words at a speaking pace of about 130 words per minute.</p><h3>Does it work for Bangla and Hindi text?</h3><p>Yes, words are counted by spaces. Reading speeds in other languages may differ.</p><h3>Is my text uploaded?</h3><p>No. It stays in your browser.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../text-tools/word-counter/">Word Counter</a><a href="../../text-tools/character-counter/">Character Counter</a><a href="../../text-tools/lorem-ipsum-generator/">Lorem Ipsum Generator</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+<script src="../../../assets/js/track.js" defer></script>
+</body>
+</html>

@@ -19,3 +19,11 @@ body.ax-page{margin:0;min-height:100vh;padding:22px;font-family:Arial,sans-serif
 .ax-doc h1{margin:0 0 6px;font-size:32px}
 .ax-doc .ax-sub{margin:0 0 4px;color:rgba(255,255,255,.55);font-size:13px}
 .ax-doc a{color:#00e5ff}
+
+.cat-intro{margin:0 0 18px;color:rgba(255,255,255,.72);line-height:1.8}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:14px 0 8px}
+.cat-grid a{display:block;padding:16px;border-radius:14px;text-decoration:none;color:#fff;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.cat-grid a:hover{border-color:rgba(0,229,255,.45)}
+.cat-grid strong{display:block;margin-bottom:6px;color:#00e5ff;font-size:16px}
+.cat-grid span{font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.68)}
+.cat-others{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:6px}

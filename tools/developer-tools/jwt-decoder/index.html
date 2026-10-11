@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JWT Decoder — Decode JSON Web Tokens Online | ARIXO</title>
+<meta content="Free JWT decoder. Paste a JSON Web Token to read its header and payload, with issue and expiry times shown in plain dates. Decoded in your browser." name="description"/>
+<meta content="jwt decoder, decode jwt, json web token decoder, jwt parser, jwt expiry checker, read jwt token online" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/developer-tools/jwt-decoder/" rel="canonical"/>
+<meta content="JWT Decoder — Decode JSON Web Tokens Online | ARIXO" property="og:title"/>
+<meta content="Free JWT decoder. Paste a JSON Web Token to read its header and payload, with issue and expiry times shown in plain dates. Decoded in your browser." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/developer-tools/jwt-decoder/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="JWT Decoder — Decode JSON Web Tokens Online | ARIXO" name="twitter:title"/>
+<meta content="Free JWT decoder. Paste a JSON Web Token to read its header and payload, with issue and expiry times shown in plain dates. Decoded in your browser." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "JWT Decoder",
+  "url": "https://arixotools.github.io/tools/developer-tools/jwt-decoder/",
+  "description": "Free JWT decoder. Paste a JSON Web Token to read its header and payload, with issue and expiry times shown in plain dates. Decoded in your browser.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "JWT Decoder",
+      "item": "https://arixotools.github.io/tools/developer-tools/jwt-decoder/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a JWT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A signed token that carries claims, used for authentication and authorization in web apps and APIs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can anyone read a JWT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The header and payload are only encoded, not encrypted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this tool verify the signature?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It only decodes. Verify signatures on your server with the proper key."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do iat and exp mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "iat is when the token was issued and exp is when it expires, both in Unix time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my token sent anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Decoding happens in your browser."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">JWT</div>
+<h1>JWT Decoder</h1>
+<p class="subtitle">Read the header and payload of a JSON Web Token, right in your browser.</p>
+<div class="tool-box">
+<div class="input-group"><label for="tok">JWT</label><textarea data-in="" id="tok" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." rows="5" spellcheck="false"></textarea></div>
+<button class="btn calculate-btn" id="calcBtn" type="button">Decode token</button>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the JWT Decoder</h2><p>A JSON Web Token (JWT) is a compact string used to carry login and access information between systems. It has three parts separated by dots: a header, a payload with claims such as the user ID and expiry, and a signature. The first two parts are just Base64URL-encoded JSON, so they can be read by anyone. This decoder turns them into readable JSON and shows the issue and expiry times as normal dates.</p><h2>How to use the JWT Decoder</h2><ol><li>Paste the token. A leading 'Bearer ' is removed automatically.</li><li>Click <strong>Decode token</strong>.</li><li>Read the header, payload, algorithm, and issue and expiry times.</li><li>Use Copy result if you want to keep the decoded JSON.</li></ol><h2>Where it is useful</h2><ul><li>Debugging login and API problems.</li><li>Checking whether a token has expired.</li><li>Seeing which claims and roles a token carries.</li><li>Learning how JWTs are built.</li></ul><h2>What the parts mean</h2><div class="tscroll"><table class="data"><thead><tr><th>Part</th><th>Contains</th></tr></thead><tbody><tr><td>Header</td><td>The signing algorithm (alg) and token type (typ)</td></tr><tr><td>Payload</td><td>Claims such as sub (subject), iat (issued at), exp (expiry) and custom data</td></tr><tr><td>Signature</td><td>A cryptographic signature that proves the token was not changed</td></tr></tbody></table></div><h2>Important: decoding is not verifying</h2><p>This tool only <strong>reads</strong> the token. It does not check the signature, so it cannot tell you whether a token is genuine or has been tampered with. Verification needs the secret or public key and must be done on your server. Also remember that anything in a JWT payload is readable by anyone, so never put secrets in it.</p><p>Tokens can grant access to accounts. This page decodes in your browser and sends nothing anywhere, but you should still avoid pasting live production tokens into tools you do not trust.</p><h2>Tips and common mistakes</h2><ul><li>Expiry (exp) and issued-at (iat) are in seconds since 1970 and are shown here as UTC dates.</li><li>A token without an exp claim never expires on its own.</li><li>Do not store sensitive data in the payload.</li><li>To check if two parts match your expectations, use the Base64 and JSON tools.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>What is a JWT?</h3><p>A signed token that carries claims, used for authentication and authorization in web apps and APIs.</p><h3>Can anyone read a JWT?</h3><p>Yes. The header and payload are only encoded, not encrypted.</p><h3>Does this tool verify the signature?</h3><p>No. It only decodes. Verify signatures on your server with the proper key.</p><h3>What do iat and exp mean?</h3><p>iat is when the token was issued and exp is when it expires, both in Unix time.</p><h3>Is my token sent anywhere?</h3><p>No. Decoding happens in your browser.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../developer-tools/base64-decoder/">Base64 Decoder</a><a href="../../developer-tools/json-formatter/">JSON Formatter</a><a href="../../developer-tools/unix-timestamp-converter/">Unix Timestamp Converter</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+<script src="../../../assets/js/track.js" defer></script>
+</body>
+</html>

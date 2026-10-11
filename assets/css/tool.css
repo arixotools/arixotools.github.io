@@ -72,3 +72,15 @@ table.data tr.hit td{color:#00e5ff;font-weight:800}
 .out-text{min-height:140px;margin-top:6px;resize:vertical;line-height:1.5}
 .swatch{height:64px;border-radius:14px;border:1px solid rgba(255,255,255,.2)}
 .result-box{gap:12px}
+
+.out-text{min-height:140px;margin-top:6px;resize:vertical;line-height:1.5}
+.swatch{height:64px;border-radius:14px;border:1px solid rgba(255,255,255,.2)}
+.result-box{gap:12px}
+.input-group input[type=range]{padding:0;height:34px}
+.input-group input[type=color]{padding:4px;height:48px}
+.input-group input[type=file]{padding:12px}
+.img-list{display:grid;gap:12px;margin-top:14px}
+.img-row{padding:14px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.img-row img{display:block;max-width:100%;max-height:140px;margin:0 auto 10px;border-radius:10px;background:#fff}
+.img-row .meta{margin-bottom:10px;font-size:13px;line-height:1.6;color:rgba(255,255,255,.7);overflow-wrap:anywhere}
+.img-row .btn{width:100%;margin:0;text-decoration:none}

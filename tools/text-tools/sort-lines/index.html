@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sort Lines Alphabetically — A to Z, Z to A &amp; Numeric | ARIXO</title>
+<meta content="Free tool to sort lines of text A to Z, Z to A, by length or by number. Reverse a list, ignore case and remove blank lines in one click." name="description"/>
+<meta content="sort lines, sort alphabetically online, sort text lines, alphabetize list, sort numbers, reverse lines, sort list a to z" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="ARIXO" name="author"/>
+<meta content="#05070d" name="theme-color"/>
+<link href="https://arixotools.github.io/tools/text-tools/sort-lines/" rel="canonical"/>
+<meta content="Sort Lines Alphabetically — A to Z, Z to A &amp; Numeric | ARIXO" property="og:title"/>
+<meta content="Free tool to sort lines of text A to Z, Z to A, by length or by number. Reverse a list, ignore case and remove blank lines in one click." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="ARIXO" property="og:site_name"/>
+<meta content="https://arixotools.github.io/tools/text-tools/sort-lines/" property="og:url"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Sort Lines Alphabetically — A to Z, Z to A &amp; Numeric | ARIXO" name="twitter:title"/>
+<meta content="Free tool to sort lines of text A to Z, Z to A, by length or by number. Reverse a list, ignore case and remove blank lines in one click." name="twitter:description"/>
+<meta content="https://arixotools.github.io/assets/images/arixo-og.png" name="twitter:image"/>
+<link href="../../../assets/images/arixo-favicon.jpeg" rel="icon" type="image/jpeg"/>
+<link href="../../../assets/css/tool.css" rel="stylesheet"/>
+<link href="../../../assets/css/ax.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Sort Lines Alphabetically",
+  "url": "https://arixotools.github.io/tools/text-tools/sort-lines/",
+  "description": "Free tool to sort lines of text A to Z, Z to A, by length or by number. Reverse a list, ignore case and remove blank lines in one click.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ARIXO",
+    "url": "https://arixotools.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ARIXO",
+      "item": "https://arixotools.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sort Lines Alphabetically",
+      "item": "https://arixotools.github.io/tools/text-tools/sort-lines/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I sort a list alphabetically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Paste the list, keep A to Z selected and copy the result."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it sort numbers correctly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Choose 'Numbers, low to high' so 10 comes after 9, not after 1."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the sort case sensitive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not by default. Untick Ignore case to be case sensitive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I reverse a list?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, pick 'Reverse the current order'."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work with Bangla or Hindi text?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It sorts using your browser's rules for the script, which is usually correct for common languages."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main class="page">
+<a class="back-btn" href="../../../index.html">← Back to ARIXO</a>
+<section class="calculator-card">
+<div class="brand">ARIXO</div>
+<div aria-hidden="true" class="icon">A→Z</div>
+<h1>Sort Lines Alphabetically</h1>
+<p class="subtitle">Sort a list of lines alphabetically, by length, by number, or reverse it.</p>
+<div class="tool-box">
+<div class="input-group"><label for="txt">Your text (one item per line)</label><textarea data-in="" id="txt" placeholder="pear
+apple
+Mango
+banana" rows="8" spellcheck="false"></textarea></div>
+<div class="input-group"><label for="order">Sort order</label><select data-default="az" data-in="" id="order"><option selected="" value="az">A to Z</option><option value="za">Z to A</option><option value="lenA">Shortest first</option><option value="lenD">Longest first</option><option value="numA">Numbers, low to high</option><option value="numD">Numbers, high to low</option><option value="rev">Reverse the current order</option></select></div>
+<label class="check"><input checked="" data-default="1" data-in="" id="ic" type="checkbox"/> Ignore upper and lower case</label>
+<label class="check"><input checked="" data-default="1" data-in="" id="ne" type="checkbox"/> Remove empty lines</label>
+<button class="btn clear-btn" id="clearBtn" type="button">Clear</button>
+<div class="error" id="error" role="alert"></div>
+<div aria-live="polite" class="result-box" id="result"></div>
+</div>
+</section>
+<section class="ax-seo">
+<h2>About the Sort Lines Alphabetically</h2><p>Sorting a list by hand is slow and error-prone. Paste your lines and this tool sorts them A to Z or Z to A, by length, or by numeric value, and can also simply reverse the order. It is useful for tidying name lists, keywords, URLs, to-do items and numbers, and the result updates instantly as you change an option.</p><h2>How to use the Sort Lines Alphabetically</h2><ol><li>Paste your list, one item per line.</li><li>Choose a sort order from the menu.</li><li>Tick Ignore case if capitals should not affect the order, and Remove empty lines to tidy blanks.</li><li>Click <strong>Copy result</strong> to take the sorted list.</li></ol><h2>Where it is useful</h2><ul><li>Alphabetising names, tags, keywords and bibliography entries.</li><li>Sorting numbers or prices from low to high.</li><li>Putting URLs or file names in order.</li><li>Reversing a list, such as a timeline, without retyping.</li></ul><h2>Sort options explained</h2><div class="tscroll"><table class="data"><thead><tr><th>Option</th><th>What it does</th></tr></thead><tbody><tr><td>A to Z / Z to A</td><td>Alphabetical order, forwards or backwards</td></tr><tr><td>Shortest / Longest first</td><td>Orders lines by number of characters</td></tr><tr><td>Numbers low/high</td><td>Reads each line as a number. Lines that are not numbers go to the end</td></tr><tr><td>Reverse</td><td>Flips the current order without sorting</td></tr></tbody></table></div><p>Remember to turn on <strong>Ignore case</strong> if you want 'apple' and 'Banana' sorted together regardless of capital letters.</p><h2>Tips and common mistakes</h2><ul><li>For a unique sorted list, run Remove Duplicate Lines first or afterwards.</li><li>Numeric sorting understands commas in numbers such as 1,250.</li><li>Lines that start with spaces may sort first, so clean them with the Remove Spaces tool if needed.</li><li>Non-English letters are sorted using your browser's language rules.</li></ul>
+<h2>Frequently asked questions</h2>
+<h3>How do I sort a list alphabetically?</h3><p>Paste the list, keep A to Z selected and copy the result.</p><h3>Can it sort numbers correctly?</h3><p>Yes. Choose 'Numbers, low to high' so 10 comes after 9, not after 1.</p><h3>Is the sort case sensitive?</h3><p>Not by default. Untick Ignore case to be case sensitive.</p><h3>Can I reverse a list?</h3><p>Yes, pick 'Reverse the current order'.</p><h3>Does it work with Bangla or Hindi text?</h3><p>It sorts using your browser's rules for the script, which is usually correct for common languages.</p>
+</section>
+<section class="ax-related"><h2>Related tools</h2><div class="ax-links"><a href="../../text-tools/remove-duplicate-lines/">Remove Duplicate Lines</a><a href="../../text-tools/remove-spaces/">Remove Spaces</a><a href="../../text-tools/case-converter/">Case Converter</a></div></section>
+<footer class="ax-foot"><a href="../../../about/">About</a><a href="../../../privacy/">Privacy Policy</a><a href="../../../contact/">Contact</a><span>© 2026 ARIXO</span></footer>
+</main>
+<script src="../../../assets/js/runtime.js"></script>
+<script src="script.js"></script>
+<script src="../../../assets/js/track.js" defer></script>
+</body>
+</html>
